@@ -1,0 +1,4 @@
+spacy
+transformers
+PyPDF2
+torch
