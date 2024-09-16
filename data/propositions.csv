@@ -1,0 +1,1041 @@
+,doc_id,chunk,text
+0,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1,The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder.
+1,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,2,Ashish Vaswani is a researcher at Google Brain.
+2,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,3,Noam Shazeer is a researcher at Google Brain.
+3,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,4,Niki Parmar is a researcher at Google Research.
+4,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,5,Jakob Uszkoreit is a researcher at Google Research.
+5,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,6,Llion Jones is a researcher at Google Research.
+6,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,7,Aidan N. Gomez is a researcher at the University of Toronto.
+7,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,8,Łukasz Kaiser is a researcher at Google Brain.
+8,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,9,Illia Polosukhin is a researcher.
+9,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,10,Ashish Vaswani's email address is avaswani@google.com.
+10,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,11,Noam Shazeer's email address is noam@google.com.
+11,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,12,Niki Parmar's email address is nikip@google.com.
+12,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,13,Jakob Uszkoreit's email address is usz@google.com.
+13,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,14,Llion Jones's email address is llion@google.com.
+14,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,15,Aidan N. Gomez's email address is aidan@cs.toronto.edu.
+15,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,16,Łukasz Kaiser's email address is lukaszkaiser@google.com.
+16,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,17,Illia Polosukhin's email address is illia.polosukhin@gmail.com.
+17,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,18,The best performing models also connect the encoder and decoder through an attention mechanism.
+18,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,19,"We propose a new simple network architecture, the Transformer."
+19,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,20,The Transformer is based solely on attention mechanisms.
+20,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,21,The Transformer dispenses with recurrence and convolutions entirely.
+21,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,22,Experiments on two machine translation tasks show these models to be superior in quality.
+22,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,23,These models are more parallelizable.
+23,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,24,These models require significantly less time to train.
+24,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,25,Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task.
+25,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,26,The WMT 2014 English-to-German translation task is a benchmark task.
+26,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,27,Our model improves over the existing best results on the WMT 2014 English-to-German translation task.
+27,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,28,The existing best results on the WMT 2014 English-to-German translation task include ensembles.
+28,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,29,Our model improves over the existing best results by over 2 BLEU.
+29,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,30,Our model establishes a new single-model state-of-the-art BLEU score of 41.8 on the WMT 2014 English-to-French translation task.
+30,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,31,The model was trained for 3.5 days on eight GPUs.
+31,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,32,The training costs of the model are a small fraction of the training costs of the best models from the literature.
+32,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,33,We show that the Transformer generalizes well to other tasks.
+33,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,34,The Transformer was applied successfully to English constituency parsing.
+34,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,35,The Transformer was applied successfully to English constituency parsing both with large and limited training data.
+35,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,36,Recurrent neural networks have been firmly established as state-of-the-art approaches in sequence modeling.
+36,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,37,Long short-term memory [13] and gated recurrent [7] neural networks are recurrent neural networks.
+37,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,38,Long short-term memory [13] and gated recurrent [7] neural networks have been firmly established as state-of-the-art approaches in sequence modeling.
+38,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,39,The earliest evidence for the Easter Hare was recorded in south-west Germany in 1678 by Georg Franck von Franckenau.
+39,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,40,Georg Franck von Franckenau was a professor of medicine.
+40,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,41,The evidence for the Easter Hare remained unknown in other parts of Germany until the 18th century.
+41,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,42,Richard Sermon was a scholar.
+42,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,43,Richard Sermon writes a hypothesis about the possible explanation for the connection between hares and the tradition during Easter.
+43,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,44,Hares were frequently seen in gardens in spring.
+44,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,45,Hares may have served as a convenient explanation for the origin of the colored eggs hidden in gardens for children.
+45,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,46,There is a European tradition that hares laid eggs.
+46,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,47,A hare’s scratch or form and a lapwing’s nest look very similar.
+47,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,48,Both hares and lapwing’s nests occur on grassland and are first seen in the spring.
+48,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,49,"In the nineteenth century the influence of Easter cards, toys, and books was to make the Easter Hare/Rabbit popular throughout Europe."
+49,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,50,German immigrants exported the custom of the Easter Hare/Rabbit to Britain and America.
+50,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,51,The custom of the Easter Hare/Rabbit evolved into the Easter Bunny in Britain and America.
+51,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,52,Jakob proposed replacing RNNs with self-attention.
+52,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,53,Jakob started the effort to evaluate the idea of replacing RNNs with self-attention.
+53,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,54,Ashish designed and implemented the first Transformer models.
+54,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,55,Illia designed and implemented the first Transformer models.
+55,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,56,Ashish has been crucially involved in every aspect of this work.
+56,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,57,Illia has been crucially involved in every aspect of this work.
+57,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,58,Noam proposed scaled dot-product attention.
+58,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,59,Noam proposed multi-head attention.
+59,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,60,Noam proposed the parameter-free position representation.
+60,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,61,Noam became the other person involved in nearly every detail.
+61,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,62,"Niki designed, implemented, tuned and evaluated countless model variants."
+62,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,63,"Niki designed, implemented, tuned and evaluated countless model variants in our original codebase."
+63,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,64,"Niki designed, implemented, tuned and evaluated countless model variants in tensor2tensor."
+64,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,65,Llion experimented with novel model variants.
+65,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,66,Llion was responsible for the initial codebase.
+66,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,67,Llion was responsible for efficient inference and visualizations.
+67,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,68,Lukasz and Aidan spent countless long days designing various parts of and implementing tensor2tensor.
+68,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,69,tensor2tensor replaced our earlier codebase.
+69,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,70,tensor2tensor greatly improved results.
+70,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,71,tensor2tensor massively accelerated our research.
+71,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,72,The work was performed while at Google Brain.
+72,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,73,The work was performed while at Google Research.
+73,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,74,"The 31st Conference on Neural Information Processing Systems (NIPS 2017) was held in Long Beach, CA, USA."
+74,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,75,NIPS 2017 was the 31st Conference on Neural Information Processing Systems.
+75,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,76,"The conference was held in Long Beach, CA, USA."
+76,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,77,"The arXiv preprint was published on December 6, 2017."
+77,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,78,The arXiv preprint has the identifier 1706.03762v5.
+78,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,79,"The arXiv preprint is categorized as computer science, specifically computational linguistics."
+79,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,80,The preprint discusses transduction problems such as language modeling and machine translation.
+80,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,81,"The preprint cites references 35, 2, and 5."
+81,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,82,Numerous efforts have continued to push the boundaries of recurrent language models and encoder-decoder architectures.
+82,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,83,The efforts are related to recurrent language models and encoder-decoder architectures.
+83,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,84,"The efforts are described in references 38, 24, and 15."
+84,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,85,Recurrent models typically factor computation along the symbol positions of the input and output sequences.
+85,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,86,"Aligning the positions to steps in computation time, they generate a sequence of hidden states ht."
+86,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,87,The hidden states ht are a function of the previous hidden state ht-1 and the input for position t.
+87,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,88,This inherently sequential nature precludes parallelization within training examples.
+88,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,89,Parallelization within training examples becomes critical at longer sequence lengths.
+89,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,90,Memory constraints limit batching across examples.
+90,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,91,Recent work has achieved significant improvements in computational efficiency.
+91,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,92,The improvements in computational efficiency were achieved through factorization tricks.
+92,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,93,Factorization tricks were described in reference [21].
+93,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,94,Recent work has achieved significant improvements in computational efficiency through conditional computation.
+94,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,95,Conditional computation was described in reference [32].
+95,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,96,Recent work has also improved model performance.
+96,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,97,The improvement in model performance was achieved through conditional computation.
+97,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,98,The fundamental constraint of sequential computation remains.
+98,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,99,Attention mechanisms have become an integral part of compelling sequence modeling and transduction models in various tasks.
+99,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,100,Attention mechanisms allow modeling of dependencies without regard to their distance in the input or output sequences.
+100,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,101,The input or output sequences are in various tasks.
+101,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,102,"In all but a few cases, attention mechanisms are used in conjunction with a recurrent network."
+102,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,103,There are a few cases where attention mechanisms are not used in conjunction with a recurrent network.
+103,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,104,"In this work, we propose the Transformer."
+104,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,105,The Transformer is a model architecture.
+105,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,106,The Transformer eschews recurrence.
+106,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,107,The Transformer relies entirely on an attention mechanism.
+107,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,108,The attention mechanism draws global dependencies between input and output.
+108,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,109,The Transformer allows for significantly more parallelization.
+109,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,110,The Transformer can reach a new state of the art in translation quality.
+110,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,111,The Transformer can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.
+111,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,112,The goal of reducing sequential computation forms the foundation of the Extended Neural GPU.
+112,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,113,The Extended Neural GPU uses convolutional neural networks as basic building block.
+113,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,114,The Extended Neural GPU computes hidden representations in parallel for all input and output positions.
+114,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,115,The goal of reducing sequential computation also forms the foundation of ByteNet.
+115,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,116,ByteNet uses convolutional neural networks as basic building block.
+116,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,117,ByteNet computes hidden representations in parallel for all input and output positions.
+117,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,118,The goal of reducing sequential computation also forms the foundation of ConvS2S.
+118,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,119,ConvS2S uses convolutional neural networks as basic building block.
+119,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,120,ConvS2S computes hidden representations in parallel for all input and output positions.
+120,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,121,"In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions."
+121,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,122,The number of operations required to relate signals from two arbitrary input or output positions grows linearly for ConvS2S.
+122,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,123,The number of operations required to relate signals from two arbitrary input or output positions grows logarithmically for ByteNet.
+123,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,124,This makes it more difficult to learn dependencies between distant positions.
+124,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,125,The difficulty in learning dependencies between distant positions is referenced in [12].
+125,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,126,"In the Transformer, this is reduced to a constant number of operations."
+126,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,127,The reduction to a constant number of operations is at the cost of reduced effective resolution due to averaging attention-weighted positions.
+127,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,128,The effect of reduced effective resolution due to averaging attention-weighted positions is counteracted with Multi-Head Attention.
+128,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,129,Multi-Head Attention is described in section 3.2.
+129,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,130,Self-attention is an attention mechanism.
+130,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,131,Self-attention is sometimes called intra-attention.
+131,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,132,Self-attention relates different positions of a single sequence.
+132,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,133,Self-attention computes a representation of the sequence.
+133,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,134,Self-attention has been used successfully in a variety of tasks.
+134,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,135,"The tasks include reading comprehension, abstractive summarization, textual entailment and learning task-independent sentence representations."
+135,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,136,"The use of self-attention in these tasks is supported by references [4, 27, 28, 22]."
+136,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,137,End-to-end memory networks are based on a recurrent attention mechanism.
+137,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,138,End-to-end memory networks have been shown to perform well on simple-language question answering and language modeling tasks.
+138,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,139,The recurrent attention mechanism is an alternative to sequence-aligned recurrence.
+139,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,140,"To the best of our knowledge, the Transformer is the first transduction model relying entirely on self-attention to compute representations of its input and output."
+140,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,141,The Transformer does not use sequence-aligned RNNs or convolution.
+141,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,142,The Transformer is a transduction model.
+142,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,143,We will describe the Transformer in the following sections.
+143,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,144,We will motivate self-attention in the following sections.
+144,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,145,"We will discuss the advantages of the Transformer over models such as [17, 18] and [9] in the following sections."
+145,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,146,Most competitive neural sequence transduction models have an encoder-decoder structure.
+146,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,147,The encoder-decoder structure is a common architecture for neural sequence transduction models.
+147,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,148,The encoder maps an input sequence of symbol representations to a sequence of continuous representations.
+148,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,149,The input sequence of symbol representations is (x1;:::;x n).
+149,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,150,The sequence of continuous representations is z= (z1;:::;z n).
+150,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,151,"Given z, the decoder then generates an output sequence."
+151,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,152,The output sequence is (y1;:::;y m).
+152,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,153,The output sequence is generated one element at a time.
+153,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,154,At each step the model is auto-regressive
+154,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,155,The model consumes the previously generated symbols as additional input when generating the next.
+155,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,156,The Transformer follows this overall architecture.
+156,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,157,"The Transformer uses stacked self-attention and point-wise, fully connected layers for both the encoder and decoder."
+157,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,158,"The encoder and decoder are shown in the left and right halves of Figure 1, respectively."
+158,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,159,Figure 1 shows the architecture of the Transformer model.
+159,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,160,The encoder is composed of a stack of N= 6 identical layers.
+160,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,161,The encoder is a stack of layers.
+161,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,162,The encoder has 6 layers.
+162,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,163,The layers in the encoder are identical.
+163,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,164,Each layer has two sub-layers.
+164,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,165,The first is a multi-head self-attention mechanism.
+165,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,166,"The second is a simple, position-wise fully connected feed-forward network."
+166,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,167,We employ a residual connection around each of the two sub-layers.
+167,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,168,The residual connection is described in reference [11].
+168,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,169,We employ layer normalization after the residual connection.
+169,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,170,The layer normalization is described in reference [1].
+170,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,171,The output of each sub-layer is LayerNorm( x+ Sublayer( x)).
+171,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,172,Sublayer(x) is the function implemented by the sub-layer itself.
+172,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,173,"To facilitate these residual connections, all sub-layers in the model produce outputs of dimension dmodel = 512."
+173,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,174,The model has sub-layers.
+174,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,175,The embedding layers of the model produce outputs of dimension dmodel = 512.
+175,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,176,The dimension of the outputs produced by the sub-layers and embedding layers of the model is dmodel = 512.
+176,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,177,The decoder is composed of a stack of N= 6 identical layers.
+177,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,178,"In addition to the two sub-layers in each encoder layer, the decoder inserts a third sub-layer."
+178,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,179,The third sub-layer in the decoder performs multi-head attention over the output of the encoder stack.
+179,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,180,We employ residual connections around each of the sub-layers.
+180,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,181,The sub-layers are followed by layer normalization.
+181,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,182,We modify the self-attention sub-layer in the decoder stack.
+182,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,183,The self-attention sub-layer in the decoder stack prevents positions from attending to subsequent positions.
+183,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,184,This masking ensures that the predictions for position i can depend only on the known outputs at positions less than i.
+184,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,185,The masking is combined with the fact that the output embeddings are offset by one position.
+185,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,186,An attention function can be described as mapping a query and a set of key-value pairs to an output.
+186,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,187,"The query, keys, values, and output are all vectors."
+187,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,188,The output is computed as a weighted sum of the values.
+188,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,189,The weight assigned to each value is computed by a compatibility function of the query with the corresponding key.
+189,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,190,3Scaled Dot-Product Attention is a type of attention mechanism.
+190,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,191,Multi-Head Attention is a type of attention mechanism.
+191,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,192,Figure 2 shows Scaled Dot-Product Attention on the left.
+192,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,193,Multi-Head Attention consists of several attention layers running in parallel.
+193,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,194,"We call our particular attention ""Scaled Dot-Product Attention""."
+194,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,195,The input consists of queries and keys.
+195,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,196,The queries and keys have a dimension of dk.
+196,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,197,The input also consists of values.
+197,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,198,The values have a dimension of dv.
+198,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,199,We compute the dot products of the query with all keys.
+199,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,200,We divide each dot product by pdk.
+200,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,201,We apply a softmax function to obtain the weights on the values.
+201,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,202,"In practice, we compute the attention function on a set of queries simultaneously."
+202,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,203,The set of queries are packed together into a matrix Q.
+203,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,204,The keys and values are also packed together into matrices KandV.
+204,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,205,We compute the matrix of outputs as: Attention(Q;K;V ) = softmax(QKT/dk)V (1)
+205,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,206,The two most commonly used attention functions are additive attention and dot-product (multiplicative) attention.
+206,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,207,Additive attention is described in [2].
+207,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,208,Dot-product attention is identical to our algorithm.
+208,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,209,The scaling factor of the algorithm is 1pdk.
+209,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,210,Additive attention computes the compatibility function using a feed-forward network.
+210,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,211,The feed-forward network has a single hidden layer.
+211,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,212,Dot-product attention and another attention mechanism are similar in theoretical complexity.
+212,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,213,Dot-product attention is much faster and more space-efficient in practice.
+213,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,214,Dot-product attention can be implemented using highly optimized matrix multiplication code.
+214,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,215,"For small values of dk, the two mechanisms perform similarly."
+215,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,216,Additive attention outperforms dot product attention without scaling for larger values of dk.
+216,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,217,The statement that additive attention outperforms dot product attention without scaling for larger values of dk is supported by reference [3].
+217,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,218,"We suspect that for large values of dk, the dot products grow large in magnitude."
+218,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,219,The dot products pushing the softmax function into regions where it has extremely small gradients4.
+219,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,220,dk is a large value.
+220,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,221,"To counteract this effect, we scale the dot products."
+221,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,222,We scale the dot products by 1pdk.
+222,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,223,"Instead of performing a single attention function with dmodel-dimensional keys, values and queries, we found it beneficial to linearly project the queries, keys and values h times with different, learned linear projections."
+223,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,224,"The queries, keys and values are linearly projected to dk, dk and dv dimensions, respectively."
+224,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,225,The linear projections are learned.
+225,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,226,"On each of these projected versions of queries, keys and values we then perform the attention function in parallel."
+226,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,227,The attention function yields dv-dimensional output values.
+227,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,228,These are concatenated and once again projected.
+228,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,229,The concatenation and projection result in the final values.
+229,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,230,The final values are depicted in Figure 2.
+230,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,231,"To illustrate why the dot products get large, assume that the components of q and k are independent random variables."
+231,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,232,The components of q and k have a mean of 0.
+232,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,233,The components of q and k have a variance of 1.
+233,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,234,The dot product of q and k is equal to the sum of the products of the elements of q and k.
+234,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,235,The sum of the products of the elements of q and k is calculated by multiplying each element of q with the corresponding element of k and then summing the results.
+235,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,236,The mean of the dot product of q and k is 0.
+236,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,237,The variance of the dot product of q and k is dk.
+237,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,238,Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.
+238,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,239,Averaging inhibits this with a single attention head.
+239,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,240,MultiHead(Q;K;V) is equal to Concat(head 1;:::;head h)WO
+240,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,241,head i is equal to Attention(QWQi;KWKi;VWVi)
+241,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,242,WQ i is a parameter matrix in Rdmodel dk
+242,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,243,WK i is a parameter matrix in Rdmodel dk
+243,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,244,WV i is a parameter matrix in Rdmodel dv
+244,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,245,WO is a parameter matrix in Rhdv dmodel
+245,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,246,"In this work, we employ 8 parallel attention layers."
+246,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,247,The attention layers have 8 heads.
+247,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,248,For each of these we use dk=dv=dmodel=h= 64.
+248,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,249,The total computational cost is similar to that of single-head attention with full dimensionality.
+249,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,250,The reduced dimension of each head contributes to the similarity in computational cost.
+250,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,251,The Transformer uses multi-head attention in three different ways.
+251,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,252,The Transformer uses multi-head attention in encoder-decoder attention layers.
+252,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,253,"In encoder-decoder attention layers, the queries come from the previous decoder layer."
+253,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,254,"In encoder-decoder attention layers, the memory keys and values come from the output of the encoder."
+254,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,255,This allows every position in the decoder to attend over all positions in the input sequence.
+255,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,256,This mimics the typical encoder-decoder attention mechanisms in sequence-to-sequence models.
+256,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,257,"The sequence-to-sequence models are such as [38, 2, 9]."
+257,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,258,The encoder contains self-attention layers.
+258,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,259,"In a self-attention layer, all of the keys, values, and queries come from the same place."
+259,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,260,The same place is the output of the previous layer in the encoder.
+260,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,261,Each position in the encoder can attend to all positions in the previous layer of the encoder.
+261,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,262,Self-attention layers in the decoder allow each position in the decoder to attend to all positions in the decoder up to and including that position.
+262,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,263,The decoder is a component of a neural network.
+263,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,264,Each position in the decoder can attend to all positions in the decoder up to and including that position.
+264,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,265,We need to prevent leftward information flow in the decoder.
+265,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,266,The decoder has an auto-regressive property.
+266,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,267,We implement this inside of scaled dot-product attention.
+267,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,268,We mask out all values in the input of the softmax which correspond to illegal connections.
+268,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,269,We set the masked out values to -1.
+269,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,270,See Figure 2.
+270,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,271,Each of the layers in our encoder and decoder contains a fully connected feed-forward network.
+271,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,272,The fully connected feed-forward network is applied to each position separately and identically.
+272,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,273,The fully connected feed-forward network is in addition to attention sub-layers.
+273,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,274,This consists of two linear transformations.
+274,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,275,The two linear transformations have a ReLU activation in between.
+275,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,276,FFN(x) = max(0;xW1+b1)W2+b2
+276,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,277,The linear transformations are the same across different positions
+277,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,278,The linear transformations use different parameters from layer to layer
+278,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,279,Another way of describing this is as two convolutions with kernel size 1.
+279,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,280,The dimensionality of input and output is dmodel = 512.
+280,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,281,The inner-layer has dimensionality dff = 2048.
+281,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,282,We use learned embeddings to convert the input tokens and output tokens to vectors of dimension dmodel.
+282,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,283,The input tokens and output tokens are converted to vectors of dimension dmodel.
+283,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,284,The learned embeddings are used to convert the input tokens and output tokens to vectors of dimension dmodel.
+284,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,285,We also use the usual learned linear transformation and softmax function to convert the decoder output to predicted next-token probabilities.
+285,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,286,"In our model, we share the same weight matrix between the two embedding layers and the pre-softmax linear transformation."
+286,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,287,The weight matrix is shared between the two embedding layers and the pre-softmax linear transformation in our model.
+287,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,288,The sharing of the weight matrix is similar to [30].
+288,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,289,"In the embedding layers, we multiply those weights by pdmodel."
+289,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,290,Our model contains no recurrence and no convolution.
+290,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,291,"In order for the model to make use of the order of the sequence, we must inject some information about the relative or absolute position of the sequence."
+291,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,292,The model must inject some information about the relative or absolute position of the sequence in order for the model to make use of the order of the sequence.
+292,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,293,nis the sequence length.
+293,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,294,dis the representation dimension.
+294,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,295,kis the kernel size of convolutions.
+295,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,296,ris the size of the neighborhood in restricted self-attention.
+296,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,297,Layer Type has a Complexity per Layer of O(n2 d)
+297,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,298,Layer Type has a Sequential Complexity of O(1)
+298,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,299,Layer Type has a Maximum Path Length of O(1)
+299,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,300,Operations for Layer Type are Self-Attention
+300,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,301,Layer Type has a Complexity per Layer of O(n d2)
+301,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,302,Layer Type has a Sequential Complexity of O(n)
+302,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,303,Layer Type has a Maximum Path Length of O(n)
+303,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,304,Operations for Layer Type are Recurrent
+304,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,305,Layer Type has a Complexity per Layer of O(k n d2)
+305,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,306,Layer Type has a Sequential Complexity of O(1)
+306,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,307,Layer Type has a Maximum Path Length of O(logk(n))
+307,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,308,Operations for Layer Type are Convolutional
+308,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,309,Layer Type has a Complexity per Layer of O(r n d)
+309,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,310,Layer Type has a Sequential Complexity of O(1)
+310,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,311,Layer Type has a Maximum Path Length of O(n=r)
+311,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,312,Operations for Layer Type are Self-Attention (restricted)
+312,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,313,We add positional encodings to the input embeddings.
+313,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,314,The input embeddings are at the bottoms of the encoder and decoder stacks.
+314,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,315,The positional encodings have the same dimension dmodel as the embeddings.
+315,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,316,The positional encodings and the embeddings can be summed.
+316,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,317,There are many choices of positional encodings.
+317,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,318,The positional encodings can be learned or fixed.
+318,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,319,The learned and fixed positional encodings are discussed in reference [9].
+319,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,320,"In this work, we use sine and cosine functions of different frequencies."
+320,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,321,PE(pos;2i)=sin(pos=100002i=d model)
+321,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,322,PE(pos;2i+1)=cos(pos=100002i=d model)
+322,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,323,pos is the position
+323,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,324,i is the dimension
+324,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,325,Each dimension of the positional encoding corresponds to a sinusoid.
+325,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,326,The wavelengths form a geometric progression.
+326,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,327,The geometric progression starts at 2.
+327,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,328,The geometric progression ends at 10000 2.
+328,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,329,We chose this function.
+329,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,330,We hypothesized that the function would allow the model to easily learn to attend by relative positions.
+330,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,331,"For any fixed offset k, PEpos+k can be represented as a linear function of PEpos."
+331,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,332,We also experimented with using learned positional embeddings.
+332,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,333,The learned positional embeddings were described in reference [9].
+333,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,334,We found that the two versions produced nearly identical results.
+334,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,335,The two versions are the version with learned positional embeddings and the version without learned positional embeddings.
+335,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,336,The nearly identical results are shown in Table 3 row (E).
+336,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,337,We chose the sinusoidal version of the model.
+337,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,338,The sinusoidal version of the model may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.
+338,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,339,This section compares various aspects of self-attention layers to the recurrent and convolutional layers.
+339,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,340,The recurrent and convolutional layers are commonly used for mapping one variable-length sequence of symbol representations (x1;:::;x n) to another sequence of equal length (z1;:::;z n).
+340,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,341,xi;zi2Rd is a hidden layer in a typical sequence transduction encoder or decoder.
+341,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,342,We consider three desiderata.
+342,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,343,The desiderata motivate our use of self-attention.
+343,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,344,One is the total computational complexity per layer.
+344,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,345,Another factor is the amount of computation that can be parallelized.
+345,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,346,The amount of computation that can be parallelized is measured by the minimum number of sequential operations required.
+346,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,347,The third is the path length between long-range dependencies in the network.
+347,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,348,Learning long-range dependencies is a key challenge in many sequence transduction tasks.
+348,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,349,Sequence transduction tasks are tasks that involve transforming one sequence into another.
+349,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,350,One key factor affecting the ability to learn such dependencies is the length of the paths forward and backward signals have to traverse in the network.
+350,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,351,The length of the paths forward and backward signals have to traverse in the network is a key factor affecting the ability to learn such dependencies.
+351,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,352,"The shorter these paths between any combination of positions in the input and output sequences, the easier it is to learn long-range dependencies."
+352,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,353,These paths refer to paths between any combination of positions in the input and output sequences.
+353,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,354,The paths are between positions in the input and output sequences.
+354,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,355,"The easier it is to learn long-range dependencies, the shorter these paths are."
+355,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,356,We compare the maximum path length between any two input and output positions in networks composed of the different layer types.
+356,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,357,A self-attention layer connects all positions with a constant number of sequentially executed operations.
+357,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,358,A recurrent layer requires O(n) sequential operations.
+358,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,359,"In terms of computational complexity, self-attention layers are faster than recurrent layers when the sequence length is smaller than the representation dimensionality d."
+359,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,360,The sequence length is most often smaller than the representation dimensionality d when using sentence representations.
+360,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,361,Sentence representations are used by state-of-the-art models in machine translations.
+361,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,362,State-of-the-art models in machine translations use word-piece [38] and byte-pair [31] representations.
+362,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,363,"To improve computational performance for tasks involving very long sequences, self-attention could be restricted."
+363,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,364,Self-attention could be restricted to considering only a neighborhood of size r in the input sequence.
+364,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,365,The neighborhood of size r is centered around the respective output position.
+365,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,366,This would increase the maximum path length to O(n=r).
+366,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,367,We plan to investigate this approach further in future work.
+367,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,368,A single convolutional layer with kernel width k<n does not connect all pairs of input and output positions.
+368,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,369,The kernel width of a convolutional layer is k.
+369,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,370,The input size is n.
+370,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,371,k is less than n.
+371,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,372,Doing so requires a stack of O(n=k) convolutional layers in the case of contiguous kernels.
+372,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,373,The stack of convolutional layers is required in the case of contiguous kernels.
+373,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,374,The stack of convolutional layers has a complexity of O(n=k).
+374,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,375,Doing so requires a stack of O(logk(n)) convolutional layers in the case of dilated convolutions.
+375,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,376,The stack of convolutional layers is required in the case of dilated convolutions.
+376,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,377,The stack of convolutional layers has a complexity of O(logk(n)).
+377,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,378,The complexity of the stack of convolutional layers is O(logk(n)) in the case of dilated convolutions.
+378,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,379,The complexity of the stack of convolutional layers is O(n=k) in the case of contiguous kernels.
+379,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,380,The stack of convolutional layers increases the length of the longest paths between any two positions in the network.
+380,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,381,The length of the longest paths between any two positions in the network is increased by the stack of convolutional layers.
+381,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,382,Convolutional layers are generally more expensive than recurrent layers.
+382,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,383,Convolutional layers are more expensive than recurrent layers by a factor of k.
+383,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,384,Separable convolutions decrease the complexity considerably.
+384,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,385,Separable convolutions decrease the complexity to O(k n d+n d2).
+385,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,386,Separable convolutions are described in reference [6].
+386,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,387,"Even with k=n, the complexity of a separable convolution is equal to the combination of a self-attention layer and a point-wise feed-forward layer."
+387,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,388,The approach we take in our model is the combination of a self-attention layer and a point-wise feed-forward layer.
+388,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,389,Self-attention could yield more interpretable models as a side benefit.
+389,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,390,We inspect attention distributions from our models.
+390,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,391,We present and discuss examples in the appendix.
+391,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,392,Individual attention heads learn to perform different tasks.
+392,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,393,Many attention heads exhibit behavior related to the syntactic and semantic structure of the sentences.
+393,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,394,This section describes the training regime for our models.
+394,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,395,We trained on the standard WMT 2014 English-German dataset.
+395,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,396,The WMT 2014 English-German dataset consists of about 4.5 million sentence pairs.
+396,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,397,Sentences were encoded using byte-pair encoding.
+397,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,398,Byte-pair encoding is a method of encoding sentences.
+398,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,399,Byte-pair encoding has a shared source-target vocabulary of about 37000 tokens.
+399,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,400,"For English-French, we used the significantly larger WMT 2014 English-French dataset."
+400,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,401,The WMT 2014 English-French dataset consists of 36M sentences.
+401,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,402,We split tokens into a 32000 word-piece vocabulary.
+402,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,403,The WMT 2014 English-French dataset is significantly larger than the previous dataset.
+403,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,404,Sentence pairs were batched together by approximate sequence length.
+404,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,405,Each training batch contained a set of sentence pairs.
+405,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,406,The set of sentence pairs contained approximately 25000 source tokens.
+406,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,407,The set of sentence pairs contained approximately 25000 target tokens.
+407,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,408,We trained our models on one machine.
+408,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,409,The machine had 8 NVIDIA P100 GPUs.
+409,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,410,"For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds."
+410,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,411,We trained the base models.
+411,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,412,"The base models were trained for a total of 100,000 steps."
+412,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,413,The base models were trained for 12 hours.
+413,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,414,"For our big models, step time was 1.0 seconds."
+414,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,415,The big models are described on the bottom line of table 3.
+415,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,416,"The big models were trained for 300,000 steps."
+416,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,417,The big models were trained for 3.5 days.
+417,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,418,We used the Adam optimizer.
+418,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,419,"The Adam optimizer has the following parameters: 1= 0.9, 2= 0.98, and = 10-9."
+419,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,420,We varied the learning rate over the course of training.
+420,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,421,The learning rate was varied according to the formula: lrate =d 0:5 model min(step_num 0:5;step _num warmup _steps 1:5) (3).
+421,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,422,This formula corresponds to increasing the learning rate linearly for the first warmup _steps training steps.
+422,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,423,The learning rate is decreased thereafter proportionally to the inverse square root of the step number.
+423,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,424,We used warmup_steps = 4000.
+424,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,425,We employ three types of regularization during training.
+425,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,426,"The three types of regularization are Residual Dropout, Weight Decay, and Layer Normalization."
+426,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,427,"Residual Dropout is applied to the output of each sub-layer, before it is added to the sub-layer input and normalized."
+427,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,428,Dropout is a technique that randomly sets a fraction of the input units to zero during training.
+428,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,429,Dropout was introduced in [33].
+429,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,430,We apply dropout to the sums of the embeddings and the positional encodings.
+430,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,431,The sums of the embeddings and the positional encodings are in both the encoder and decoder stacks.
+431,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,432,"For the base model, we use a rate of Pdrop= 0:1."
+432,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,433,The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests.
+433,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,434,The Transformer achieves better BLEU scores than previous state-of-the-art models at a fraction of the training cost.
+434,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,435,The English-to-German and English-to-French newstest2014 tests are used to evaluate the Transformer's performance.
+435,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,436,The ModelBLEU training cost (FLOPs) for EN-DE and EN-FR is shown in the table.
+436,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,437,ByteNet has a training cost of 23.75 FLOPs for EN-DE and EN-FR.
+437,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,438,Deep-Att + PosUnk has a training cost of 39.2 FLOPs for EN-DE and 1020 FLOPs for EN-FR.
+438,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,439,GNMT + RL has a training cost of 24.6 FLOPs for EN-DE and 39.92 FLOPs for EN-FR.
+439,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,440,GNMT + RL has a training cost of 10191 FLOPs for EN-DE and 1020 FLOPs for EN-FR.
+440,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,441,ConvS2S has a training cost of 25.16 FLOPs for EN-DE and 40.46 FLOPs for EN-FR.
+441,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,442,ConvS2S has a training cost of 10181 FLOPs for EN-DE and 1020 FLOPs for EN-FR.
+442,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,443,MoE has a training cost of 26.03 FLOPs for EN-DE and 40.56 FLOPs for EN-FR.
+443,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,444,MoE has a training cost of 10191 FLOPs for EN-DE and 1020 FLOPs for EN-FR.
+444,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,445,Deep-Att + PosUnk Ensemble has a training cost of 40.4 FLOPs for EN-DE and 1020 FLOPs for EN-FR.
+445,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,446,GNMT + RL Ensemble has a training cost of 26.30 FLOPs for EN-DE and 41.16 FLOPs for EN-FR.
+446,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,447,GNMT + RL Ensemble has a training cost of 10201 FLOPs for EN-DE and 1021 FLOPs for EN-FR.
+447,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,448,ConvS2S Ensemble has a training cost of 26.36 FLOPs for EN-DE and 41.29 FLOPs for EN-FR.
+448,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,449,ConvS2S Ensemble has a training cost of 10191 FLOPs for EN-DE and 1021 FLOPs for EN-FR.
+449,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,450,The Transformer (base model) has a training cost of 27.3 FLOPs for EN-DE and 38.1 FLOPs for EN-FR.
+450,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,451,The Transformer (base model) has a training cost of 1018 FLOPs for EN-DE and 1018 FLOPs for EN-FR.
+451,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,452,The Transformer (big) has a training cost of 28.4 FLOPs for EN-DE and 41.8 FLOPs for EN-FR.
+452,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,453,The Transformer (big) has a training cost of 1019 FLOPs for EN-DE and 1019 FLOPs for EN-FR.
+453,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,454,Label smoothing of value ls= 0:1 was employed during training.
+454,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,455,This hurts perplexity.
+455,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,456,The model learns to be more unsure.
+456,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,457,The model improves accuracy.
+457,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,458,The model improves BLEU score.
+458,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,459,The big transformer model outperforms the best previously reported models on the WMT 2014 English-to-German translation task.
+459,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,460,The big transformer model is referred to as Transformer (big) in Table 2.
+460,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,461,The best previously reported models include ensembles.
+461,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,462,The big transformer model outperforms the best previously reported models by more than 2:0 BLEU.
+462,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,463,The big transformer model establishes a new state-of-the-art BLEU score of 28:4.
+463,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,464,The configuration of this model is listed in the bottom line of Table 3.
+464,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,465,Training took 3.5 days.
+465,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,466,The training was performed on 8 P100 GPUs.
+466,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,467,Even our base model surpasses all previously published models and ensembles.
+467,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,468,The base model surpasses all previously published models and ensembles at a fraction of the training cost of any of the competitive models.
+468,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,469,The training cost of the base model is a fraction of the training cost of any of the competitive models.
+469,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,470,Our big model achieves a BLEU score of 41:0 on the WMT 2014 English-to-French translation task.
+470,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,471,The WMT 2014 English-to-French translation task is a benchmark for machine translation.
+471,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,472,Our big model outperforms all of the previously published single models on the WMT 2014 English-to-French translation task.
+472,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,473,Our big model achieves this result at less than 1/4 the training cost of the previous state-of-the-art model.
+473,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,474,The Transformer model was trained for English-to-French.
+474,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,475,The Transformer model is big.
+475,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,476,The Transformer model used a dropout rate of Pdrop=0:1.
+476,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,477,The Transformer model did not use a dropout rate of 0:3.
+477,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,478,"For the base models, we used a single model."
+478,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,479,The single model was obtained by averaging the last 5 checkpoints.
+479,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,480,The checkpoints were written at 10-minute intervals.
+480,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,481,"For the big models, we averaged the last 20 checkpoints."
+481,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,482,We used beam search.
+482,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,483,The beam search had a beam size of 4.
+483,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,484,The beam search had a length penalty of 0.6.
+484,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,485,The length penalty was set to 0.6.
+485,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,486,These hyperparameters were chosen after experimentation on the development set.
+486,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,487,The hyperparameters were chosen after experimentation.
+487,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,488,The experimentation was done on the development set.
+488,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,489,We set the maximum output length during inference to input length + 50.
+489,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,490,The maximum output length is set during inference.
+490,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,491,The maximum output length is set to input length + 50.
+491,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,492,We terminate early when possible.
+492,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,493,The termination is possible early.
+493,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,494,Table 2 summarizes our results.
+494,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,495,Table 2 compares our translation quality and training costs to other model architectures from the literature.
+495,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,496,We estimate the number of floating point operations used to train a model.
+496,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,497,"The model is trained by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point capacity of each GPU."
+497,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,498,The estimate of the sustained single-precision floating-point capacity of each GPU is 5.
+498,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,499,"To evaluate the importance of different components of the Transformer, we varied our base model in different ways."
+499,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,500,"We measured the change in performance on English-to-German translation on the development set, newstest2013."
+500,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,501,newstest2013 is a development set.
+501,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,502,We used beam search.
+502,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,503,The beam search was described in the previous section.
+503,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,504,We did not use checkpoint averaging.
+504,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,505,We present these results in Table 3.
+505,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,506,"In Table 3 rows (A), we vary the number of attention heads and the attention key and value dimensions."
+506,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,507,The number of attention heads and the attention key and value dimensions are varied in Table 3 rows (A).
+507,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,508,The amount of computation is kept constant in Table 3 rows (A).
+508,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,509,The amount of computation is kept constant as described in Section 3.2.2.
+509,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,510,Single-head attention is 0.9 BLEU worse than the best setting.
+510,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,511,Quality drops off with too many heads.
+511,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,512,We used values of 2.8 TFLOPS for K80.
+512,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,513,We used values of 3.7 TFLOPS for K40.
+513,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,514,We used values of 6.0 TFLOPS for M40.
+514,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,515,We used values of 9.5 TFLOPS for P100.
+515,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,516,Table 3 is a table that shows variations on the Transformer architecture.
+516,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,517,The earliest evidence for the Easter Hare was recorded in south-west Germany in 1678 by Georg Franck von Franckenau.
+517,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,518,Georg Franck von Franckenau was a professor of medicine.
+518,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,519,The evidence for the Easter Hare remained unknown in other parts of Germany until the 18th century.
+519,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,520,Richard Sermon was a scholar.
+520,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,521,Richard Sermon writes a hypothesis about the possible explanation for the connection between hares and the tradition during Easter
+521,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,522,Hares were frequently seen in gardens in spring.
+522,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,523,Hares may have served as a convenient explanation for the origin of the colored eggs hidden in gardens for children.
+523,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,524,There is a European tradition that hares laid eggs.
+524,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,525,A hare’s scratch or form and a lapwing’s nest look very similar.
+525,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,526,Both hares and lapwing’s nests occur on grassland and are first seen in the spring.
+526,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,527,"In the nineteenth century the influence of Easter cards, toys, and books was to make the Easter Hare/Rabbit popular throughout Europe."
+527,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,528,German immigrants exported the custom of the Easter Hare/Rabbit to Britain and America.
+528,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,529,The custom of the Easter Hare/Rabbit evolved into the Easter Bunny in Britain and America.
+529,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,530,All metrics are on the English-to-German translation development set.
+530,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,531,The English-to-German translation development set is newstest2013.
+531,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,532,The listed perplexities are per-wordpiece.
+532,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,533,The listed perplexities are according to our byte-pair encoding.
+533,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,534,The listed perplexities should not be compared to per-word perplexities.
+534,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,535,N d modeldffh d kdvPdrop lstrain PPL BLEU params steps (dev) (dev) 106
+535,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,536,base 6 512 2048 8 64 64 0.1 0.1 100K 4.92 25.8 65
+536,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,537,(A)1 512 512 5.29 24.9
+537,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,538,(A)4 128 128 5.00 25.5
+538,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,539,(A)16 32 32 4.91 25.8
+539,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,540,(A)32 16 16 5.01 25.4
+540,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,541,(B)16 5.16 25.1 58
+541,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,542,(B)32 5.01 25.4 60
+542,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,543,(C)2 6.11 23.7 36
+543,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,544,(C)4 5.19 25.3 50
+544,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,545,(C)8 4.88 25.5 80
+545,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,546,(C)256 32 32 5.75 24.5 28
+546,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,547,(C)1024 128 128 4.66 26.0 168
+547,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,548,(C)1024 5.12 25.4 53
+548,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,549,(C)4096 4.75 26.2 90
+549,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,550,(D)0.0 5.77 24.6
+550,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,551,(D)0.2 4.95 25.5
+551,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,552,(D)0.0 4.67 25.3
+552,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,553,(D)0.2 5.47 25.7
+553,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,554,(E) positional embedding instead of sinusoids 4.92 25.7
+554,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,555,big 6 1024 4096 16 0.3 300K 4.33 26.4 213
+555,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,556,Table 4: The Transformer generalizes well to English constituency parsing
+556,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,557,The results are on Section 23 of WSJ
+557,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,558,Parser Training WSJ 23 F1
+558,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,559,Vinyals & Kaiser el al.
+559,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,560,The paper was published in 2014.
+560,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,561,The paper was published in the Wall Street Journal.
+561,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,562,The paper was published in the 37th volume of the Wall Street Journal.
+562,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,563,The paper is discriminative.
+563,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,564,The paper has an accuracy of 88.3%
+564,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,565,The paper was written by Petrov et al.
+565,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,566,The paper was published in 2006.
+566,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,567,The paper was published in the Wall Street Journal.
+567,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,568,The paper was published in the 29th volume of the Wall Street Journal.
+568,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,569,The paper was discriminative.
+569,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,570,The paper had a discriminative score of 90.4.
+570,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,571,The paper was written by Zhu et al.
+571,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,572,The paper was published in 2013.
+572,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,573,The paper was published in the Wall Street Journal.
+573,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,574,The paper was discriminative.
+574,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,575,The paper had a discriminative score of 90.4.
+575,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,576,The paper was written by Dyer et al.
+576,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,577,The discriminative accuracy of the WSJ model in 2016 was 91.7.
+577,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,578,The discriminative accuracy of the Transformer model with 4 layers on the WSJ dataset was 91.3.
+578,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,579,Zhu et al. are the authors of the Transformer model.
+579,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,580,The paper (2013) [40] used a semi-supervised approach and achieved an accuracy of 91.3.
+580,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,581,The paper by Huang & Harper (2009) [14] used a semi-supervised approach and achieved an accuracy of 91.3.
+581,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,582,The paper by McClosky et al. used a semi-supervised approach.
+582,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,583,The paper was published in 2006.
+583,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,584,The paper was published in volume 26.
+584,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,585,The paper is about semi-supervised learning.
+585,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,586,The paper achieved an accuracy of 92.1%.
+586,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,587,The authors of the paper are Vinyals and Kaiser et al.
+587,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,588,The Transformer model with 4 layers achieved a semi-supervised accuracy of 92.7 in 2014.
+588,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,589,The semi-supervised accuracy of the Transformer model with 4 layers was 92.7 in 2014.
+589,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,590,The semi-supervised accuracy of a model with 4 layers was 92.1 in 2014.
+590,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,591,Luong et al. are researchers who conducted the study.
+591,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,592,The paper was published in 2015.
+592,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,593,The paper was published in volume 23.
+593,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,594,The paper is a multi-task paper.
+594,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,595,The paper achieved an accuracy of 93.0.
+595,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,596,The paper was written by Dyer et al.
+596,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,597,"In Table 3 rows (B), we observe that reducing the attention key size dkhurts model quality."
+597,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,598,The attention key size is dkhurts.
+598,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,599,The attention key size dkhurts model quality.
+599,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,600,Determining compatibility is not easy.
+600,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,601,A more sophisticated compatibility function than dot product may be beneficial.
+601,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,602,We observe in rows (C) and (D) that bigger models are better.
+602,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,603,We observe in rows (C) and (D) that dropout is very helpful in avoiding overfitting.
+603,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,604,In row (E) we replace our sinusoidal positional encoding with learned positional embeddings.
+604,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,605,The learned positional embeddings are described in reference [9].
+605,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,606,We observe nearly identical results to the base model.
+606,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,607,"To evaluate if the Transformer can generalize to other tasks, we performed experiments on English constituency parsing."
+607,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,608,This task presents specific challenges.
+608,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,609,The output is subject to strong structural constraints.
+609,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,610,The output is significantly longer than the input.
+610,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,611,RNN sequence-to-sequence models have not been able to attain state-of-the-art results in small-data regimes.
+611,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,612,The reference [37] provides more information about RNN sequence-to-sequence models and their performance in small-data regimes.
+612,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,613,We trained a 4-layer transformer.
+613,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,614,The transformer has a dmodel of 1024.
+614,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,615,The transformer was trained on the Wall Street Journal (WSJ) portion of the Penn Treebank.
+615,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,616,The Penn Treebank is a corpus of text and its grammatical annotation.
+616,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,617,The Wall Street Journal (WSJ) portion of the Penn Treebank contains about 40K training sentences.
+617,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,618,We also trained it in a semi-supervised setting.
+618,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,619,The training was done using the larger high-conﬁdence and BerkleyParser corpora.
+619,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,620,The corpora contained approximately 17M sentences.
+620,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,621,The corpora were used in the training of the model.
+621,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,622,We used a vocabulary of 16K tokens for the WSJ only setting.
+622,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,623,We used a vocabulary of 32K tokens for the semi-supervised setting.
+623,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,624,We performed only a small number of experiments to select the dropout.
+624,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,625,The dropout was for both attention and residual.
+625,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,626,The experiments were performed in section 5.4.
+626,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,627,We also selected learning rates and beam size on the Section 22 development set.
+627,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,628,All other parameters remained unchanged from the English-to-German base translation model.
+628,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,629,"During inference, we increased the maximum output length."
+629,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,630,The maximum output length was increased to input length + 300.
+630,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,631,We used a beam size of 21
+631,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,632,We used a value of 0.3 for =
+632,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,633,We used a beam size of 21 and a value of 0.3 for = in both the WSJ only and the semi-supervised setting.
+633,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,634,Our results in Table 4 show that despite the lack of task-specific tuning our model performs surprisingly well.
+634,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,635,Our model yielded better results than all previously reported models with the exception of the Recurrent Neural Network Grammar.
+635,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,636,The Recurrent Neural Network Grammar is a model described in reference [8].
+636,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,637,The Transformer outperforms the Berkeley-Parser even when training only on the WSJ training set of 40K sentences.
+637,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,638,The Transformer is in contrast to RNN sequence-to-sequence models.
+638,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,639,The Berkeley-Parser is a parser.
+639,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,640,The WSJ training set contains 40K sentences.
+640,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,641,"In this work, we presented the Transformer."
+641,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,642,The Transformer is the first sequence transduction model based entirely on attention.
+642,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,643,The Transformer replaces the recurrent layers most commonly used in encoder-decoder architectures with multi-headed self-attention.
+643,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,644,"For translation tasks, the Transformer can be trained significantly faster than architectures based on recurrent or convolutional layers."
+644,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,645,The Transformer is an architecture for translation tasks.
+645,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,646,Architectures based on recurrent or convolutional layers are slower to train than the Transformer.
+646,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,647,We achieve a new state of the art on both WMT 2014 English-to-German and WMT 2014 English-to-French translation tasks.
+647,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,648,WMT 2014 English-to-German is a translation task.
+648,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,649,WMT 2014 English-to-French is a translation task.
+649,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,650,"In the former task, our best model outperforms even all previously reported ensembles."
+650,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,651,We are excited about the future of attention-based models.
+651,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,652,We plan to apply attention-based models to other tasks.
+652,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,653,We plan to extend the Transformer to problems involving input and output modalities other than text.
+653,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,654,"We plan to investigate local, restricted attention mechanisms to efficiently handle large inputs and outputs such as images, audio and video."
+654,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,655,Making generation less sequential is another research goal of ours.
+655,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,656,The code used to train and evaluate our models is available at https://github.com/tensorflow/tensor2tensor.
+656,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,657,The code is available on GitHub.
+657,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,658,The code is available in the tensorflow/tensor2tensor repository.
+658,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,659,We are grateful to Nal Kalchbrenner and Stephan Gouws.
+659,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,660,"Nal Kalchbrenner and Stephan Gouws provided fruitful comments, corrections and inspiration."
+660,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,661,"Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton are references."
+661,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,662,Jimmy Lei Ba is a reference.
+662,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,663,Jamie Ryan Kiros is a reference.
+663,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,664,Geoffrey E Hinton is a reference.
+664,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,665,Layer normalization is a technique used in deep learning to normalize the inputs to a neural network layer.
+665,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,666,arXiv preprint arXiv:1607.06450 was published in 2016.
+666,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,667,"Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio are authors."
+667,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,668,Dzmitry Bahdanau is an author.
+668,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,669,Kyunghyun Cho is an author.
+669,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,670,Yoshua Bengio is an author.
+670,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,671,Neural machine translation is a method for translating text using neural networks.
+671,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,672,Neural machine translation jointly learns to align and translate.
+672,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,673,CoRR is a repository for preprints.
+673,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,674,The preprint has the identifier abs/1409.0473.
+674,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,675,The preprint was published in 2014.
+675,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,676,Denny Britz is a person.
+676,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,677,Anna Goldie is a person.
+677,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,678,Minh-Thang Luong is a person.
+678,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,679,Quoc V is a person.
+679,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,680,Le.
+680,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,681,There is a massive exploration of neural machine translation architectures.
+681,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,682,CoRR is a repository for preprints.
+682,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,683,The preprint has the identifier abs/1703.03906.
+683,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,684,The preprint was published in 2017.
+684,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,685,"Jianpeng Cheng, Li Dong, and Mirella Lapata are authors."
+685,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,686,Jianpeng Cheng is an author.
+686,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,687,Li Dong is an author.
+687,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,688,Mirella Lapata is an author.
+688,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,689,Long short-term memory-networks are used for machine reading.
+689,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,690,arXiv preprint arXiv:1601.06733 was published in 2016.
+690,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,691,Kyunghyun Cho is an author.
+691,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,692,Bart van Merrienboer is an author.
+692,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,693,Caglar Gulcehre is an author.
+693,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,694,Fethi Bougares is an author.
+694,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,695,Holger Schwenk is an author.
+695,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,696,Yoshua Bengio is an author.
+696,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,697,Learning phrase representations using rnn encoder-decoder is a method for statistical machine translation.
+697,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,698,The method uses an rnn encoder-decoder.
+698,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,699,CoRR is a repository for preprints.
+699,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,700,The preprint has the identifier abs/1406.1078.
+700,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,701,The preprint was published in 2014.
+701,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,702,Francois Chollet is a person.
+702,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,703,Xception is a deep learning model.
+703,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,704,Xception uses depthwise separable convolutions.
+704,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,705,The arXiv preprint arXiv:1610.02357 was published in 2016.
+705,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,706,Junyoung Chung is a person.
+706,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,707,Çaglar Gülçehre is a person.
+707,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,708,Kyunghyun Cho is a person.
+708,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,709,Yoshua Bengio is a person.
+709,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,710,This is an empirical evaluation of gated recurrent neural networks on sequence modeling.
+710,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,711,CoRR is a repository for preprints.
+711,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,712,The preprint has the identifier abs/1412.3555.
+712,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,713,The preprint was published in 2014.
+713,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,714,Chris Dyer is an author.
+714,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,715,Adhiguna Kuncoro is an author.
+715,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,716,Miguel Ballesteros is an author.
+716,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,717,Noah A. Smith is an author.
+717,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,718,Recurrent neural network grammars are a type of neural network grammar.
+718,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,719,In Proc.
+719,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,720,The paper was presented at the North American Chapter of the Association for Computational Linguistics (NAACL) in 2016.
+720,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,721,Jonas Gehring is an author.
+721,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,722,Michael Auli is an author.
+722,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,723,David Grangier is an author.
+723,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,724,Denis Yarats is an author.
+724,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,725,Yann N. Dauphin is an author.
+725,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,726,Convolutional sequence to sequence learning is a type of neural network architecture.
+726,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,727,arXiv preprint arXiv:1705.03122v2 was published in 2017.
+727,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,728,Alex Graves is a person.
+728,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,729,Generating sequences with recurrent neural networks is a common task.
+729,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,730,Recurrent neural networks are well-suited for generating sequences.
+730,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,731,arXiv preprint arXiv:1308.0850 was published in 2013.
+731,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,732,Kaiming He is an author.
+732,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,733,Xiangyu Zhang is an author.
+733,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,734,Shaoqing Ren is an author.
+734,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,735,Jian Sun is an author.
+735,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,736,Deep residual learning is used for image recognition.
+736,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,737,The paper was published in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition.
+737,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,738,The paper was published in 2016.
+738,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,739,The paper was published on pages 770–778.
+739,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,740,Sepp Hochreiter is a person.
+740,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,741,Yoshua Bengio is a person.
+741,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,742,Paolo Frasconi is a person.
+742,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,743,Jürgen Schmidhuber is a person.
+743,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,744,Gradient flow in recurrent nets is difficult to learn long-term dependencies.
+744,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,745,The paper was published in 2001.
+745,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,746,Sepp Hochreiter and Jürgen Schmidhuber are people.
+746,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,747,Sepp Hochreiter is a person.
+747,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,748,Jürgen Schmidhuber is a person.
+748,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,749,Long short-term memory is a type of recurrent neural network.
+749,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,750,Neural computation is a journal.
+750,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,751,Neural computation has a volume number of 9.
+751,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,752,Neural computation has an issue number of 8.
+752,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,753,Neural computation has pages 1735–1780.
+753,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,754,Neural computation was published in 1997.
+754,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,755,Zhongqiang Huang is a person.
+755,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,756,Mary Harper is a person.
+756,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,757,Self-training PCFG grammars with latent annotations across languages are a method for training grammars.
+757,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,758,The method uses latent annotations.
+758,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,759,The method uses latent annotations across languages.
+759,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,760,The Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing were published.
+760,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,761,The Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing were published on pages 832–841.
+761,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,762,ACL was held in August 2009.
+762,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,763,Rafal Jozefowicz is an author.
+763,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,764,Oriol Vinyals is an author.
+764,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,765,Mike Schuster is an author.
+765,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,766,Noam Shazeer is an author.
+766,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,767,Yonghui Wu is an author.
+767,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,768,Exploring the limits of language modeling.
+768,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,769,arXiv preprint arXiv:1602.02410 was published in 2016.
+769,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,770,Łukasz Kaiser and Samy Bengio are authors.
+770,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,771,Łukasz Kaiser is an author.
+771,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,772,Samy Bengio is an author.
+772,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,773,Active memory can replace attention.
+773,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,774,The paper was published in Advances in Neural Information Processing Systems (NIPS).
+774,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,775,The paper was published in 2016.
+775,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,776,Łukasz Kaiser and Ilya Sutskever are authors.
+776,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,777,Łukasz Kaiser is an author.
+777,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,778,Ilya Sutskever is an author.
+778,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,779,Neural GPUs learn algorithms.
+779,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,780,The International Conference on Learning Representations (ICLR) was held in 2016.
+780,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,781,"Nal Kalchbrenner, Lasse Espeholt, Karen Simonyan, Aaron van den Oord, Alex Graves, and Koray Kavukcuoglu are authors."
+781,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,782,Nal Kalchbrenner is an author.
+782,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,783,Lasse Espeholt is an author.
+783,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,784,Karen Simonyan is an author.
+784,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,785,Aaron van den Oord is an author.
+785,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,786,Alex Graves is an author.
+786,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,787,Koray Kavukcuoglu is an author.
+787,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,788,Neural machine translation can be performed in linear time.
+788,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,789,The arXiv preprint arXiv:1610.10099v2 was published in 2017.
+789,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,790,"Yoon Kim, Carl Denton, Luong Hoang, and Alexander M. Rush are authors."
+790,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,791,Yoon Kim is an author.
+791,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,792,Carl Denton is an author.
+792,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,793,Luong Hoang is an author.
+793,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,794,Alexander M. Rush is an author.
+794,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,795,Structured attention networks are a type of neural network.
+795,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,796,Structured attention networks use attention mechanisms to process structured data.
+796,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,797,"Structured attention networks are used in tasks such as machine translation, question answering, and text summarization."
+797,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,798,The International Conference on Learning Representations was held in 2017.
+798,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,799,Diederik Kingma and Jimmy Ba are authors.
+799,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,800,Diederik Kingma is an author.
+800,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,801,Jimmy Ba is an author.
+801,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,802,Adam is a method for stochastic optimization.
+802,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,803,The paper was presented at ICLR.
+803,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,804,ICLR is a conference.
+804,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,805,The conference took place in 2015.
+805,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,806,Oleksii Kuchaiev and Boris Ginsburg are people.
+806,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,807,Factorization tricks are used for LSTM networks.
+807,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,808,Factorization tricks are used to reduce the number of parameters in LSTM networks.
+808,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,809,arXiv preprint arXiv:1703.10722 was published in 2017.
+809,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,810,Zhouhan Lin is an author.
+810,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,811,Minwei Feng is an author.
+811,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,812,Cicero Nogueira dos Santos is an author.
+812,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,813,Mo Yu is an author.
+813,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,814,Bing Xiang is an author.
+814,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,815,Bowen Zhou is an author.
+815,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,816,Yoshua Bengio is an author.
+816,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,817,A structured self-attentive sentence embedding is a type of sentence embedding.
+817,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,818,A structured self-attentive sentence embedding is a method for representing sentences as vectors.
+818,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,819,A structured self-attentive sentence embedding uses a self-attention mechanism to capture the relationships between words in a sentence.
+819,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,820,A structured self-attentive sentence embedding uses a structured approach to represent the sentence.
+820,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,821,The structured approach in a structured self-attentive sentence embedding allows for the capture of long-range dependencies between words.
+821,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,822,arXiv preprint arXiv:1703.03130 was published in 2017.
+822,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,823,Minh-Thang Luong is a person.
+823,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,824,Quoc V. is a person.
+824,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,825,Le is a person.
+825,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,826,Ilya Sutskever is a person.
+826,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,827,Oriol Vinyals is a person.
+827,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,828,Lukasz Kaiser is a person.
+828,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,829,Multi-task sequence to sequence learning is a type of machine learning.
+829,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,830,Multi-task sequence to sequence learning involves training a single model to perform multiple tasks.
+830,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,831,The tasks in multi-task sequence to sequence learning are typically related to sequences of data.
+831,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,832,"Examples of tasks in multi-task sequence to sequence learning include machine translation, text summarization, and question answering."
+832,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,833,arXiv preprint arXiv:1511.06114 was published in 2015.
+833,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,834,"Minh-Thang Luong, Hieu Pham, and Christopher D Manning are authors."
+834,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,835,Minh-Thang Luong is an author.
+835,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,836,Hieu Pham is an author.
+836,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,837,Christopher D Manning is an author.
+837,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,838,Effective approaches to attention-based neural machine translation are discussed.
+838,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,839,Attention-based neural machine translation is a type of neural machine translation.
+839,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,840,arXiv preprint arXiv:1508.04025 was published in 2015.
+840,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,841,"Mitchell P Marcus, Mary Ann Marcinkiewicz, and Beatrice Santorini are authors."
+841,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,842,Mitchell P Marcus is an author.
+842,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,843,Mary Ann Marcinkiewicz is an author.
+843,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,844,Beatrice Santorini is an author.
+844,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,845,Building a large annotated corpus of English: The Penn Treebank.
+845,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,846,The Penn Treebank is a large annotated corpus of English.
+846,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,847,Computational linguistics is a journal.
+847,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,848,Computational linguistics has a volume number of 19.
+848,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,849,Computational linguistics has an issue number of 2.
+849,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,850,Computational linguistics has pages 313–330.
+850,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,851,Computational linguistics was published in 1993.
+851,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,852,"David McClosky, Eugene Charniak, and Mark Johnson are authors."
+852,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,853,David McClosky is an author.
+853,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,854,Eugene Charniak is an author.
+854,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,855,Mark Johnson is an author.
+855,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,856,Effective self-training is for parsing.
+856,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,857,"The Proceedings of the Human Language Technology Conference of the NAACL, Main Conference, were published."
+857,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,858,"The Proceedings of the Human Language Technology Conference of the NAACL, Main Conference, were published on pages 152–159."
+858,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,859,ACL was held in June 2006.
+859,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,860,Ankur Parikh is a person.
+860,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,861,Oscar Täckström is a person.
+861,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,862,Dipanjan Das is a person.
+862,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,863,Jakob Uszkoreit is a person.
+863,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,864,A decomposable attention model is a type of attention model.
+864,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,865,The model is decomposable.
+865,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,866,Empirical Methods in Natural Language Processing was published in 2016.
+866,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,867,"Romain Paulus, Caiming Xiong, and Richard Socher are authors."
+867,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,868,Romain Paulus is an author.
+868,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,869,Caiming Xiong is an author.
+869,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,870,Richard Socher is an author.
+870,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,871,A deep reinforced model is for abstractive summarization.
+871,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,872,arXiv preprint arXiv:1705.04304 was published in 2017.
+872,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,873,Slav Petrov is a person.
+873,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,874,Leon Barrett is a person.
+874,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,875,Romain Thibaux is a person.
+875,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,876,Dan Klein is a person.
+876,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,877,Learning accurate tree annotation is a goal.
+877,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,878,Learning compact tree annotation is a goal.
+878,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,879,Learning interpretable tree annotation is a goal.
+879,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,880,The Proceedings of the 21st International Conference on Computational Linguistics and 44th Annual Meeting of the ACL were published.
+880,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,881,The Proceedings of the 21st International Conference on Computational Linguistics and 44th Annual Meeting of the ACL were published on pages 433–440.
+881,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,882,ACL was held in July 2006.
+882,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,883,Oﬁr Press and Lior Wolf are authors.
+883,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,884,Oﬁr Press is an author.
+884,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,885,Lior Wolf is an author.
+885,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,886,Using the output embedding to improve language models is a technique.
+886,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,887,The technique uses output embedding to improve language models.
+887,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,888,The arXiv preprint arXiv:1608.05859 was published in 2016.
+888,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,889,"Rico Sennrich, Barry Haddow, and Alexandra Birch are authors."
+889,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,890,Rico Sennrich is an author.
+890,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,891,Barry Haddow is an author.
+891,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,892,Alexandra Birch is an author.
+892,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,893,Neural machine translation of rare words with subword units is a topic of research.
+893,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,894,Subword units are used in neural machine translation.
+894,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,895,arXiv preprint arXiv:1508.07909 was published in 2015.
+895,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,896,Noam Shazeer is a person.
+896,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,897,Azalia Mirhoseini is a person.
+897,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,898,Krzysztof Maziarz is a person.
+898,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,899,Andy Davis is a person.
+899,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,900,Quoc Le is a person.
+900,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,901,Geoffrey Hinton is a person.
+901,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,902,Jeff Dean is a person.
+902,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,903,Outrageously large neural networks are a type of neural network.
+903,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,904,The sparsely-gated mixture-of-experts layer is a layer in outrageously large neural networks.
+904,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,905,arXiv preprint arXiv:1701.06538 was published in 2017.
+905,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,906,Nitish Srivastava is an author.
+906,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,907,Geoffrey E Hinton is an author.
+907,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,908,Alex Krizhevsky is an author.
+908,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,909,Ilya Sutskever is an author.
+909,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,910,Ruslan Salakhutdinov is an author.
+910,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,911,Dropout is a simple way to prevent neural networks from overfitting.
+911,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,912,The Journal of Machine Learning Research published an article in 2014.
+912,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,913,"The article was published in volume 15, issue 1."
+913,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,914,The article was published on pages 1929–1958.
+914,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,915,Sainbayar Sukhbaatar is an author.
+915,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,916,Arthur Szlam is an author.
+916,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,917,Jason Weston is an author.
+917,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,918,Rob Fergus is an author.
+918,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,919,End-to-end memory networks are a type of neural network architecture.
+919,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,920,"C. Cortes, N. D. Lawrence, D. D. Lee, M. Sugiyama, and R. Garnett are editors."
+920,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,921,The editors edited Advances in Neural Information Processing Systems 28.
+921,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,922,Advances in Neural Information Processing Systems 28 has pages 2440–2448.
+922,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,923,Curran Associates is a company.
+923,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,924,Curran Associates was founded in 2015.
+924,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,925,"Ilya Sutskever, Oriol Vinyals, and Quoc VV Le are authors."
+925,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,926,Ilya Sutskever is an author.
+926,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,927,Oriol Vinyals is an author.
+927,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,928,Quoc VV Le is an author.
+928,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,929,Sequence to sequence learning is a type of machine learning.
+929,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,930,Sequence to sequence learning uses neural networks.
+930,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,931,Neural networks are a type of artificial intelligence.
+931,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,932,The paper was published in Advances in Neural Information Processing Systems.
+932,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,933,The paper was published on pages 3104–3112.
+933,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,934,The paper was published in 2014.
+934,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,935,"Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, and Zbigniew Wojna are authors."
+935,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,936,Christian Szegedy is an author.
+936,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,937,Vincent Vanhoucke is an author.
+937,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,938,Sergey Ioffe is an author.
+938,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,939,Jonathon Shlens is an author.
+939,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,940,Zbigniew Wojna is an author.
+940,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,941,The inception architecture is being reconsidered for computer vision.
+941,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,942,CoRR is a repository for preprints.
+942,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,943,The preprint has the identifier abs/1512.00567.
+943,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,944,The preprint was published in 2015.
+944,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,945,"Vinyals, Kaiser, Koo, Petrov, Sutskever, and Hinton are authors."
+945,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,946,Vinyals is an author.
+946,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,947,Kaiser is an author.
+947,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,948,Koo is an author.
+948,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,949,Petrov is an author.
+949,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,950,Sutskever is an author.
+950,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,951,Hinton is an author.
+951,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,952,Grammar is a foreign language.
+952,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,953,Advances in Neural Information Processing Systems was published in 2015.
+953,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,954,Yonghui Wu is an author.
+954,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,955,Mike Schuster is an author.
+955,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,956,Zhifeng Chen is an author.
+956,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,957,Quoc V Le is an author.
+957,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,958,Mohammad Norouzi is an author.
+958,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,959,Wolfgang Macherey is an author.
+959,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,960,Maxim Krikun is an author.
+960,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,961,Yuan Cao is an author.
+961,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,962,Qin Gao is an author.
+962,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,963,Klaus Macherey is an author.
+963,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,964,Google’s neural machine translation system bridges the gap between human and machine translation.
+964,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,965,Google’s neural machine translation system is a system.
+965,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,966,arXiv preprint arXiv:1609.08144 was published in 2016.
+966,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,967,Jie Zhou is an author.
+967,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,968,Ying Cao is an author.
+968,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,969,Xuguang Wang is an author.
+969,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,970,Peng Li is an author.
+970,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,971,Wei Xu is an author.
+971,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,972,Deep recurrent models with fast-forward connections are used for neural machine translation.
+972,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,973,CoRR is a repository for preprints.
+973,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,974,The preprint has the identifier abs/1606.04199.
+974,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,975,The preprint was published in 2016.
+975,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,976,Muhua Zhu is an author.
+976,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,977,Yue Zhang is an author.
+977,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,978,Wenliang Chen is an author.
+978,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,979,Min Zhang is an author.
+979,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,980,Jingbo Zhu is an author.
+980,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,981,Shift-reduce constituent parsing is fast and accurate.
+981,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,982,The 51st Annual Meeting of the ACL was held.
+982,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,983,The meeting was the 51st Annual Meeting of the ACL.
+983,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,984,The meeting was held in Proceedings of the 51st Annual Meeting of the ACL (Volume 1: Long Papers).
+984,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,985,The meeting was held on pages 434–443.
+985,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,986,ACL was held in August 2013.
+986,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,987,A majority of American governments have passed new laws since 2009.
+987,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,988,The new laws passed by a majority of American governments since 2009 make the registration or voting process more difficult.
+988,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,989,A majority of American governments have passed new laws since 2009.
+989,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,990,The new laws passed by a majority of American governments since 2009 make the registration or voting process more difficult.
+990,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,991,Figure 3 is an example of the attention mechanism following long-distance dependencies in the encoder self-attention in layer 5 of 6.
+991,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,992,Many of the attention heads attend to a distant dependency of the verb ‘making’.
+992,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,993,The verb ‘making’ completes the phrase ‘making...more difficult’.
+993,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,994,Attentions are shown only for the word ‘making’.
+994,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,995,Different colors represent different heads.
+995,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,996,The image is best viewed in color.
+996,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,997,The Law will never be perfect.
+997,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,998,The application of the Law should be just.
+998,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,999,This is what we are missing.
+999,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1000,This is the opinion of the speaker.
+1000,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1001,The Law will never be perfect.
+1001,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1002,The application of the Law should be just.
+1002,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1003,This is what we are missing.
+1003,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1004,This is the opinion of the speaker.
+1004,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1005,The Law will never be perfect.
+1005,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1006,The application of the Law should be just.
+1006,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1007,This is what we are missing.
+1007,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1008,This is the opinion of the speaker.
+1008,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1009,The Law will never be perfect.
+1009,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1010,The application of the Law should be just.
+1010,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1011,This is what we are missing.
+1011,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1012,This is the opinion of the speaker.
+1012,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1013,Figure 4 shows two attention heads.
+1013,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1014,The two attention heads are in layer 5 of 6.
+1014,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1015,The two attention heads are apparently involved in anaphora resolution.
+1015,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1016,Full attentions for head 5.
+1016,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1017,The attention heads 5 and 6 are isolated attentions from just the word ‘its’.
+1017,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1018,The attentions are very sharp for this word.
+1018,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1019,The Law will never be perfect.
+1019,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1020,The application of the Law should be just.
+1020,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1021,This is what we are missing.
+1021,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1022,This is the opinion of the speaker.
+1022,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1023,The Law will never be perfect.
+1023,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1024,The application of the Law should be just.
+1024,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1025,This is what we are missing.
+1025,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1026,This is the opinion of the speaker.
+1026,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1027,The Law will never be perfect.
+1027,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1028,The application of the Law should be just.
+1028,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1029,This is what we are missing.
+1029,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1030,This is the opinion of the speaker.
+1030,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1031,The Law will never be perfect.
+1031,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1032,The application of the Law should be just.
+1032,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1033,This is what we are missing.
+1033,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1034,This is the opinion of the speaker.
+1034,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1035,Figure 5 shows attention heads that exhibit behaviour related to the structure of the sentence.
+1035,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1036,Many of the attention heads exhibit behaviour related to the structure of the sentence.
+1036,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1037,We give two examples above.
+1037,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1038,The examples are from two different heads from the encoder self-attention at layer 5 of 6.
+1038,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1039,The heads learned to perform different tasks.
+1039,9bce526f29338990687593c102f3a43ca5cd4b63f626d5872c48ce102b333170,1040,15 is a number.
