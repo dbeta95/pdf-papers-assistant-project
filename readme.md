@@ -1,6 +1,6 @@
 # DocuMentor: Academic Papers Assistant
 
-![](Documentor.jfif)
+![](images/Documentor.jfif)
 
 **DocuMentor**
 
