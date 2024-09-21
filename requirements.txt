@@ -1,4 +1,7 @@
-spacy
 transformers
 PyPDF2
-torch
+pytest
+numpy
+pandas
+google-generativeai
+elasticsearch

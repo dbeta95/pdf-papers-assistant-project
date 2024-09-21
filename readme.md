@@ -2,7 +2,6 @@
 
 ![](images/Documentor.jfif)
 
-**DocuMentor**
 
 Academic research and writing can be incredibly challenging, especially for young students. Reading through countless papers and recalling specific details later during the writing process can be arduous.
 
