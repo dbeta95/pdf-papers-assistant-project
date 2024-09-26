@@ -1,12 +1,12 @@
-,id,category,paper,text
-0,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-1,deeplearning,attention_is_all_you_need.pdf,"We used a beam size of 21and= 0:3
+id,category,paper,text
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-1,deeplearning,attention_is_all_you_need.pdf,"We used a beam size of 21and= 0:3
 for both WSJ only and the semi-supervised setting."
-1,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-2,deeplearning,attention_is_all_you_need.pdf,"The Transformer allows for signiﬁcantly more parallelization and can reach a new state of the art in
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-2,deeplearning,attention_is_all_you_need.pdf,"The Transformer allows for signiﬁcantly more parallelization and can reach a new state of the art in
 translation quality after being trained for as little as twelve hours on eight P100 GPUs.
 For translation tasks, the Transformer can be trained signiﬁcantly faster than architectures based
 on recurrent or convolutional layers."
-2,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-3,deeplearning,attention_is_all_you_need.pdf,"[4]Jianpeng Cheng, Li Dong, and Mirella Lapata."
-3,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-4,deeplearning,attention_is_all_you_need.pdf,"Attention Is All You Need
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-3,deeplearning,attention_is_all_you_need.pdf,"[4]Jianpeng Cheng, Li Dong, and Mirella Lapata."
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-4,deeplearning,attention_is_all_you_need.pdf,"Attention Is All You Need
 Ashish Vaswani
 Google Brain
 avaswani@google.comNoam Shazeer
@@ -33,7 +33,7 @@ Most competitive neural sequence transduction models have an encoder-decoder str
 3.4 Embeddings and Softmax
 Similarly to other sequence transduction models, we use learned embeddings to convert the input
 tokens and output tokens to vectors of dimension dmodel."
-4,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-5,deeplearning,attention_is_all_you_need.pdf,"At each step the model is auto-regressive
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-5,deeplearning,attention_is_all_you_need.pdf,"At each step the model is auto-regressive
 [10], consuming the previously generated symbols as additional input when generating the next.
 The keys and values are also packed together into matrices KandV.
 MultiHead( Q;K;V ) = Concat(head 1;:::;head h)WO
@@ -56,12 +56,12 @@ In Table 3 rows (A), we vary the number of attention heads and the attention key
 keeping the amount of computation constant, as described in Section 3.2.2.
 During inference, we
 increased the maximum output length to input length + 300."
-5,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-6,deeplearning,attention_is_all_you_need.pdf,We present these results in Table 3.
-6,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-7,deeplearning,attention_is_all_you_need.pdf,"Computational linguistics , 19(2):313–330, 1993.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-6,deeplearning,attention_is_all_you_need.pdf,We present these results in Table 3.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-7,deeplearning,attention_is_all_you_need.pdf,"Computational linguistics , 19(2):313–330, 1993.
 In Proceedings of the 21st International Conference on
 Computational Linguistics and 44th Annual Meeting of the ACL , pages 433–440.
 Grammar as a foreign language."
-7,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-8,deeplearning,attention_is_all_you_need.pdf,"13Input-Input Layer5
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-8,deeplearning,attention_is_all_you_need.pdf,"13Input-Input Layer5
 The
 Law
 will
@@ -169,18 +169,18 @@ in
 my
 opinion
 ."
-8,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-9,deeplearning,attention_is_all_you_need.pdf,"Le.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-9,deeplearning,attention_is_all_you_need.pdf,"Le.
 of NAACL , 2016."
-9,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-10,deeplearning,attention_is_all_you_need.pdf,"To this end, we add ""positional encodings"" to the input embeddings at the
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-10,deeplearning,attention_is_all_you_need.pdf,"To this end, we add ""positional encodings"" to the input embeddings at the
 bottoms of the encoder and decoder stacks.
 The positional encodings have the same dimension dmodel
 as the embeddings, so that the two can be summed.
 In addition, we apply dropout to the sums of the embeddings and the
 positional encodings in both the encoder and decoder stacks."
-10,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-11,deeplearning,attention_is_all_you_need.pdf,"3.3 Position-wise Feed-Forward Networks
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-11,deeplearning,attention_is_all_you_need.pdf,"3.3 Position-wise Feed-Forward Networks
 In addition to attention sub-layers, each of the layers in our encoder and decoder contains a fully
 connected feed-forward network, which is applied to each position separately and identically."
-11,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-12,deeplearning,attention_is_all_you_need.pdf,"3.2 Attention
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-12,deeplearning,attention_is_all_you_need.pdf,"3.2 Attention
 An attention function can be described as mapping a query and a set of key-value pairs to an output,
 where the query, keys, values, and output are all vectors.
 In practice, we compute the attention function on a set of queries simultaneously, packed together
@@ -202,18 +202,18 @@ We are excited about the future of attention-based models and plan to apply them
 Can active memory replace attention?
 A decomposable attention
 model."
-12,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-13,deeplearning,attention_is_all_you_need.pdf,"ACL, August 2009.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-13,deeplearning,attention_is_all_you_need.pdf,"ACL, August 2009.
 ACL, June 2006.
 ACL, July
 2006.
 ACL, August 2013."
-13,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-14,deeplearning,attention_is_all_you_need.pdf,"[16] Łukasz Kaiser and Samy Bengio.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-14,deeplearning,attention_is_all_you_need.pdf,"[16] Łukasz Kaiser and Samy Bengio.
 [17] Łukasz Kaiser and Ilya Sutskever.
 [20] Diederik Kingma and Jimmy Ba.
 [21] Oleksii Kuchaiev and Boris Ginsburg.
 Le, Ilya Sutskever, Oriol Vinyals, and Lukasz Kaiser.
 [35] Ilya Sutskever, Oriol Vinyals, and Quoc VV Le."
-14,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-15,deeplearning,attention_is_all_you_need.pdf,"For our base models using
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-15,deeplearning,attention_is_all_you_need.pdf,"For our base models using
 the hyperparameters described throughout the paper, each training step took about 0.4 seconds.
 We
 trained the base models for a total of 100,000 steps or 12 hours.
@@ -221,7 +221,7 @@ For our big models,(described on the
 bottom line of table 3), step time was 1.0 seconds.
 The big models were trained for 300,000 steps
 (3.5 days)."
-15,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-16,deeplearning,attention_is_all_you_need.pdf,"We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-16,deeplearning,attention_is_all_you_need.pdf,"We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the
 Penn Treebank [ 25], about 40K training sentences.
 We also trained it in a semi-supervised setting,
 using the larger high-conﬁdence and BerkleyParser corpora from with approximately 17M sentences
@@ -232,12 +232,12 @@ Building a large annotated
 corpus of english: The penn treebank.
 Learning accurate, compact,
 and interpretable tree annotation."
-16,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-17,deeplearning,attention_is_all_you_need.pdf,"[5]Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Fethi Bougares, Holger Schwenk,
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-17,deeplearning,attention_is_all_you_need.pdf,"[5]Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Fethi Bougares, Holger Schwenk,
 and Yoshua Bengio.
 [8]Chris Dyer, Adhiguna Kuncoro, Miguel Ballesteros, and Noah A. Smith.
 [12] Sepp Hochreiter, Yoshua Bengio, Paolo Frasconi, and Jürgen Schmidhuber.
 [13] Sepp Hochreiter and Jürgen Schmidhuber."
-17,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-18,deeplearning,attention_is_all_you_need.pdf,"We propose a new simple network architecture, the Transformer,
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-18,deeplearning,attention_is_all_you_need.pdf,"We propose a new simple network architecture, the Transformer,
 based solely on attention mechanisms, dispensing with recurrence and convolutions
 entirely.
 In this work we propose the Transformer, a model architecture eschewing recurrence and instead
@@ -260,7 +260,7 @@ to investigate local, restricted attention mechanisms to efﬁciently handle lar
 such as images, audio and video.
 End-to-end memory
 networks."
-18,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-19,deeplearning,attention_is_all_you_need.pdf,"<EOS>
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-19,deeplearning,attention_is_all_you_need.pdf,"<EOS>
 <pad>
 The
 Law
@@ -368,7 +368,7 @@ in
 my
 opinion
 ."
-19,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-20,deeplearning,attention_is_all_you_need.pdf,"Aligning the positions to steps in computation time, they generate a sequence of hidden
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-20,deeplearning,attention_is_all_you_need.pdf,"Aligning the positions to steps in computation time, they generate a sequence of hidden
 statesht, as a function of the previous hidden state ht 1and the input for position t. This inherently
 sequential nature precludes parallelization within training examples, which becomes critical at longer
 sequence lengths, as memory constraints limit batching across examples.
@@ -385,11 +385,11 @@ order of the sequence, we must inject some information about the relative or abs
 for different layer types.
 There are many choices of positional encodings,
 learned and ﬁxed [9]."
-20,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-21,deeplearning,attention_is_all_you_need.pdf,"Gradient ﬂow in
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-21,deeplearning,attention_is_all_you_need.pdf,"Gradient ﬂow in
 recurrent nets: the difﬁculty of learning long-term dependencies, 2001.
 Neural GPUs learn algorithms.
 Factorization tricks for LSTM networks."
-21,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-22,deeplearning,attention_is_all_you_need.pdf,"Neural machine translation by jointly
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-22,deeplearning,attention_is_all_you_need.pdf,"Neural machine translation by jointly
 learning to align and translate.
 Massive exploration of neural
 machine translation architectures.
@@ -398,7 +398,7 @@ Effective approaches to attention-
 based neural machine translation.
 Neural machine translation of rare words
 with subword units."
-22,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-23,deeplearning,attention_is_all_you_need.pdf,"Each layer has two
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-23,deeplearning,attention_is_all_you_need.pdf,"Each layer has two
 sub-layers.
 That is, the output of each sub-layer is
 LayerNorm( x+ Sublayer( x)), where Sublayer(x)is the function implemented by the sub-layer
@@ -406,7 +406,7 @@ itself.
 FFN(x) = max(0;xW 1+b1)W2+b2 (2)
 While the linear transformations are the same across different positions, they use different parameters
 from layer to layer."
-23,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-24,deeplearning,attention_is_all_you_need.pdf,"Recent work has achieved
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-24,deeplearning,attention_is_all_you_need.pdf,"Recent work has achieved
 signiﬁcant improvements in computational efﬁciency through factorization tricks [ 21] and conditional
 computation [ 32], while also improving model performance in case of the latter.
 ModelBLEU Training Cost (FLOPs)
@@ -432,7 +432,7 @@ We further observe in rows (C) and (D) that, as expected,
 bigger models are better, and dropout is very helpful in avoiding over-ﬁtting.
 In the former task our best
 model outperforms even all previously reported ensembles."
-24,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-25,deeplearning,attention_is_all_you_need.pdf,"In Proceedings of the IEEE Conference on Computer Vision and Pattern
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-25,deeplearning,attention_is_all_you_need.pdf,"In Proceedings of the IEEE Conference on Computer Vision and Pattern
 Recognition , pages 770–778, 2016.
 Neural computation ,
 9(8):1735–1780, 1997.
@@ -443,7 +443,7 @@ Advances in Neural Information Processing Systems 28 , pages 2440–2448.
 In Advances in Neural Information Processing Systems , pages 3104–3112, 2014.
 In
 Advances in Neural Information Processing Systems , 2015."
-25,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-26,deeplearning,attention_is_all_you_need.pdf,"[2]Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-26,deeplearning,attention_is_all_you_need.pdf,"[2]Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio.
 [3]Denny Britz, Anna Goldie, Minh-Thang Luong, and Quoc V .
 10[7]Junyoung Chung, Çaglar Gülçehre, Kyunghyun Cho, and Yoshua Bengio.
 [11] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
@@ -457,7 +457,7 @@ Zhou, and Yoshua Bengio.
 [28] Romain Paulus, Caiming Xiong, and Richard Socher.
 [39] Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu.
 [40] Muhua Zhu, Yue Zhang, Wenliang Chen, Min Zhang, and Jingbo Zhu."
-26,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-27,deeplearning,attention_is_all_you_need.pdf,"In the Transformer this is
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-27,deeplearning,attention_is_all_you_need.pdf,"In the Transformer this is
 reduced to a constant number of operations, albeit at the cost of reduced effective resolution due
 to averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as
 described in section 3.2.
@@ -473,15 +473,15 @@ Due to the reduced dimension of each head, the total computational cost
 is similar to that of single-head attention with full dimensionality.
 While single-head
 attention is 0.9 BLEU worse than the best setting, quality also drops off with too many heads."
-27,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-28,deeplearning,attention_is_all_you_need.pdf,"For the base model, we use a rate of
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-28,deeplearning,attention_is_all_you_need.pdf,"For the base model, we use a rate of
 Pdrop= 0:1."
-28,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-29,deeplearning,attention_is_all_you_need.pdf,"Deep residual learning for im-
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-29,deeplearning,attention_is_all_you_need.pdf,"Deep residual learning for im-
 age recognition."
-29,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-30,deeplearning,attention_is_all_you_need.pdf,"We suspect that for large values of
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-30,deeplearning,attention_is_all_you_need.pdf,"We suspect that for large values of
 dk, the dot products grow large in magnitude, pushing the softmax function into regions where it has
 extremely small gradients4.
 To counteract this effect, we scale the dot products by1pdk."
-30,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-31,deeplearning,attention_is_all_you_need.pdf,"CoRR , abs/1409.0473, 2014.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-31,deeplearning,attention_is_all_you_need.pdf,"CoRR , abs/1409.0473, 2014.
 CoRR , abs/1703.03906, 2017.
 CoRR , abs/1406.1078, 2014.
 CoRR , abs/1412.3555, 2014.
@@ -489,13 +489,13 @@ Curran Associates,
 Inc., 2015.
 CoRR , abs/1512.00567, 2015.
 CoRR , abs/1606.04199, 2016."
-31,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-32,deeplearning,attention_is_all_you_need.pdf,"For each of these we use
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-32,deeplearning,attention_is_all_you_need.pdf,"For each of these we use
 dk=dv=dmodel=h= 64 .
 5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively.
 This
 suggests that determining compatibility is not easy and that a more sophisticated compatibility
 function than dot product may be beneﬁcial."
-32,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-33,deeplearning,attention_is_all_you_need.pdf,"Another way of describing this is as two convolutions with kernel size 1.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-33,deeplearning,attention_is_all_you_need.pdf,"Another way of describing this is as two convolutions with kernel size 1.
 This would increase the maximum
 path length to O(n=r).
 A single convolutional layer with kernel width k<n does not connect all pairs of input and output
@@ -503,7 +503,7 @@ positions.
 Doing so requires a stack of O(n=k)convolutional layers in the case of contiguous kernels,
 orO(logk(n))in the case of dilated convolutions [ 18], increasing the length of the longest paths
 between any two positions in the network."
-33,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-34,deeplearning,attention_is_all_you_need.pdf,"31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA.arXiv:1706.03762v5  [cs.CL]  6 Dec 2017transduction problems such as language modeling and machine translation [ 35,2,5].
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-34,deeplearning,attention_is_all_you_need.pdf,"31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA.arXiv:1706.03762v5  [cs.CL]  6 Dec 2017transduction problems such as language modeling and machine translation [ 35,2,5].
 Numerous
 efforts have since continued to push the boundaries of recurrent language models and encoder-decoder
 architectures [38, 24, 15].
@@ -518,7 +518,7 @@ Google’s neural machine
 translation system: Bridging the gap between human and machine translation.
 Deep recurrent models with
 fast-forward connections for neural machine translation."
-34,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-35,deeplearning,attention_is_all_you_need.pdf,"The output is computed as a weighted sum
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-35,deeplearning,attention_is_all_you_need.pdf,"The output is computed as a weighted sum
 of the values, where the weight assigned to each value is computed by a compatibility function of the
 query with the corresponding key.
 The input consists of
@@ -526,7 +526,7 @@ queries and keys of dimension dk, and values of dimension dv.
 We compute the dot products of the
 query with all keys, divide each bypdk, and apply a softmax function to obtain the weights on the
 values."
-35,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-36,deeplearning,attention_is_all_you_need.pdf,"7Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-36,deeplearning,attention_is_all_you_need.pdf,"7Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the
 English-to-German and English-to-French newstest2014 tests at a fraction of the training cost.
 The Transformer (big) model trained for English-to-French used
 dropout rate Pdrop= 0:1, instead of 0:3.
@@ -534,11 +534,11 @@ dropout rate Pdrop= 0:1, instead of 0:3.
 To evaluate the importance of different components of the Transformer, we varied our base model
 in different ways, measuring the change in performance on English-to-German translation on the
 development set, newstest2013."
-36,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-37,deeplearning,attention_is_all_you_need.pdf,"4To illustrate why the dot products get large, assume that the components of qandkare independent random
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-37,deeplearning,attention_is_all_you_need.pdf,"4To illustrate why the dot products get large, assume that the components of qandkare independent random
 variables with mean 0and variance 1.
 Then their dot product, qk=Pdk
 i=1qiki, has mean 0and variance dk."
-37,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-38,deeplearning,attention_is_all_you_need.pdf,"Acknowledgements We are grateful to Nal Kalchbrenner and Stephan Gouws for their fruitful
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-38,deeplearning,attention_is_all_you_need.pdf,"Acknowledgements We are grateful to Nal Kalchbrenner and Stephan Gouws for their fruitful
 comments, corrections and inspiration.
 11[27] Ankur Parikh, Oscar Täckström, Dipanjan Das, and Jakob Uszkoreit.
 [32] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton,
@@ -547,11 +547,11 @@ and Jeff Dean.
 nov.
 [38] Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang
 Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al."
-38,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-39,deeplearning,attention_is_all_you_need.pdf,"Many of the attention heads attend to a distant dependency of
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-39,deeplearning,attention_is_all_you_need.pdf,"Many of the attention heads attend to a distant dependency of
 the verb ‘making’, completing the phrase ‘making...more difﬁcult’.
 Attentions here shown only for
 the word ‘making’."
-39,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-40,deeplearning,attention_is_all_you_need.pdf,"The best
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-40,deeplearning,attention_is_all_you_need.pdf,"The best
 performing models also connect the encoder and decoder through an attention
 mechanism.
 We also modify the self-attention
@@ -579,7 +579,7 @@ information ﬂow in the decoder to preserve the auto-regressive property.
 <pad>
 Figure 3: An example of the attention mechanism following long-distance dependencies in the
 encoder self-attention in layer 5 of 6."
-40,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-41,deeplearning,attention_is_all_you_need.pdf,"5.1 Training Data and Batching
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-41,deeplearning,attention_is_all_you_need.pdf,"5.1 Training Data and Batching
 We trained on the standard WMT 2014 English-German dataset consisting of about 4.5 million
 sentence pairs.
 Sentences were encoded using byte-pair encoding [ 3], which has a shared source-
@@ -593,7 +593,7 @@ batch contained a set of sentence pairs containing approximately 25000 source to
 target tokens.
 We used a vocabulary of 16K tokens for the WSJ only setting and a vocabulary of 32K tokens
 for the semi-supervised setting."
-41,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-42,deeplearning,attention_is_all_you_need.pdf,"Ashish, with Illia, designed and implemented the ﬁrst Transformer models and
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-42,deeplearning,attention_is_all_you_need.pdf,"Ashish, with Illia, designed and implemented the ﬁrst Transformer models and
 has been crucially involved in every aspect of this work.
 In the following sections, we will describe the Transformer, motivate
 self-attention and discuss its advantages over models such as [17, 18] and [9].
@@ -602,12 +602,12 @@ self-attention and discuss its advantages over models such as [17, 18] and [9].
 (2014) [37] semi-supervised 92.1
 Transformer (4 layers) semi-supervised 92.7
 Luong et al."
-42,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-43,deeplearning,attention_is_all_you_need.pdf,"One is the total computational complexity per layer.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-43,deeplearning,attention_is_all_you_need.pdf,"One is the total computational complexity per layer.
 The third is the path length between long-range dependencies in the network.
 Hence we also compare
 the maximum path length between any two input and output positions in networks composed of the
 different layer types."
-43,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-44,deeplearning,attention_is_all_you_need.pdf,"(2014) [37] WSJ only, discriminative 88.3
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-44,deeplearning,attention_is_all_you_need.pdf,"(2014) [37] WSJ only, discriminative 88.3
 Petrov et al.
 (2006) [29] WSJ only, discriminative 90.4
 Zhu et al.
@@ -616,7 +616,7 @@ Dyer et al.
 (2016) [8] WSJ only, discriminative 91.7
 Transformer (4 layers) WSJ only, discriminative 91.3
 Zhu et al."
-44,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-45,deeplearning,attention_is_all_you_need.pdf,"1 Introduction
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-45,deeplearning,attention_is_all_you_need.pdf,"1 Introduction
 Recurrent neural networks, long short-term memory [ 13] and gated recurrent [ 7] neural networks
 in particular, have been ﬁrmly established as state of the art approaches in sequence modeling and
 Equal contribution.
@@ -632,12 +632,12 @@ Recurrent neural
 network grammars.
 Generating sequences with recurrent neural networks.
 Long short-term memory."
-45,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-46,deeplearning,attention_is_all_you_need.pdf,"For the base models, we used a single model obtained by averaging the last 5 checkpoints, which
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-46,deeplearning,attention_is_all_you_need.pdf,"For the base models, we used a single model obtained by averaging the last 5 checkpoints, which
 were written at 10-minute intervals.
 For the big models, we averaged the last 20 checkpoints.
 We used beam search as described in the previous section, but no
 checkpoint averaging."
-46,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-47,deeplearning,attention_is_all_you_need.pdf,"12Attention Visualizations
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-47,deeplearning,attention_is_all_you_need.pdf,"12Attention Visualizations
 Input-Input Layer5
 It
 is
@@ -698,7 +698,7 @@ process
 more
 difficult
 ."
-47,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-48,deeplearning,attention_is_all_you_need.pdf,"[6]Francois Chollet.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-48,deeplearning,attention_is_all_you_need.pdf,"[6]Francois Chollet.
 [9]Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann N. Dauphin.
 [18] Nal Kalchbrenner, Lasse Espeholt, Karen Simonyan, Aaron van den Oord, Alex Graves, and Ko-
 ray Kavukcuoglu.
@@ -708,11 +708,11 @@ ray Kavukcuoglu.
 [34] Sainbayar Sukhbaatar, Arthur Szlam, Jason Weston, and Rob Fergus.
 [36] Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, and Zbigniew Wojna.
 [37] Vinyals & Kaiser, Koo, Petrov, Sutskever, and Hinton."
-48,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-49,deeplearning,attention_is_all_you_need.pdf,"To facilitate these residual connections, all sub-layers in the model, as well as the embedding
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-49,deeplearning,attention_is_all_you_need.pdf,"To facilitate these residual connections, all sub-layers in the model, as well as the embedding
 layers, produce outputs of dimension dmodel = 512 .
 The dimensionality of input and output is dmodel = 512 , and the inner-layer has dimensionality
 dff= 2048 ."
-49,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-50,deeplearning,attention_is_all_you_need.pdf,"Noam proposed scaled dot-product attention, multi-head
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-50,deeplearning,attention_is_all_you_need.pdf,"Noam proposed scaled dot-product attention, multi-head
 attention and the parameter-free position representation and became the other person involved in nearly every
 detail.
 3Scaled Dot-Product Attention
@@ -734,12 +734,12 @@ matrix multiplication code.
 We implement this
 inside of scaled dot-product attention by masking out (setting to  1) all values in the input
 of the softmax which correspond to illegal connections."
-50,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-51,deeplearning,attention_is_all_you_need.pdf,Best viewed in color.
-51,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-52,deeplearning,attention_is_all_you_need.pdf,"Structured attention networks.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-51,deeplearning,attention_is_all_you_need.pdf,Best viewed in color.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-52,deeplearning,attention_is_all_you_need.pdf,"Structured attention networks.
 A structured self-attentive sentence embedding.
 A deep reinforced model for abstractive
 summarization."
-52,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-53,deeplearning,attention_is_all_you_need.pdf,"Experiments on two machine translation tasks show these models to
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-53,deeplearning,attention_is_all_you_need.pdf,"Experiments on two machine translation tasks show these models to
 be superior in quality while being more parallelizable and requiring signiﬁcantly
 less time to train.
 Our model achieves 28.4 BLEU on the WMT 2014 English-
@@ -765,18 +765,18 @@ We performed only a small number of experiments to select the dropout, both atte
 remained unchanged from the English-to-German base translation model.
 On both WMT 2014 English-to-German and WMT 2014
 English-to-French translation tasks, we achieve a new state of the art."
-53,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-54,deeplearning,attention_is_all_you_need.pdf,"[10] Alex Graves.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-54,deeplearning,attention_is_all_you_need.pdf,"[10] Alex Graves.
 [30] Oﬁr Press and Lior Wolf."
-54,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-55,deeplearning,attention_is_all_you_need.pdf,"yWork performed while at Google Brain.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-55,deeplearning,attention_is_all_you_need.pdf,"yWork performed while at Google Brain.
 zWork performed while at Google Research."
-55,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-56,deeplearning,attention_is_all_you_need.pdf,"In
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-56,deeplearning,attention_is_all_you_need.pdf,"In
 our model, we share the same weight matrix between the two embedding layers and the pre-softmax
 linear transformation, similar to [ 30].
 In the embedding layers, we multiply those weights bypdmodel."
-56,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-57,deeplearning,attention_is_all_you_need.pdf,"In International Conference
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-57,deeplearning,attention_is_all_you_need.pdf,"In International Conference
 on Learning Representations (ICLR) , 2016.
 InInternational Conference on Learning Representations , 2017."
-57,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-58,deeplearning,attention_is_all_you_need.pdf,"We show that the Transformer generalizes well to
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-58,deeplearning,attention_is_all_you_need.pdf,"We show that the Transformer generalizes well to
 other tasks by applying it successfully to English constituency parsing both with
 large and limited training data.
 N d modeldffh d kdvPdroplstrain PPL BLEU params
@@ -813,26 +813,26 @@ across languages.
 Effective self-training for parsing.
 Fast and accurate
 shift-reduce constituent parsing."
-58,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-59,deeplearning,attention_is_all_you_need.pdf,"In this work, we use sine and cosine functions of different frequencies:
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-59,deeplearning,attention_is_all_you_need.pdf,"In this work, we use sine and cosine functions of different frequencies:
 PE(pos;2i)=sin(pos=100002i=d model)
 PE(pos;2i+1)=cos(pos=100002i=d model)
 whereposis the position and iis the dimension."
-59,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-60,deeplearning,attention_is_all_you_need.pdf,"Llion also experimented with novel model variants, was responsible for our initial codebase, and
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-60,deeplearning,attention_is_all_you_need.pdf,"Llion also experimented with novel model variants, was responsible for our initial codebase, and
 efﬁcient inference and visualizations."
-60,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-61,deeplearning,attention_is_all_you_need.pdf,"Jakob proposed replacing RNNs with self-attention and started
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-61,deeplearning,attention_is_all_you_need.pdf,"Jakob proposed replacing RNNs with self-attention and started
 the effort to evaluate this idea.
 Self-attention has been
 used successfully in a variety of tasks including reading comprehension, abstractive summarization,
 textual entailment and learning task-independent sentence representations [4, 27, 28, 22].
 As side beneﬁt, self-attention could yield more interpretable models."
-61,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-62,deeplearning,attention_is_all_you_need.pdf,"We set the maximum output length during
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-62,deeplearning,attention_is_all_you_need.pdf,"We set the maximum output length during
 inference to input length + 50, but terminate early when possible [38].
 Adam: A method for stochastic optimization.
 Outrageously large neural networks: The sparsely-gated mixture-of-experts
 layer.
 Dropout: a simple way to prevent neural networks from overﬁtting.
 Rethinking the inception architecture for computer vision."
-62,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-63,deeplearning,attention_is_all_you_need.pdf,"arXiv preprint
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-63,deeplearning,attention_is_all_you_need.pdf,"arXiv preprint
 arXiv:1607.06450 , 2016.
 arXiv preprint arXiv:1601.06733 , 2016.
 arXiv
@@ -856,13 +856,13 @@ arXiv preprint arXiv:1508.07909 , 2015.
 arXiv preprint arXiv:1701.06538 , 2017.
 arXiv preprint
 arXiv:1609.08144 , 2016."
-63,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-64,deeplearning,attention_is_all_you_need.pdf,"We plan to investigate this approach further in future work.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-64,deeplearning,attention_is_all_you_need.pdf,"We plan to investigate this approach further in future work.
 Making generation less sequential is another research goals of ours."
-64,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-65,deeplearning,attention_is_all_you_need.pdf,"We
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-65,deeplearning,attention_is_all_you_need.pdf,"We
 used beam search with a beam size of 4and length penalty = 0:6[38].
 This task presents speciﬁc challenges: the output is subject to strong structural
 9constraints and is signiﬁcantly longer than the input."
-65,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-66,deeplearning,attention_is_all_you_need.pdf,"Attention mechanisms have become an integral part of compelling sequence modeling and transduc-
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-66,deeplearning,attention_is_all_you_need.pdf,"Attention mechanisms have become an integral part of compelling sequence modeling and transduc-
 tion models in various tasks, allowing modeling of dependencies without regard to their distance in
 the input or output sequences [ 2,19].
 In all but a few cases [ 27], however, such attention mechanisms
@@ -875,15 +875,15 @@ dependencies is a key challenge in many sequence transduction tasks.
 To improve computational performance for tasks involving
 very long sequences, self-attention could be restricted to considering only a neighborhood of size rin
 6the input sequence centered around the respective output position."
-66,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-67,deeplearning,attention_is_all_you_need.pdf,"Niki designed, implemented, tuned and evaluated countless model variants in our original codebase and
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-67,deeplearning,attention_is_all_you_need.pdf,"Niki designed, implemented, tuned and evaluated countless model variants in our original codebase and
 tensor2tensor.
 Lukasz and Aidan spent countless long days designing various parts of and
 implementing tensor2tensor, replacing our earlier codebase, greatly improving results and massively accelerating
 our research.
 The code we used to train and evaluate our models is available at https://github.com/
 tensorflow/tensor2tensor ."
-67,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-68,deeplearning,attention_is_all_you_need.pdf,Listing order is random.
-68,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-69,deeplearning,attention_is_all_you_need.pdf,"Self-attention, sometimes called intra-attention is an attention mechanism relating different positions
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-68,deeplearning,attention_is_all_you_need.pdf,Listing order is random.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-69,deeplearning,attention_is_all_you_need.pdf,"Self-attention, sometimes called intra-attention is an attention mechanism relating different positions
 of a single sequence in order to compute a representation of the sequence.
 nis the sequence length, dis the representation dimension, kis the kernel
 size of convolutions and rthe size of the neighborhood in restricted self-attention.
@@ -899,7 +899,7 @@ computational complexity, self-attention layers are faster than recurrent layers
 lengthnis smaller than the representation dimensionality d, which is most often the case with
 sentence representations used by state-of-the-art models in machine translations, such as word-piece
 [38] and byte-pair [ 31] representations."
-69,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-70,deeplearning,attention_is_all_you_need.pdf,"5.3 Optimizer
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-70,deeplearning,attention_is_all_you_need.pdf,"5.3 Optimizer
 We used the Adam optimizer [ 20] with1= 0:9,2= 0:98and= 10 9.
 We varied the learning
 rate over the course of training, according to the formula:
@@ -909,7 +909,7 @@ This corresponds to increasing the learning rate linearly for the ﬁrst warmup 
 and decreasing it thereafter proportionally to the inverse square root of the step number.
 We used
 warmup _steps = 4000 ."
-70,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-71,deeplearning,attention_is_all_you_need.pdf,"We employ a residual connection [ 11] around each of
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-71,deeplearning,attention_is_all_you_need.pdf,"We employ a residual connection [ 11] around each of
 the two sub-layers, followed by layer normalization [ 1].
 Similar to the encoder, we employ residual connections
 around each of the sub-layers, followed by layer normalization.
@@ -918,24 +918,24 @@ We employ three types of regularization during training:
 Residual Dropout We apply dropout [ 33] to the output of each sub-layer, before it is added to the
 sub-layer input and normalized.
 Layer normalization."
-71,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-72,deeplearning,attention_is_all_you_need.pdf,"5.2 Hardware and Schedule
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-72,deeplearning,attention_is_all_you_need.pdf,"5.2 Hardware and Schedule
 We trained our models on one machine with 8 NVIDIA P100 GPUs.
 Training took 3:5days on 8P100 GPUs.
 We estimate the number of ﬂoating point operations used to train a
 model by multiplying the training time, the number of GPUs used, and an estimate of the sustained
 single-precision ﬂoating-point capacity of each GPU5."
-72,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-73,deeplearning,attention_is_all_you_need.pdf,"These are concatenated and once again projected, resulting in the ﬁnal values, as
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-73,deeplearning,attention_is_all_you_need.pdf,"These are concatenated and once again projected, resulting in the ﬁnal values, as
 depicted in Figure 2.
 See Figure 2."
-73,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-74,deeplearning,attention_is_all_you_need.pdf,"Unlisted values are identical to those of the base
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-74,deeplearning,attention_is_all_you_need.pdf,"Unlisted values are identical to those of the base
 model."
-74,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-75,deeplearning,attention_is_all_you_need.pdf,"The fundamental
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-75,deeplearning,attention_is_all_you_need.pdf,"The fundamental
 constraint of sequential computation, however, remains.
 Another is the amount of computation that can
 be parallelized, as measured by the minimum number of sequential operations required."
-75,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-76,deeplearning,attention_is_all_you_need.pdf,The wavelengths form a geometric progression from 2to100002.
-76,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-77,deeplearning,attention_is_all_you_need.pdf,15
-77,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-78,deeplearning,attention_is_all_you_need.pdf,"In Proceedings of the 2009 Conference on Empirical Methods in Natural
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-76,deeplearning,attention_is_all_you_need.pdf,The wavelengths form a geometric progression from 2to100002.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-77,deeplearning,attention_is_all_you_need.pdf,15
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-78,deeplearning,attention_is_all_you_need.pdf,"In Proceedings of the 2009 Conference on Empirical Methods in Natural
 Language Processing , pages 832–841.
 In
 Proceedings of the Human Language Technology Conference of the NAACL, Main Conference ,
@@ -943,18 +943,18 @@ pages 152–159.
 In Empirical Methods in Natural Language Processing , 2016.
 Journal of Machine
 Learning Research , 15(1):1929–1958, 2014."
-78,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-79,deeplearning,attention_is_all_you_need.pdf,"We
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-79,deeplearning,attention_is_all_you_need.pdf,"We
 chose this function because we hypothesized it would allow the model to easily learn to attend by
 relative positions, since for any ﬁxed offset k,PEpos+kcan be represented as a linear function of
 PEpos.
 We chose the sinusoidal version
 because it may allow the model to extrapolate to sequence lengths longer than the ones encountered
 during training."
-79,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-80,deeplearning,attention_is_all_you_need.pdf,"In ICLR , 2015.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-80,deeplearning,attention_is_all_you_need.pdf,"In ICLR , 2015.
 In Proceedings of the 51st Annual Meeting of the ACL (Volume
 1: Long Papers) , pages 434–443."
-80,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-81,deeplearning,attention_is_all_you_need.pdf,The heads clearly learned to perform different tasks.
-81,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-82,deeplearning,attention_is_all_you_need.pdf,"The Transformer follows this overall architecture using stacked self-attention and point-wise, fully
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-81,deeplearning,attention_is_all_you_need.pdf,The heads clearly learned to perform different tasks.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-82,deeplearning,attention_is_all_you_need.pdf,"The Transformer follows this overall architecture using stacked self-attention and point-wise, fully
 connected layers for both the encoder and decoder, shown in the left and right halves of Figure 1,
 respectively.
 3.1 Encoder and Decoder Stacks
@@ -967,40 +967,40 @@ Each position in the encoder can attend to all positions in the previous layer o
 encoder.
 We give two such examples above, from two different heads from the encoder self-attention
 at layer 5 of 6."
-82,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-83,deeplearning,attention_is_all_you_need.pdf,"(2006) [26] semi-supervised 92.1
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-83,deeplearning,attention_is_all_you_need.pdf,"(2006) [26] semi-supervised 92.1
 Vinyals & Kaiser el al."
-83,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-84,deeplearning,attention_is_all_you_need.pdf,"(2015) [23] multi-task 93.0
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-84,deeplearning,attention_is_all_you_need.pdf,"(2015) [23] multi-task 93.0
 Dyer et al."
-84,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-85,deeplearning,attention_is_all_you_need.pdf,"We also experimented with using learned positional embeddings [ 9] instead, and found that the two
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-85,deeplearning,attention_is_all_you_need.pdf,"We also experimented with using learned positional embeddings [ 9] instead, and found that the two
 versions produced nearly identical results (see Table 3 row (E)).
 In row (E) we replace our
 sinusoidal positional encoding with learned positional embeddings [ 9], and observe nearly identical
 results to the base model."
-85,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-86,deeplearning,attention_is_all_you_need.pdf,"This
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-86,deeplearning,attention_is_all_you_need.pdf,"This
 hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score."
-86,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-87,deeplearning,attention_is_all_you_need.pdf,"Exploring
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-87,deeplearning,attention_is_all_you_need.pdf,"Exploring
 the limits of language modeling.
 Using the output embedding to improve language models."
-87,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-88,deeplearning,attention_is_all_you_need.pdf,"This makes
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-88,deeplearning,attention_is_all_you_need.pdf,"This makes
 it more difﬁcult to learn dependencies between distant positions [ 12].
 One key factor affecting the
 ability to learn such dependencies is the length of the paths forward and backward signals have to
 traverse in the network.
 The shorter these paths between any combination of positions in the input
 and output sequences, the easier it is to learn long-range dependencies [ 12]."
-88,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-89,deeplearning,attention_is_all_you_need.pdf,"Listed
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-89,deeplearning,attention_is_all_you_need.pdf,"Listed
 perplexities are per-wordpiece, according to our byte-pair encoding, and should not be compared to
 per-word perplexities."
-89,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-90,deeplearning,attention_is_all_you_need.pdf,"References
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-90,deeplearning,attention_is_all_you_need.pdf,"References
 [1]Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton."
-90,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-91,deeplearning,attention_is_all_you_need.pdf,"Convolu-
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-91,deeplearning,attention_is_all_you_need.pdf,"Convolu-
 tional sequence to sequence learning.
 Multi-task
 sequence to sequence learning.
 Sequence to sequence learning with neural
 networks."
-91,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-92,deeplearning,attention_is_all_you_need.pdf,Different colors represent different heads.
-92,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-93,deeplearning,attention_is_all_you_need.pdf,"Here, the encoder maps an input sequence of symbol representations (x1;:::;x n)to a sequence
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-92,deeplearning,attention_is_all_you_need.pdf,Different colors represent different heads.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-93,deeplearning,attention_is_all_you_need.pdf,"Here, the encoder maps an input sequence of symbol representations (x1;:::;x n)to a sequence
 of continuous representations z= (z1;:::;z n).
 Given z, the decoder then generates an output
 sequence (y1;:::;y m)of symbols one element at a time.
@@ -1008,8 +1008,8 @@ This
 consists of two linear transformations with a ReLU activation in between.
 That is, each dimension of the positional encoding
 corresponds to a sinusoid."
-93,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-94,deeplearning,attention_is_all_you_need.pdf,In Proc.
-94,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-95,deeplearning,attention_is_all_you_need.pdf,"Motivating our use of self-attention we
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-94,deeplearning,attention_is_all_you_need.pdf,In Proc.
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-95,deeplearning,attention_is_all_you_need.pdf,"Motivating our use of self-attention we
 consider three desiderata.
 Not only do individual attention
 heads clearly learn to perform different tasks, many appear to exhibit behavior related to the syntactic
@@ -1024,8 +1024,8 @@ Note that the attentions are very sharp for this word.
 <EOS>
 <pad>Figure 5: Many of the attention heads exhibit behaviour that seems related to the structure of the
 sentence."
-95,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-96,deeplearning,attention_is_all_you_need.pdf,"[25] Mitchell P Marcus, Mary Ann Marcinkiewicz, and Beatrice Santorini."
-96,e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-97,deeplearning,attention_is_all_you_need.pdf,"2 Background
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-96,deeplearning,attention_is_all_you_need.pdf,"[25] Mitchell P Marcus, Mary Ann Marcinkiewicz, and Beatrice Santorini."
+e1ccff07e5c99304d9674e3bb8b21a9f3ad63a708349704476b45c169163a8b4-97,deeplearning,attention_is_all_you_need.pdf,"2 Background
 The goal of reducing sequential computation also forms the foundation of the Extended Neural GPU
 [16], ByteNet [ 18] and ConvS2S [ 9], all of which use convolutional neural networks as basic building
 block, computing hidden representations in parallel for all input and output positions.
@@ -1043,7 +1043,7 @@ Even with k=n, however, the complexity of a separable
 convolution is equal to the combination of a self-attention layer and a point-wise feed-forward layer,
 the approach we take in our model.
 Xception: Deep learning with depthwise separable convolutions."
-97,0e743db25fb819961cd2f051fb88dd185c37e45bc1e11944edac8d96cb4a51e5-1,deeplearning,the_matrix_calculus_you_need_for_deeplearning.pdf,".
+0e743db25fb819961cd2f051fb88dd185c37e45bc1e11944edac8d96cb4a51e5-1,deeplearning,the_matrix_calculus_you_need_for_deeplearning.pdf,".
 .
 .
 .
@@ -1565,7 +1565,7 @@ Xception: Deep learning with depthwise separable convolutions."
 .
 .
 ."
-98,0e743db25fb819961cd2f051fb88dd185c37e45bc1e11944edac8d96cb4a51e5-2,deeplearning,the_matrix_calculus_you_need_for_deeplearning.pdf,"The Matrix Calculus You Need For Deep Learning
+0e743db25fb819961cd2f051fb88dd185c37e45bc1e11944edac8d96cb4a51e5-2,deeplearning,the_matrix_calculus_you_need_for_deeplearning.pdf,"The Matrix Calculus You Need For Deep Learning
 Terence Parr and Jeremy Howard
 July 3, 2018
 (We teach in University of San Francisco's MS in Data Science program and have other nefarious
@@ -3688,7 +3688,7 @@ We reference the law of total derivative, which is an important concept that jus
 with respect to xmust take into consideration the derivative with respect xof all variables that
 are a function of x.
 33"
-99,95c543b8fe00c9b1adbed90ddbc9e22abacf34b8ecc804f58850ed67a54b4cc7-1,deeplearning,dense_x_retieval_what_retrieval_granularity_shoud_we_use.pdf,"DenseXRetrieval: What Retrieval Granularity Should We Use?
+95c543b8fe00c9b1adbed90ddbc9e22abacf34b8ecc804f58850ed67a54b4cc7-1,deeplearning,dense_x_retieval_what_retrieval_granularity_shoud_we_use.pdf,"DenseXRetrieval: What Retrieval Granularity Should We Use?
 Tong Chen♣∗Hongwei Wang♢Sihao Chen♡Wenhao Yu♢
 Kaixin Ma♢Xinran Zhao♠Hongming Zhang♢Dong Yu♢
 ♣University of Washington♢Tencent AI Lab
@@ -5147,7 +5147,7 @@ Present the results as a list of strings, formatted in JSON.
 Input : <a new passage >
 Output :
 Figure 8: Prompt for generating propositions from a passage using GPT-4."
-100,95c543b8fe00c9b1adbed90ddbc9e22abacf34b8ecc804f58850ed67a54b4cc7-2,deeplearning,dense_x_retieval_what_retrieval_granularity_shoud_we_use.pdf,"(2022).
+95c543b8fe00c9b1adbed90ddbc9e22abacf34b8ecc804f58850ed67a54b4cc7-2,deeplearning,dense_x_retieval_what_retrieval_granularity_shoud_we_use.pdf,"(2022).
 2019.
 2023.
 2013.
@@ -5216,7 +5216,7 @@ Figure 8: Prompt for generating propositions from a passage using GPT-4."
 2022.
 The
 dump dates back to October 13, 2021."
-101,95c543b8fe00c9b1adbed90ddbc9e22abacf34b8ecc804f58850ed67a54b4cc7-3,deeplearning,dense_x_retieval_what_retrieval_granularity_shoud_we_use.pdf,"/githubhttps://github.com/ct123098/
+95c543b8fe00c9b1adbed90ddbc9e22abacf34b8ecc804f58850ed67a54b4cc7-3,deeplearning,dense_x_retieval_what_retrieval_granularity_shoud_we_use.pdf,"/githubhttps://github.com/ct123098/
 factoid-wikiQuestion: What is the angle of the Tower of Pisa?
 Passage
 RetrievalPrior to restoration work performed be-
@@ -5499,7 +5499,7 @@ Input : Title: ¯Eostre.
 "", ""Georg Franck von Franckenau was a professor of
 medicine.
 "", ""Richard Sermon was a scholar."
-102,95c543b8fe00c9b1adbed90ddbc9e22abacf34b8ecc804f58850ed67a54b4cc7-4,deeplearning,dense_x_retieval_what_retrieval_granularity_shoud_we_use.pdf,"Section: Theories and interpretations, Connection to Easter Hares.
+95c543b8fe00c9b1adbed90ddbc9e22abacf34b8ecc804f58850ed67a54b4cc7-4,deeplearning,dense_x_retieval_what_retrieval_granularity_shoud_we_use.pdf,"Section: Theories and interpretations, Connection to Easter Hares.
 Content:
 The earliest evidence for the Easter Hare (Osterhase) was recorded in south-west Germany in
 1678 by the professor of medicine Georg Franck von Franckenau, but it remained unknown in
@@ -5535,7 +5535,7 @@ throughout Europe.
 Britain and America.
 "", ""The custom of the Easter Hare/Rabbit evolved into the Easter Bunny in
 Britain and America."""
-103,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-1,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Thus, a scaled error is
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-1,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Thus, a scaled error is
 deﬁned as
 qt=et
 1
@@ -5555,7 +5555,7 @@ out-of-sample forecast errors are, on average, about twice as large as the in-sa
 forecast errors from the na ¨ıve method.
 Because the scaling is based on one-step forecasts, the
 scaled errors for multi-step forecasts are typically larger than one."
-104,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-2,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Another look at measures of forecast accuracy
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-2,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Another look at measures of forecast accuracy
 Rob J Hyndman
 Department of Econometrics and Business Statistics,
 Monash University, VIC 3800, Australia.
@@ -5610,10 +5610,10 @@ MAKRIDAKIS , S., A NDERSON , A., C ARBONE , R., F ILDES , R., H IBON , M., L EWA
 R., N EWTON , J., P ARZEN , P., and WINKLER , R.(1982) The accuracy of extrapolation (time
 series) methods: results of a forecasting competition.
 (1990) An MSE statistic for comparing forecast accuracy across series."
-105,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-3,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"KOEHLER , A.B.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-3,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"KOEHLER , A.B.
 THOMPSON , P.A.
 TSAY, R.S."
-106,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-4,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"2.1 Scale-dependent measures
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-4,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"2.1 Scale-dependent measures
 There are some commonly used accuracy measures whose scale depends on the scale of the
 data.
 A serious deﬁciency in relative error measures is that e¤
@@ -5622,15 +5622,15 @@ In particular, the measures used in the M-competition and the
 M3-competition, and the measures recommended by other authors, all have problems—they
 can give inﬁnite or undeﬁned values in commonly occurring situations.
 MAKRIDAKIS , S.(1993) Accuracy measures: theoretical and practical concerns."
-107,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-5,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Data source: Tsay (2002), chapter 1.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-5,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Data source: Tsay (2002), chapter 1.
 Relative errors have a statistical
 distribution with undeﬁned mean and inﬁnite variance.
 CHATFIELD , C. (1988) Apples, oranges and mean square error."
-108,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-6,time_series,another_lookat_measures_of_forecast_accuracy.pdf,".,n.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-6,time_series,another_lookat_measures_of_forecast_accuracy.pdf,".,n.
 .,j."
-109,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-7,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"However, this approach has the disadvantage that the denominator
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-7,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"However, this approach has the disadvantage that the denominator
 grows with the sample size for non-stationary series containing a unit root."
-110,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-8,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Forecasting ,8, 99–111.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-8,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Forecasting ,8, 99–111.
 International J Forecasting ,8, 69–80.
 International Journal of Forecasting 16, 521–530.
 Forecasting ,4,
@@ -5645,17 +5645,17 @@ Forecasting ,9, 527–529.
 Forecasting ,1, 111–153.
 Forecasting ,16, 451–476.
 Forecasting ,6219–227."
-111,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-9,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The acronyms are deﬁned below and we explicitly deﬁne the measures in Sections 2and 3.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-9,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The acronyms are deﬁned below and we explicitly deﬁne the measures in Sections 2and 3.
 Data source: ‘Product C’ in
 Makridakis, Wheelwright and Hyndman (1998), chapter 1."
-112,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-10,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Billah et al.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-10,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Billah et al.
 BILLAH , B., K ING, M.L., S NYDER , R.D., and KOEHLER , A.B.
 BOWERMAN , B.L., O’C ONNELL , R.T., and KOEHLER , A.B.
 CLEMENTS , M.P., AND HENDRY , D.F.
 COLEMAN , C.D., and SWANSON , D.A.
 GRANGER , C.W.J., and PESARAN , M.H.
 SWANSON , D.A., T AYMAN , J.,and BARR, C.F."
-113,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-11,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Armstrong and Col-
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-11,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Armstrong and Col-
 lopy (1992) recommended the use of GMRAE, MdRAE and MdAPE.
 Fildes (1992) also rec-
 ommended the use of MdAPE and GMRAE (although he described the latter as the relative
@@ -5673,7 +5673,7 @@ of squared relative errors.
 Rather than use relative errors, one can use relative measures.
 (2000) Another error measure for selection of the best fore-
 casting method: the unbiased absolute percentage error."
-114,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-12,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Of the measures in Tables 1–3, only the MASE can be used for these series due to the occur-
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-12,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Of the measures in Tables 1–3, only the MASE can be used for these series due to the occur-
 rence of inﬁnite and undeﬁned values.
 Table 4gives the MASE for each of the M3 methods along with the HKSG method.
 Comparing Table 4with the results of the original M3 analysis (Makridakis & Hibon, 2000)
@@ -5681,9 +5681,9 @@ shows that MASE does not substantially affect the main conclusions about the bes
 methods.
 (2001) The asymmetry of the sAPE measure and other comments on the M3-
 competition."
-115,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-13,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Inter-
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-13,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Inter-
 national J."
-116,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-14,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-14,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The
 methods used in the M-competition and the M3-competition, and many of the measures recom-
 mended by previous authors on this topic, are found to be degenerate in commonly occurring situ-
 ations.
@@ -5695,7 +5695,7 @@ method.
 We demonstrate the use of MASE using the M3-competition data (Makridakis & Hibon, 2000).
 The best performing method in each
 category is highlighted with its MASE in bold."
-117,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-15,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"MAPE Mean Absolute Percentage Error
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-15,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"MAPE Mean Absolute Percentage Error
 MdAPE Median Absolute Percentage Error
 sMAPE Symmetric Mean Absolute Percentage Error
 sMdAPE Symmetric Median Absolute Percentage Error
@@ -5805,43 +5805,43 @@ forecasts from the naive method.
 However, in situations where there are very different scales
 including data which are close to zero or negative, we suggest the MASE is the best available
 measure of forecast accuracy."
-118,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-16,time_series,another_lookat_measures_of_forecast_accuracy.pdf,".
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-16,time_series,another_lookat_measures_of_forecast_accuracy.pdf,".
 .
 .
 .
 ."
-119,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-17,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Also note that the
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-17,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Also note that the
 sMAPE can take negative values although it is meant to be an “absolute percentage error”.
 As was seen in the examples in Section 1, sMAPE and sMdAPE can take negative values."
-120,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-18,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"International
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-18,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"International
 J.
 International J.
 International J.
 International J.
 International J.
 International J."
-121,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-19,time_series,another_lookat_measures_of_forecast_accuracy.pdf,".,Fn+mbased on data
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-19,time_series,another_lookat_measures_of_forecast_accuracy.pdf,".,Fn+mbased on data
 from times t=1,.
 .,Fm+hwhere each Fj+h
 is based on data from times t=1,.
 Then we compute a single
 Fn+hbased on data from times t=1,."
-122,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-20,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"J.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-20,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"J.
 J.
 J."
-123,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-21,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"In the latter case, it is algebraically possible to cancel the
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-21,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"In the latter case, it is algebraically possible to cancel the
 numerator and denominator, although numerical results will be undeﬁned.
 It
 would seem more natural to deﬁne them with absolute values in the denominator, and so avoid
 this problem, but this is not what is usually done."
-124,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-22,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"We do not suggest these are the best methods for these data, but they are all simple methods
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-22,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"We do not suggest these are the best methods for these data, but they are all simple methods
 that are widely applied.
 These are useful when comparing different methods on the same set of data, but should
 not be used, for example, when comparing across data sets that have different scales.
 They have a meaningful scale,
 are widely applicable, and are not subject to the degeneracy problems seen in the examples in
 Section 1."
-125,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-23,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Then deﬁne the forecast
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-23,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Then deﬁne the forecast
 error et=Yt¡Ft.
 2.2 Measures based on percentage errors
 The percentage error is given by pt=100et/Yt.
@@ -5868,13 +5868,13 @@ the improvement possible from the proposed forecast method relative to the bench
 cast method.
 If the RMSSE is used, it may be
 preferable to use the in-sample RMSE from the na ¨ıve method in the denominator of qt."
-126,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-24,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The MdRAE, sMAPE and sMdAPE were used
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-24,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The MdRAE, sMAPE and sMdAPE were used
 in the M3-competition (Makridakis & Hibon, 2000).
 Never-
 theless, the MSE was used by Makridakis et al., 1985, in the M-competition.
 MAKRIDAKIS , S., and HIBON , M. (2000) The M3-competition: results, conclusions and impli-
 cations."
-127,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-25,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"They also give no indication of the size of the forecast errors.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-25,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"They also give no indication of the size of the forecast errors.
 However, they are more sensitive to outliers than MAE or MdAE which has
 led some authors (e.g., Armstrong, 2001) to recommend against their use in forecast accuracy
 evaluation.
@@ -5884,31 +5884,31 @@ For example, they make no sense in measuring forecast error for temperatures on 
 Fahrenheit or Celsius scales.
 Thus, it provides a form of shrinkage which
 limits the ability of the model to produce anything wildly inaccurate."
-128,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-26,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Demography ,2, 193–201."
-129,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-27,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"ARMSTRONG , J.S.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-26,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Demography ,2, 193–201."
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-27,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"ARMSTRONG , J.S.
 Armstrong."
-130,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-28,time_series,another_lookat_measures_of_forecast_accuracy.pdf,".,nfor each of mdifferent series.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-28,time_series,another_lookat_measures_of_forecast_accuracy.pdf,".,nfor each of mdifferent series.
 It makes no sense to compute the MAE across series (due to their different scales).
 Scaling by the in-
 sample na ¨ıve MAE only assumes that series has no more than one unit root, which is almost
 always true for real data.
 For example, if all series are on the same scale, then the MAE may be preferred because it is
 simpler to explain."
-131,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-29,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"This means, for example, that the MAPE is often substantially larger than the MdAPE.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-29,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"This means, for example, that the MAPE is often substantially larger than the MdAPE.
 Excessively large (or inﬁnite) MAPEs were avoided in the M3-competition by only
 including data that were positive (Makridakis and Hibon, 2000, p.462)."
-132,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-30,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"These show series N0472 from the M3-competition1, monthly log
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-30,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"These show series N0472 from the M3-competition1, monthly log
 stock returns for the Walt Disney Corporation, and monthly sales of a lubricant product sold
 in large containers.
 Note that the Disney return series and the lubricant sales series both in-
 clude exact zero observations, and the Disney series contains negative values."
-133,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-31,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Note that there are many inﬁnite values occurring in Tables 1–3due to division by zero.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-31,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Note that there are many inﬁnite values occurring in Tables 1–3due to division by zero.
 The undeﬁned values
 arise due to the division of zero by zero.
 Some of these are due to computations of the form
 Yt/(Yt¡Yt¡1)where Yt¡1=Yt=0 and others are due to computations of the form (Yt¡
 Yt¡1)/(Yt¡Yt¡1)where Yt=Yt¡1."
-134,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-32,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The most commonly used scale-dependent measures are based on the absolute error or squaredAnother look at measures of forecast accuracy 8
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-32,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The most commonly used scale-dependent measures are based on the absolute error or squaredAnother look at measures of forecast accuracy 8
 errors:
 Mean Square Error (MSE) =mean (e2
 t)
@@ -5949,21 +5949,21 @@ than RMSSE, and less variable on small samples than MdASE.
 In some circumstances an asymmmetric loss function may be preferred (see, e.g., Lawrence &
 O’Connor, 2005), in which case some other (asymmetric) function of the scaled errors may be
 appropriate."
-135,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-33,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"See Goodwin
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-33,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"See Goodwin
 and Lawton (1999) and Koehler (2001) for further discussion on this point.
 See Coleman and Swanson (2004) for further discussion."
-136,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-34,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Then, a relative MAE is given by
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-34,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Then, a relative MAE is given by
 RelMAE =MAE /MAE b.
 Note that Armstrong and
 Collopy refer to the relative MAE as CumRAE."
-137,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-35,time_series,another_lookat_measures_of_forecast_accuracy.pdf,(1992).
-138,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-36,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"In fact, rthas inﬁnite
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-35,time_series,another_lookat_measures_of_forecast_accuracy.pdf,(1992).
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-36,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"In fact, rthas inﬁnite
 variance because e¤
 thas positive probability density at 0.
 One common special case is when et
 and e¤
 tare normally distributed, in which case rthas a Cauchy distribution."
-139,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-37,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Instead, we propose that the mean absolute scaled error become the standard measure for
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-37,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Instead, we propose that the mean absolute scaled error become the standard measure for
 comparing forecast accuracy across multiple time series.
 Keywords: forecast accuracy, forecast evaluation, forecast error measures, M-competition, mean
 absolute scaled error.
@@ -5995,24 +5995,24 @@ the M3 competition, and then averaged across all series.
 We propose that scaled errors become the standard measure for forecast accuracy, where the
 forecast error is scaled by the in-sample mean absolute error obtained using the na ¨ıve forecast-Another look at measures of forecast accuracy 16
 ing method."
-140,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-38,time_series,another_lookat_measures_of_forecast_accuracy.pdf,We do not distinguish these scenarios in this paper.
-141,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-39,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The cause of the problems with M3 series N0472 is the occurrence
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-38,time_series,another_lookat_measures_of_forecast_accuracy.pdf,We do not distinguish these scenarios in this paper.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-39,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The cause of the problems with M3 series N0472 is the occurrence
 of consecutive observations taking the same value, something that occurs very often with real
 data."
-142,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-40,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"A third scenario arises when we wish to compare the
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-40,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"A third scenario arises when we wish to compare the
 accuracy of methods across many series at a single forecast horizon."
-143,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-41,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"We use the notation mean (xt)to denote the sample mean of fxtgover the period of interest
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-41,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"We use the notation mean (xt)to denote the sample mean of fxtgover the period of interest
 (or over the series of interest).
 Analogously, we use median (xt)for the sample median and
 gmean (xt)for the geometric mean."
-144,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-42,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Hyndman & Billah (2003) demonstrated that this method
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-42,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Hyndman & Billah (2003) demonstrated that this method
 is equivalent to simple exponential smoothing (SES) with drift where the drift is half the value
 of the slope of a linear regression ﬁtted to the data."
-145,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-43,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"We
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-43,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"We
 do not include those here as they are dependent on the number of methods being considered.
 Again, such measures are not included here as they do not indicate the size of the
 errors."
-146,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-44,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"For seasonal data,
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-44,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"For seasonal data,
 the “na ¨ıve2” method is sometimes used for comparison; this gives forecasts based on the last
 observation adjusted for seasonality using classical decomposition (Makridakis, Wheelwright
 and Hyndman, 1998).
@@ -6041,10 +6041,10 @@ MAKRIDAKIS , S., W HEELWRIGHT , S., and HYNDMAN , R.J. (1998) Forecasting: metho
 plications , 3rd ed., John Wiley & Sons: New York.
 THEIL , H. (1966) Applied economic forecasting .
 (2002) Analysis of ﬁnancial time series , John Wiley & Sons: New York."
-147,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-45,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"International J. Fore-
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-45,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"International J. Fore-
 casting , 18(3), 439–454."
-148,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-46,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Rand McNally: Chicago, IL."
-149,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-47,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Working Paper 6/05, Department of Econometrics and
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-46,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Rand McNally: Chicago, IL."
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-47,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Working Paper 6/05, Department of Econometrics and
 Business Statistics, Monash University, Australia.
 Center for Population Studies, University of Mississippi.
 Accessed 18 May 2005.
@@ -6052,21 +6052,21 @@ http://www.olemiss.edu/depts/population studies/WorkingPapers.html
 COLLOPY , F.,and ARMSTRONG , J.S.
 (2000) A note on the measurement of accuracy
 for subnational demographic estimates."
-150,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-48,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"This inappropriate
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-48,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"This inappropriate
 use of the MSE was widely criticized (e.g., Chatﬁeld, 1988; Armstrong and Collopy, 1992)."
-151,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-49,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-49,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The
 relative measures are all computed relative to a na ¨ıve (random walk) method.
 The random walk or “na ¨ıve” method (where Ftis equal to the last observation) is the most
 common benchmark method for such calculations, although another frequently used possibil-
 ity is the mean method (where Ftis equal to the mean of all observations).
 A related approach is to use the percentage of forecasts for which a given method is more
 accurate than the random walk."
-152,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-50,time_series,another_lookat_measures_of_forecast_accuracy.pdf,An advantage of these methods is their interpretability.
-153,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-51,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Example (b): ten years of monthly log stock
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-50,time_series,another_lookat_measures_of_forecast_accuracy.pdf,An advantage of these methods is their interpretability.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-51,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Example (b): ten years of monthly log stock
 returns for the Walt Disney Corporation, 1990–1999.
 Example (c):
 three years of monthly sales of a lubricant product sold in large containers."
-154,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-52,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"These three series are not degenerate or unusual—
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-52,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"These three series are not degenerate or unusual—
 intermittent demand data often contain zeros and many time series of interest to forecastersAnother look at measures of forecast accuracy 7
 take negative observations.
 These measures have the disadvantage of being inﬁnite or undeﬁned if Yt=0 for any tin
@@ -6076,22 +6076,22 @@ Where the data involves small counts (which is common with intermittent demand d
 Gardner, 1990) it is impossible to use these measures as occurrences of zero values of Ytoccur
 frequently.
 However, ever there if Ytis close to zero, Ftis also likely to be close to zero."
-155,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-53,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Telephone: +61{3{9905{2358
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-53,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Telephone: +61{3{9905{2358
 Email: Rob.Hyndman@buseco.monash.edu
 Anne B Koehler
 Department of Decision Sciences & Management Information Systems
 Miami University
 Oxford, Ohio 45056, USA."
-156,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-54,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Working paper.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-54,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Working paper.
 Manage-
 ment Science ,36, 490–499."
-157,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-55,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Nikolopoulos, 2000) does very well."
-158,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-56,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The HKSG method uses the state space modelling approach of Hyndman, Koehler,
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-55,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Nikolopoulos, 2000) does very well."
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-56,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The HKSG method uses the state space modelling approach of Hyndman, Koehler,
 Snyder and Grose (2002), but only including the additive models.
 All methods were participants
 in the M3-competition except for HKSG which is based on the method of Hyndman, Koehler, Snyder and
 Grose (2002)."
-159,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-57,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Most textbooks recommend the use of
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-57,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Most textbooks recommend the use of
 the MAPE (e.g., Hanke and Reitsch, 1995, p.120, and Bowerman, O’Connell & Koehler, 2004,
 p.18) and it was the primary measure in the M-competition (Makridakis, et al., 1982).
 In con-
@@ -6101,11 +6101,11 @@ The MAPE and MdAPE also have the disadvantage that they put a heavier penalty on
 errors than on negative errors.
 If all data are positive and much greater than zero, the MAPE may still be
 preferred for reasons of simplicity."
-160,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-58,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Armstrong and Collopy (1992) recommend the use of “winsorizing” to trim extreme values.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-58,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Armstrong and Collopy (1992) recommend the use of “winsorizing” to trim extreme values.
 This will avoid the difﬁculties associated with small values of e¤
 t, but adds some complexity to
 the calculation and a level of arbitrariness as the amount of trimming must be speciﬁed."
-161,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-59,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Rather, we simply look at ways of sum-
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-59,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Rather, we simply look at ways of sum-
 marizing forecast accuracy assuming that we have mforecasts and that we observe the data at
 each forecast period.
 One common situation where it is not possible to use such measures is where one
@@ -6122,49 +6122,49 @@ usually the na ¨ıve method.
 Relative measures can only be com-
 puted when there are several forecasts on the same series, and so cannot be used to measure
 out-of-sample forecast accuracy at a single forecast horizon."
-162,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-60,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"In particular, we do not recommend the use of any of the measures
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-60,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"In particular, we do not recommend the use of any of the measures
 that were used in the M-competition and the M3-competition."
-163,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-61,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Further, these measures are not as “symmet-
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-61,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Further, these measures are not as “symmet-
 ric” as their name suggests."
-164,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-62,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Diebold, 2001, gives some examples of suitable asymmetric functions.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-62,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Diebold, 2001, gives some examples of suitable asymmetric functions.
 GOODWIN , P., and LAWTON , R. (1999) On the asymmetry of the symmetric MAPE."
-165,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-63,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"While this has some nice statistical
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-63,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"While this has some nice statistical
 properties, it is not so easily interpreted which is possibly why it has not been widely used.
 The only circumstance under which these measures would be inﬁnite or undeﬁned
 is when allhistorical observations are equal.
 This is widely applicable, and is always deﬁned and ﬁnite except in the irrelevant
 case where all historical data are equal.
 Of course, there will be situations where some of the existing measures may still be preferred."
-166,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-64,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Kluwer Academic
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-64,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Kluwer Academic
 Publishers: Norwell, MA."
-167,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-65,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"However, they both have problems."
-168,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-66,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Di-
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-65,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"However, they both have problems."
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-66,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Di-
 vision by numbers close to zero also results in very large numbers.
 Thus, the measure
 still involves division by a number close to zero."
-169,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-67,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The forecasts may be computed from a common base time, and be of varying
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-67,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"The forecasts may be computed from a common base time, and be of varying
 forecast horizons.
 Alternatively, the forecasts may be from varying base times, and be of a
 consistent forecast horizon.
 However, they require several forecasts on the same series to enable a MAE (or MSE) to be
 computed."
-170,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-68,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"However, this is an
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-68,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"However, this is an
 artiﬁcial solution that is impossible to apply in practical situations."
-171,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-69,time_series,another_lookat_measures_of_forecast_accuracy.pdf,Updated October 2000.
-172,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-70,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"We provide our own recommendations of what should be used in
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-69,time_series,another_lookat_measures_of_forecast_accuracy.pdf,Updated October 2000.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-70,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"We provide our own recommendations of what should be used in
 empirical comparisons."
-173,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-71,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"When RelMAE <1, the proposed method is better than the benchmark method
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-71,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"When RelMAE <1, the proposed method is better than the benchmark method
 and when RelMAE >1, the proposed method is worse than the benchmark method.
 When MASE <1, the proposed method gives, on average, smaller errors than the one-step
 errors from the na ¨ıve method."
-174,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-72,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"To our knowledge, the MASE has not been proposed before."
-175,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-73,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Thus, we may compute out-of-sample forecasts Fn+1,.
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-72,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"To our knowledge, the MASE has not been proposed before."
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-73,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"Thus, we may compute out-of-sample forecasts Fn+1,.
 That is, we may compute forecasts F1+h,.
 The in-sample forecasts in the examples above were
 based on the second scenario with h=1."
-176,d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-74,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"This equivalence does not seem to have been noticed by any of the
+d0c311c5cbe30c3cc008b9e54d1f6d107078ef0e30d18760d77f62d479c33268-74,time_series,another_lookat_measures_of_forecast_accuracy.pdf,"This equivalence does not seem to have been noticed by any of the
 discussants in the commentary by Ahlburg et al."
-177,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-1,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Dan Hendrycks, Collin Burns, Anya Chen, and Spencer Ball.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-1,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Dan Hendrycks, Collin Burns, Anya Chen, and Spencer Ball.
 Evan Hernandez, Belinda Z Li, and Jacob Andreas.
 Jungo Kasai, Keisuke Sakaguchi, Yoichi Takahashi, Ronan Le Bras, Akari Asai, Xinyan Yu, Dragomir
 Radev, Noah A Smith, Yejin Choi, and Kentaro Inui.
@@ -6178,7 +6178,7 @@ Vered Shwartz, Peter West, Ronan Le Bras, Chandra Bhagavatula, and Yejin Choi.
 Robyn Speer, Joshua Chin, and Catherine Havasi.
 Rowan Zellers, Ari Holtzman, Hannah Rashkin, Yonatan Bisk, Ali Farhadi, Franziska Roesner, and
 Yejin Choi."
-178,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-2,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In International Conference on Learning Representations , 2018.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-2,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In International Conference on Learning Representations , 2018.
 In International Conference on
 Learning Representations , 2020.
 In International Conference on Learning Representations , 2019.
@@ -6199,12 +6199,12 @@ In The Eleventh International Conference on Learning Representations , 2022.
 In The Eleventh International Conference on Learning Representations , 2022.
 In International
 conference on learning representations , 2021."
-179,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-3,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"For example, grade school students
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-3,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"For example, grade school students
 might expect LLMs to be absolutely factual about knowledge and information in common textbooks,
 NLP researchers might expect LLMs to have a basic understanding of current NLP research, cooking
 amateurs might expect LLMs to understand the basic recipes and cuisines for different occasions,
 and more."
-180,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-4,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,".
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-4,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,".
 .
 .
 .
@@ -6231,7 +6231,7 @@ and more."
 .
 .
 ."
-181,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-5,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In Proceedings of the 2020 Conference on Empirical Methods in
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-5,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In Proceedings of the 2020 Conference on Empirical Methods in
 Natural Language Processing (EMNLP) , pp.
 In
 Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing , pp.
@@ -6260,7 +6260,7 @@ In Proceedings of the 2020 conference on empirical methods in
 natural language processing: system demonstrations , pp.
 In
 Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing , pp."
-182,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-6,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Bottom-Up Approach Bottom-up starts by prompting available knowledge cards, then progres-
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-6,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Bottom-Up Approach Bottom-up starts by prompting available knowledge cards, then progres-
 sively goes through the three knowledge selectors, and these outputs are incorporated into the LLM
 via the prompt context.
 Knowledge Stream Analysis Inbottom-up , three hyperparameters (§2.3) govern the “knowledge
@@ -6269,7 +6269,7 @@ One straightforward way to combine the two knowledge
 integration approaches would be: in each step of top-down, the LLM proposes multiple knowledge
 cards as candidates, then employs the bottom-up approach with the pool of these knowledge cards for
 knowledge generation."
-183,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-7,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,", sn”.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-7,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,", sn”.
 IIS2142739, NSF Grants
 No.
 2931–2937, 2017.
@@ -6280,7 +6280,7 @@ A. Jan McDowell B. Beth Van Duyne
 Answer : B
 //four-way setting
 Question : Who won the 6th congressional district of Pennsylvania in the 2022 U.S. midterm elections?"
-184,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-8,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"sports
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-8,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"sports
 Factuality Selector
 Knowledge : Tom Brady returned to his hometown of San Mateo, CA .
 Answer : Answer : Knowledge: Tom 
@@ -6291,7 +6291,7 @@ Tom Brady returned to his hometown of San Mateo .
 Knowledge :Tom Brady returned to his hometown of San Mateo, CA .
 sports
 Knowledge :Tom Brady returned to his hometown of San Mateo, CA ."
-185,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-9,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"KNOWL -
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-9,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"KNOWL -
 EDGE CARD successfully updates the knowledge
 of Codex by adding a single knowledge card.Tasks and Datasets 1) For general-purpose
 QA, we adopt MMLU (Hendrycks et al., 2020),
@@ -6329,7 +6329,7 @@ STEM, and others.
 22Published as a conference paper at ICLR 2024
 Algorithm 1: Bottom-Up Approach
 Data: question q; in-context examples prompt sicl; knowledge cards C={spec1, ."
-186,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-10,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Modular LMs Mixture-of-Experts (MoE) (Masoudnia & Ebrahimpour, 2014) aims to activate one
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-10,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Modular LMs Mixture-of-Experts (MoE) (Masoudnia & Ebrahimpour, 2014) aims to activate one
 expert based on the input instance, which has been adopted in language model research (Gururangan
 et al., 2022; Roller et al., 2021; Lewis et al., 2021; Kudugunta et al., 2021; Pfeiffer et al., 2022).
 One billion word benchmark for measuring progress in statistical language modeling.
@@ -6344,7 +6344,7 @@ Nonparametric masked language modeling.
 Lifting the curse of multilinguality by pre-training modular transformers.
 Bitfit: Simple parameter-efficient fine-tuning
 for transformer-based masked language-models."
-187,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-11,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"6Published as a conference paper at ICLR 2024
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-11,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"6Published as a conference paper at ICLR 2024
 + BookCorpus + PubMed + IMDB + News + Wikipedia+1.0+2.0+3.0ACC
 + BookCorpus + PubMed + IMDB + News + Wikipedia+1.0+2.0Balanced ACC
 Figure 2: Performance on misinformation de-
@@ -6385,7 +6385,7 @@ prompts for the bottom-up approach, and the top-
 down approach with automatic and explicit selection
 in Tables 9, 10, and 11 respectively.
 Different knowledge cards dohave varying factuality score distributions."
-188,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-12,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Specifically, we evaluate the factuality of knowledge documents with two measures.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-12,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Specifically, we evaluate the factuality of knowledge documents with two measures.
 We first evaluate summarization factuality , ensuring that the pruned version ˜difactually captures the
 important points in the original di.
 Concretely, we adopt factuality evaluation models (Kry ´sci´nski
@@ -6468,7 +6468,7 @@ opensubtitles
 twitter
 Figure 9: Factuality score distributions of the 25 knowledge cards when prompted with questions in
 the MMLU benchmark."
-189,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-13,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Formally, we retain
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-13,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Formally, we retain
 diifi∈top-kj(sim(enc( dj),enc(q)))where top-k is the top- kargmax operation.
 arXiv preprint arXiv:1312.3005 , 2013.
 arXiv preprint arXiv:2107.03374 , 2021.
@@ -6504,7 +6504,7 @@ arXiv preprint arXiv:2205.01068 , 2022.
 arXiv preprint
 arXiv:2307.10442 , 2023.
 arXiv preprint arXiv:2206.10128 , 2022."
-190,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-14,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Existing works propose addressing these limitations through retrieval
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-14,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Existing works propose addressing these limitations through retrieval
 augmentation or generated knowledge prompting.
 We adopt a separate encoder-based LM enc(·)that maps a token
 sequence to a feature vector and cosine similarity sim(·,·)to measure relevance.
@@ -6543,7 +6543,7 @@ Aligning books and movies: Towards story-like visual explanations by watching
 movies and reading books.
 Bridging the gap between indexing and retrieval for differentiable search index with query
 generation."
-191,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-15,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Oshin Agarwal, Heming Ge, Siamak Shakeri, and Rami Al-Rfou.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-15,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Oshin Agarwal, Heming Ge, Siamak Shakeri, and Rami Al-Rfou.
 Suchin Gururangan, Mike Lewis, Ari Holtzman, Noah A Smith, and Luke Zettlemoyer.
 Nikhil Kandpal, Haikang Deng, Adam Roberts, Eric Wallace, and Colin Raffel.
 Hamid Karimi, Proteek Roy, Sari Saba-Sadiya, and Jiliang Tang.
@@ -6551,7 +6551,7 @@ Mike Lewis, Shruti Bhosale, Tim Dettmers, Naman Goyal, and Luke Zettlemoyer.
 Adam Roberts, Colin Raffel, and Noam Shazeer.
 Alireza Salemi, Sheshera Mysore, Michael Bendersky, and Hamed Zamani.
 Taylor Shin, Yasaman Razeghi, Robert L Logan IV , Eric Wallace, and Sameer Singh."
-192,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-16,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We design three respective selectors to control for such factors.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-16,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We design three respective selectors to control for such factors.
 We provide prompt examples in Tables 10 and 11 in the Appendix.
 BAcc and MaF are balanced accu-
 racy and macro F1.
@@ -6560,7 +6560,7 @@ the three selectors all contribute to model perfor-
 mance, the factuality selector is most crucial.
 We investigate these control measures
 and report performance in Figure 4."
-193,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-17,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"5Published as a conference paper at ICLR 2024
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-17,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"5Published as a conference paper at ICLR 2024
 Type Model Human.
 (2022), RePlug, and RePlug LSR (Shi et al., 2023).
 10Published as a conference paper at ICLR 2024
@@ -6584,7 +6584,7 @@ ning, and Jure Leskovec.
 17Published as a conference paper at ICLR 2024
 A D ISCUSSION
 Modularity at every turn."
-194,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-18,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Advances
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-18,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Advances
 in Neural Information Processing Systems , 35:31668–31683, 2022.
 Advances in Neural Information Processing Systems , 33:
 9459–9474, 2020.
@@ -6600,7 +6600,7 @@ In Advances
 in Neural Information Processing Systems .
 Advances in neural information processing
 systems , 32, 2019."
-195,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-19,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"9Published as a conference paper at ICLR 2024
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-19,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"9Published as a conference paper at ICLR 2024
 ACKNOWLEDGEMENTS
 We thank the reviewers, the area chair, members of Tsvetshop, and the UW NLP Group for their feed-
 back.
@@ -6610,14 +6610,14 @@ In Findings of the Association for
 Computational Linguistics: ACL 2023 , pp.
 In Findings of the Association for Computational
 Linguistics: ACL 2022 , pp."
-196,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-20,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Do you need more information?
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-20,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Do you need more information?
 (Yes or No)
 Yes
 What kind of information do you need?
 Do you need more information?
 Do you need more information?
 Do you need more information?"
-197,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-21,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Eugene Bagdasaryan and Vitaly Shmatikov.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-21,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Eugene Bagdasaryan and Vitaly Shmatikov.
 Alexander Borzunov, Dmitry Baranchuk, Tim Dettmers, Max Ryabinin, Younes Belkada, Artem
 Chumachenko, Pavel Samygin, and Colin Raffel.
 Steve Cayzer.
@@ -6640,7 +6640,7 @@ Ohad Rubin, Jonathan Herzig, and Jonathan Berant.
 David Saxton, Edward Grefenstette, Felix Hill, and Pushmeet Kohli.
 Denny Vrande ˇci´c and Markus Kr ¨otzsch.
 Elad Ben Zaken, Yoav Goldberg, and Shauli Ravfogel."
-198,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-22,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Wenhu Chen, Yu Su, Xifeng Yan, and William Yang Wang.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-22,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Wenhu Chen, Yu Su, Xifeng Yan, and William Yang Wang.
 Shangbin Feng, Zilong Chen, Wenqian Zhang, Qingyao Li, Qinghua Zheng, Xiaojun Chang, and
 Minnan Luo.
 Shangbin Feng, Vidhisha Balachandran, Yuyang Bai, and Yulia Tsvetkov.
@@ -6663,7 +6663,7 @@ Xinran Zhao, Hongming Zhang, Xiaoman Pan, Wenlin Yao, Dong Yu, and Jianshu Chen.
 Zexuan Zhong, Tao Lei, and Danqi Chen.
 Shengyao Zhuang, Houxing Ren, Linjun Shou, Jian Pei, Ming Gong, Guido Zuccon, and Daxin
 Jiang."
-199,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-23,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde de Oliveira Pinto, Jared
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-23,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde de Oliveira Pinto, Jared
 Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph, Greg Brockman, et al.
 Shangbin Feng, Zhaoxuan Tan, Herun Wan, Ningnan Wang, Zilong Chen, Binchi Zhang, Qinghua
 Zheng, Wenqian Zhang, Zhenyu Lei, Shujie Yang, et al.
@@ -6682,7 +6682,7 @@ Wenhao Yu, Dan Iter, Shuohang Wang, Yichong Xu, Mingxuan Ju, Soumya Sanyal, Chen
 Michael Zeng, and Meng Jiang.
 Susan Zhang, Stephen Roller, Naman Goyal, Mikel Artetxe, Moya Chen, Shuohui Chen, Christopher
 Dewan, Mona Diab, Xian Li, Xi Victoria Lin, et al."
-200,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-24,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"yes no1,290 498
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-24,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"yes no1,290 498
 1,140 71auto: 2-way
 314 171
 1,576 938auto: 4-way
@@ -6709,7 +6709,7 @@ It is demonstrated that LLMs give moderately
 consistent responses: 79.9% of cases received unanimous yes or
 no from the three prompts, while 20.1% examples received mixed
 results."
-201,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-25,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We encourage better-calibrated answers to the yes/no question through
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-25,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We encourage better-calibrated answers to the yes/no question through
 in-context learning (Wei et al.
 5-shot in-context learning is adopted to evaluate KNOWLEDGE CARD and baselines.
 Baselines We compare KNOWLEDGE CARD with a wide range of baseline methods in three
@@ -6749,7 +6749,7 @@ sans=LLM (PROMPT )
 return sans
 Algorithm 2: Top-Down Approach
 Data: question q; in-context examples prompt sicl; knowledge cards C={spec1, ."
-202,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-26,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Knowledge is
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-26,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Knowledge is
 collaborative (Cayzer, 2004): LLMs should be able to represent and incorporate diverse and evolving
 knowledge, from multi-faceted sources and perspectives, while enabling collaborative contribution
 from various stakeholders.
@@ -6766,7 +6766,7 @@ cards on their desired knowledge source to KNOWLEDGE CARD, expanding the knowled
 general-purpose LLMs through community-driven efforts.
 In Workshop on Broadening Research Collaborations 2022 , 2022.
 Semantic blogging and decentralized knowledge management."
-203,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-27,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"PMLR, 2022.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-27,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"PMLR, 2022.
 PMLR, 2020.
 PMLR, 2019.
 PMLR, 2023.
@@ -6775,7 +6775,7 @@ PMLR, 2017.
 PMLR,
 2022.
 PMLR, 2020."
-204,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-28,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"sports
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-28,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"sports
 biomedical literature
 NLP papers
 book corpusChoose an information 
@@ -6795,7 +6795,7 @@ Springer, 2009.
 (Yes or No)
 Yes
 Choose an information source from the following: sports, biomedical literature, NLP papers, book corpus."
-205,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-29,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Ultimately, KNOWLEDGE CARD framework enables dynamic synthesis
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-29,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Ultimately, KNOWLEDGE CARD framework enables dynamic synthesis
 and updates of knowledge from diverse domains.
 Compared to existing approaches, knowledge cards
 enable flexible and targeted information access, searching over domains, and employing private and
@@ -6814,7 +6814,7 @@ theories and techniques for knowledge modularization , volume 5445.
 However, if KNOWLEDGE
 CARD is adopted for more fine-grained use cases, the “biomedical” domain could be further divided
 into sub-domains and one knowledge card could be trained for each."
-206,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-30,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"This research is supported in part by the Office of the Director of National Intelligence (ODNI),
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-30,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"This research is supported in part by the Office of the Director of National Intelligence (ODNI),
 Intelligence Advanced Research Projects Activity (IARPA), via the HIATUS Program contract #2022-
 22072200004.
 This material is also funded by the DARPA Grant under Contract No.
@@ -6827,7 +6827,7 @@ Computing Surveys , 55(12):1–38, 2023.
 In addition, for other tasks (e.g.
 Computation Resources Details We used a GPU cluster with 16 NVIDIA A40 GPUs, 1988G
 memory, and 104 CPU cores for the experiments."
-207,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-31,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Through extensive experiments, we demonstrate
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-31,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Through extensive experiments, we demonstrate
 thatKNOWLEDGE CARD achieves state-of-the-art performance on six benchmark
 datasets.
 As an increasing amount of powerful LLMs are released behind API
@@ -6852,13 +6852,13 @@ heterogeneity allow for flexibility in knowledge card training: larger and more 
 be trained on large corpora and extensive knowledge domains by compute-rich individuals, while
 smaller knowledge cards trained on small and dedicated domains by computationally underprivileged
 researchers could also help improve black-box LLMs, democratizing LLM research."
-208,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-32,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"top-down is
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-32,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"top-down is
 advantageous in tasks and domains where external knowledge is not always necessary.
 We expect top-down to perform better
 when external knowledge is not always necessary.
 This observation suggests that top-down
 approaches are better at tasks where external knowledge is not always necessary."
-209,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-33,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We leverage the
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-33,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We leverage the
 widely adopted LUN misinformation detection
 dataset (Rashkin et al., 2017) with both 2-way
 and 4-way classification settings.
@@ -6882,7 +6882,7 @@ task in Figure 7.
 2) The LUN dataset (Rashkin et al., 2017) is a misinformation detection dataset
 with two- or four-way classification settings, either with true/false only or fine-grained categories
 of trusted, hoax, propaganda, or satire."
-210,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-34,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Yes or No:Q: Who is the senior senator of 
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-34,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Yes or No:Q: Who is the senior senator of 
 Tom Brady ’s birthplace ?
 Question : Who is 
 the senior senator 
@@ -6893,7 +6893,7 @@ Question : Who is the senior senator of Tom Brady ’s birthplace ?
 Question : Who is the senior senator from Tom Brady’s birth place?
 Question : Who is the senior senator from Tom Brady’s birth place?
 Question : Who is the senior senator from Tom Brady’s birth place?"
-211,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-35,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In addition, parameter averaging (Matena & Raffel, 2022;
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-35,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In addition, parameter averaging (Matena & Raffel, 2022;
 McMahan et al., 2017; Izmailov et al., 2018; Wortsman et al., 2022; Li et al., 2022; Gururangan et al.,
 2023), model fusion (Don-Yehiya et al., 2022; Borzunov et al., 2022), continual learning (Jang et al.,
 2021; Qin et al., 2022; Ke et al., 2022; Qin et al., 2023), and other collaborative approaches (K ¨opf
@@ -6915,7 +6915,7 @@ inference time.
 While existing modular LM proposals often require modular
 sub-models to be of the same size and architecture for parameter averaging and model fusion (Li
 et al., 2022), the knowledge cards in this work could be fully heterogeneous."
-212,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-36,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"2206–2240.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-36,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"2206–2240.
 933–952, Singapore, December 2023a.
 2116–2138, July 2023c.
 5557–5576, 2022.
@@ -6935,7 +6935,7 @@ et al., 2022), the knowledge cards in this work could be fully heterogeneous."
 1–9, 2022.
 5657–5673, 2022.
 25"
-213,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-37,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Following Kadavath et al.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-37,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Following Kadavath et al.
 Sebastian Borgeaud, Arthur Mensch, Jordan Hoffmann, Trevor Cai, Eliza Rutherford, Katie Millican,
 George Bm Van Den Driessche, Jean-Baptiste Lespiau, Bogdan Damoc, Aidan Clark, et al.
 Communications of the
@@ -6967,7 +6967,7 @@ Communica-
 tions of the ACM , 57(10):78–85, 2014.
 Mitchell Wortsman, Gabriel Ilharco, Samir Ya Gadre, Rebecca Roelofs, Raphael Gontijo-Lopes,
 Ari S Morcos, Hongseok Namkoong, Ali Farhadi, Yair Carmon, Simon Kornblith, et al."
-214,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-38,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Published as a conference paper at ICLR 2024
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-38,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Published as a conference paper at ICLR 2024
 KNOWLEDGE CARD: FILLING LLM S’ KNOWLEDGE GAPS
 WITH PLUG-INSPECIALIZED LANGUAGE MODELS
 Shangbin Feng1Weijia Shi1Yuyang Bai2
@@ -6988,7 +6988,7 @@ Red teaming language models with language models.
 Lamp: When large
 language models meet personalization.
 Thrust: Adaptively propels large language models with external knowledge."
-215,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-39,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-39,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In
 the third task, to evaluate the ability to update the knowledge of general-purpose LLMs, we curate
 MIDTERM QA, a QA dataset focusing on the 2022 U.S. midterm elections while the knowledge
 cutoff of LLMs is generally 2021 or earlier.
@@ -7044,7 +7044,7 @@ to choose the winner from the two front runners, and c) four-way, where we incre
 by including two other politicians contesting in the same state to create a distraction.
 We present
 examples of the MidtermQA dataset in Table 8."
-216,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-40,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Generated knowledge prompting
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-40,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Generated knowledge prompting
 approaches (Shin et al., 2020; Liu et al., 2022a; Sun et al., 2022) prompt LLMs to incorporate and
 generate contextual documents to encourage knowledge-aware generation.
 1Published as a conference paper at ICLR 2024
@@ -7078,7 +7078,7 @@ are occasionally over-confident about their knowledge capabilities.
 We leave it to future work on
 designing better strategies for LLMs to abstain, acknowledge knowledge limitations, and seek help
 from external information sources."
-217,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-41,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"These specialized LMs are later prompted to generate background
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-41,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"These specialized LMs are later prompted to generate background
 information to support general-purpose LLMs.
 We use Codex
 (CODE -DAVINCI -002) (Chen et al., 2021) as the default, general-purpose, black-box LLM.
@@ -7107,7 +7107,7 @@ EDGE CARD also works with TEXT -DAVINCI -003 and GPT-3.5- TURBO (§5) and could 
 adapted to future LLMs.
 Different color boxes indicate knowledge
 documents generated by different specialized LMs."
-218,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-42,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Its modularity will ensure that
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-42,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Its modularity will ensure that
 relevant knowledge can be continuously updated through the collective efforts of
 the research community.1
 1 I NTRODUCTION
@@ -7131,7 +7131,7 @@ language models and corresponding defense tactics (Bagdasaryan & Shmatikov, 2022
 2022) could be integrated to alleviate the impact of malicious knowledge cards; on the social side, we
 could rely on and reinforce the existing rules for model sharing on popular infrastructures (Wolf et al.,
 2020) to prevent such malicious contribution from happening."
-219,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-43,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We then
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-43,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We then
 propose three content selectors to dynamically select and retain information in
 documents generated by knowledge cards, specifically controlling for relevance ,
 brevity , and factuality of outputs.
@@ -7311,7 +7311,7 @@ high school chemistry0.71.40.713.8 1.40.00.00.00.70.00.70.01.40.70.00.70.70.00.0
 0.50.00.020.2 7.40.00.00.50.00.50.00.00.01.00.00.00.00.00.00.00.064.5 0.05.4
 Figure 8: Statistics of knowledge card selection in the top-down approach with automatic selection
 across 57 sub-tasks in the MMLU benchmark."
-220,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-44,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Knowledge cards serve as parametric repositories that are selected
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-44,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Knowledge cards serve as parametric repositories that are selected
 at inference time to generate background knowledge for the base LLM.
 Specifically, the bottom-up approach starts by prompting all
 knowledge cards to generate multiple documents, then performs selection with the three knowledge
@@ -7358,7 +7358,7 @@ Upon obtaining the document, we append “ Knowledge: d” to the LLM context.
 In this way, the top-down approach enables LLMs
 to take charge in identifying their inherent knowledge limitations and seeking help from external
 knowledge cards proactively."
-221,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-45,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In Proceedings of the
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-45,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In Proceedings of the
 2021 Conference of the North American Chapter of the Association for Computational Linguistics:
 Human Language Technologies , pp.
 In Proceedings of the 2022 Conference of
@@ -7382,7 +7382,7 @@ Transformers: State-of-the-art
 natural language processing.
 (2023a) to construct textual
 corpora and use them as training data."
-222,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-46,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Please provide the 
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-46,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Please provide the 
 state Tom Brady is 
 from.What kind of 
 information do you 
@@ -7396,9 +7396,9 @@ Please provide the
 state Tom Brady is 
 from.
 The state Tom Brady is from."
-223,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-47,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"The U.S. Government is authorized to reproduce and distribute reprints for governmental purposes
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-47,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"The U.S. Government is authorized to reproduce and distribute reprints for governmental purposes
 notwithstanding any copyright annotation therein."
-224,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-48,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Both bottom-up andtop-down consistently improve different
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-48,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Both bottom-up andtop-down consistently improve different
 LLMs across various datasets and evaluation metrics.
 Recent advances incorporated frozen (Mallen et al., 2023; Si et al., 2022; Khattab
 et al., 2022) and trainable retrievers (Shi et al., 2023) as well as search engines (Press et al., 2022)
@@ -7406,7 +7406,7 @@ to augment LLMs.
 Transformer memory as a differentiable search index.
 For the black-box LLMs, we used the OpenAI
 API to access CODE -DAVINCI -002, TEXT -DAVINCI -003, and GPT-3.5- TURBO in the experiments."
-225,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-49,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We first ask the LLM a yes/no question to determine
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-49,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We first ask the LLM a yes/no question to determine
 whether external knowledge is needed for the given query q, specifically “ Do you need more
 information?
 (Yes or No) ”.
@@ -7433,7 +7433,7 @@ tent across three prompt tem-
 plates, while there is space for
 improvement in future work.Yes/No Template Sensitivity In the top-down approach, we
 prompt LLMs with “ Do you need more information?"
-226,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-50,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In 2022 IEEE Symposium on Security and Privacy (SP) , pp.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-50,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In 2022 IEEE Symposium on Security and Privacy (SP) , pp.
 In International conference on
 machine learning , pp.
 In International conference on machine learning , pp.
@@ -7463,7 +7463,7 @@ E E XPERIMENT DETAILS
 Algorithm Details We present an algorithmic sum-
 mary of the bottom-up andtop-down approach in
 Algorithm 1 and 2."
-227,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-51,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,".Yes No
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-51,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,".Yes No
 auto selection exp selection
 general -purpose LLM
 Bottom -Up Bottom -Up Top-Down Top-DownChoose an information 
@@ -7484,7 +7484,7 @@ Table 10: Prompt example for the top-down approach with automatic selection.
 No
 Answer :
 Table 11: Prompt example for the top-down approach with explicit selection."
-228,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-52,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Finally, we propose two complementary integra-
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-52,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Finally, we propose two complementary integra-
 tion approaches to augment the base LLM with the (relevant, factual) knowledge
 curated from the specialized LMs.
 The lack of knowledge modularity has made gener-
@@ -7509,7 +7509,7 @@ However, this line of work assumes that the encoded knowledge
 in LLM parameters is all we need, while LLM knowledge suffers from hallucination (Ji et al., 2023),
 struggles to encode long-tail facts (Mallen et al., 2023), and can not be efficiently updated (De Cao
 et al., 2021)."
-229,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-53,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We first introduce knowledge
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-53,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We first introduce knowledge
 cards —specialized language models trained on corpora from specific domains
 and sources.
 We first
@@ -7575,7 +7575,7 @@ et al., 2017), biomedical knowledge graph UMLS (Zhang et al., 2021), Gutenberg (
 Question : Who won the senate race of Oregon in the 2022 U.S. midterm elections?
 Training knowledge cards took from around 7 hours
 to 10 days depending on the training corpora size."
-230,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-54,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Social STEM Other All
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-54,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Social STEM Other All
 Vanilla LMCODEX 74.2 76.9 57.8 70.1 68.3
 PALM 77.0 81.0 55.6 69.6 69.3
 FLAN-PALM - - - - 72.2
@@ -7638,21 +7638,21 @@ demonstrates that for most tasks knowledge selection exhibits spike-like pattern
 corpora and encyclopedic knowledge graphs, suggesting that the majority of tasks have a few clearly
 relevant knowledge cards.
 For knowledge graphs, we follow Feng et al."
-231,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-55,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Adapters are also proposed for task transfer and parameter-efficient fine-tuning (Houlsby et al., 2019;
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-55,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Adapters are also proposed for task transfer and parameter-efficient fine-tuning (Houlsby et al., 2019;
 Pfeiffer et al., 2020; Zaken et al., 2022).
 Mass-editing
 memory in a transformer.
 Mad-x: An adapter-based framework
 for multi-task cross-lingual transfer.
 Recyclable tuning for continual pre-training."
-232,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-56,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Nearest neighbor zero-shot
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-56,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Nearest neighbor zero-shot
 inference."
-233,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-57,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In addition,
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-57,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In addition,
 hyperparameters n1,n2, andn3enable fine-grained control over the knowledge synthesis process.
 These hyperparameters enable fine-
 grained control over the knowledge synthesis process.
 Hyperparameters We present hyperparameter settings in Table 6."
-234,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-58,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"For misinformation analysis that tests
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-58,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"For misinformation analysis that tests
 multi-domain knowledge integration, KNOWLEDGE CARD outperforms all baseline approaches by
 at least 15.8% and 10.0% balanced accuracy scores on two- and four-way classification settings.
 2) To evaluate multi-domain
@@ -7680,7 +7680,7 @@ shades: Analyzing language in fake news and political fact-checking.
 Detecting spoilers in movie reviews with external movie knowledge and user
 networks.
 The factuality selector is biased towards information-rich domains and existing knowledge."
-235,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-59,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"For
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-59,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"For
 general-purpose knowledge QA ,KNOWLEDGE CARD improves Codex performance by 6.6% on
 MMLU and even outperforms the 3-times larger Flan-PaLM.
 As shown in Table 1, all three configurations of KNOWLEDGE CARD significantly improve
@@ -7693,7 +7693,7 @@ knowledge card with 1.3B parameters successfully updates the parametric knowledg
 Codex through KNOWLEDGE CARD.
 To this end, we evaluate the change in performance when five
 knowledge cards are separately added to augment Codex with the top-down approach."
-236,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-60,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Transactions of
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-60,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Transactions of
 the Association for Computational Linguistics , 10:257–273, 2022.
 Association for Computational Linguistics.
 In
@@ -7724,7 +7724,7 @@ Linguistics , pp.
 Transactions of the Association for Computational Linguistics , 9:176–194, 2021.
 In Proceedings of the 60th Annual Meeting of the
 Association for Computational Linguistics (Volume 2: Short Papers) , pp."
-237,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-61,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Leo Gao, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang,
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-61,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Leo Gao, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang,
 Horace He, Anish Thite, Noa Nabeshima, et al.
 Suchin Gururangan, Margaret Li, Mike Lewis, Weijia Shi, Tim Althoff, Noah A Smith, and Luke
 Zettlemoyer.
@@ -7751,7 +7751,7 @@ Peter West, Chandra Bhagavatula, Jack Hessel, Jena Hwang, Liwei Jiang, Ronan Le 
 Sean Welleck, and Yejin Choi.
 Yukun Zhu, Ryan Kiros, Rich Zemel, Ruslan Salakhutdinov, Raquel Urtasun, Antonio Torralba, and
 Sanja Fidler."
-238,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-62,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"11737–11762, July 2023b.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-62,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"11737–11762, July 2023b.
 1121–1133, April 2021.
 15696–15707.
 1546–1557, 2018.
@@ -7760,8 +7760,8 @@ Sanja Fidler."
 Springer, 2020.
 11328–11339.
 19–27, 2015."
-239,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-63,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,Prompting gpt-3 to be reliable.
-240,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-64,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Language gans falling short.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-63,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,Prompting gpt-3 to be reliable.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-64,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Language gans falling short.
 Evaluating large
 language models trained on code.
 From pretraining data to language
@@ -7781,12 +7781,12 @@ commonsense models.
 Generate rather than retrieve: Large language models are strong
 context generators.
 Greaselm: Graph reasoning enhanced language models."
-241,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-65,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"The views and
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-65,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"The views and
 conclusions contained herein are those of the authors and should not be interpreted as necessarily rep-
 resenting the official policies, either expressed or implied, of ODNI, IARPA, or the U.S. Government.
 An important risk is the dual use
 and exploitation from malicious actors."
-242,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-66,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"N
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-66,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"N
 B
 GA
 P
@@ -7819,7 +7819,7 @@ Answer :  San Mateo is located in the northwest of California ...
 Dianne Feinstein, the senior senator from California ... Tom BradyKnowledge:
 returned to his hometown of San Mateo ...
 San Mateo is located in the northwest of California ."
-243,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-67,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Michele Bevilacqua, Giuseppe Ottaviano, Patrick Lewis, Scott Yih, Sebastian Riedel, and Fabio
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-67,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Michele Bevilacqua, Giuseppe Ottaviano, Patrick Lewis, Scott Yih, Sebastian Riedel, and Fabio
 Petroni.
 Massimo Caccia, Lucas Caccia, William Fedus, Hugo Larochelle, Joelle Pineau, and Laurent Charlin.
 Gautier Izacard, Patrick Lewis, Maria Lomeli, Lucas Hosseini, Fabio Petroni, Timo Schick, Jane
@@ -7832,20 +7832,20 @@ Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Ant
 Pierric Cistac, Tim Rault, R ´emi Louf, Morgan Funtowicz, et al.
 Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi,
 Pierric Cistac, Tim Rault, R ´emi Louf, Morgan Funtowicz, et al."
-244,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-68,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We follow the official demonstration set and test set
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-68,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We follow the official demonstration set and test set
 in our experiments.
 We use the official test set in (Hu et al., 2021) with 2,999
 examples throughout the experiments."
-245,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-69,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"0, if˜di/∈ Dk.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-69,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"0, if˜di/∈ Dk.
 D A NALYSIS (CONT .)"
-246,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-70,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Retrieval vs.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-70,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Retrieval vs.
 retrieval and search engine) while
 they could be complementary (Appendix A)."
-247,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-71,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Italic texts indicate
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-71,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Italic texts indicate
 that this field is generated by black-box LLMs.
 Italic texts indicate that
 this field is generated by black-box LLMs."
-248,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-72,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"(Yes or No) ”
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-72,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"(Yes or No) ”
 RESPONSE =LLM (PROMPT )
 ifRESPONSE == “Yes” then
 ifAUTO then
@@ -7853,7 +7853,7 @@ PROMPT += “What kind of information do you need?
 ”
 RESPONSE =LLM (PROMPT )
 spec =ϕrel(RESPONSE ,{s1, ."
-249,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-73,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Kgpt: Knowledge-grounded pre-training
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-73,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Kgpt: Knowledge-grounded pre-training
 for data-to-text generation.
 The curious case of neural text
 degeneration.
@@ -7874,12 +7874,12 @@ gap-sentences for abstractive summarization.
 Opt: Open pre-trained transformer language
 models.
 Training language models with memory augmentation."
-250,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-74,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"HR001120C0124.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-74,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"HR001120C0124.
 769–786.
 876–885, 2018.
 6265–6274.
 583–596."
-251,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-75,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Furthermore, only a handful of knowledge cards would be relevant for a given query.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-75,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Furthermore, only a handful of knowledge cards would be relevant for a given query.
 Knowledge cards heterogeneity.
 1) Different knowledge
 cards could have different sizes.
@@ -7895,11 +7895,11 @@ history), it is not clear which knowledge cards would be most helpful, thus the 
 spread-out.
 , specn};
 knowledge card names S={s1, ."
-252,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-76,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"¡in-context examples with the same format¿
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-76,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"¡in-context examples with the same format¿
 ...
 ¡in-context examples with the same format¿
 ..."
-253,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-77,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Specifically, bottom-up activates all available knowledge cards at once and employs the three
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-77,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Specifically, bottom-up activates all available knowledge cards at once and employs the three
 knowledge selectors to control for knowledge quality.
 We expect the bottom-
 up approach to be strong in multi-domain knowledge synthesis since multiple knowledge cards
@@ -7917,7 +7917,7 @@ In addition, top-down outperforms bottom-up , indicating that
 the selective activation of knowledge cards is better when there is a specific knowledge card tied to
 the task domain.
 Combining bottom-up and top-down."
-254,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-78,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Retrieval-augmented LMs (Guu et al., 2020;
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-78,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Retrieval-augmented LMs (Guu et al., 2020;
 Borgeaud et al., 2022; Shi et al., 2023) employ retrieval systems to fetch relevant documents from a
 general and fixed retrieval corpus (e.g., Wikipedia or the Pile (Gao et al., 2020)), leveraging external
 knowledge from non-parametric sources to aid LLM generation.
@@ -7973,18 +7973,18 @@ that LLMs do not need external knowledge for every query (Zhao et al., 2023) and
 (mostly) know what they know (Kadavath et al., 2022), we propose to ask yes/no questions to
 decide whether to activate knowledge cards and encourage well-calibrated answers through in-
 context learning."
-255,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-79,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We then iteratively
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-79,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"We then iteratively
 ask “ Do you need more information?
 We leave further explorations to future work.
 ” and “ Would you like additional
 information?"
-256,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-80,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Following previous works (Si et al., 2022;
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-80,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Following previous works (Si et al., 2022;
 Shi et al., 2023), we adopt a 5-shot in-context
 learning setting.
 All models are evaluated based on 16-shot in-context learning.
 The official dataset also provides a demonstration set, i.e.5-shot examples in each
 sub-task to enable few-shot in-context learning."
-257,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-81,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"While the two lines of work have achieved some success, these existing systems struggle to reflect
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-81,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"While the two lines of work have achieved some success, these existing systems struggle to reflect
 two key properties of knowledge.
 Knowledge is modular (Stuckenschmidt et al., 2009): it is an
 “archipelago” rather than a single “continent”, encapsulating information that exists in diversified
@@ -7994,7 +7994,7 @@ Compatible with diversified forms of knowledge.
 Similar divisions could be
 applied to sub-fields in NLP research, political news in different countries, and more.
 Knowledge :."
-258,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-82,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In Thirty-sixth Conference on Neural Information Processing Systems Datasets and
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-82,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"In Thirty-sixth Conference on Neural Information Processing Systems Datasets and
 Benchmarks Track , 2022.
 In Thirty-fifth Conference on Neural Information Processing Systems
 Datasets and Benchmarks Track (Round 1) , 2021.
@@ -8003,7 +8003,7 @@ Elle:
 Efficient lifelong pre-training for emerging data.
 Analysing mathematical
 reasoning abilities of neural models."
-259,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-83,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Answer : Dianne Feinstein
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-83,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Answer : Dianne Feinstein
 Dianne Feinstein
 knowledge documents
 news biomedgeogra
@@ -8019,7 +8019,7 @@ knowledge documentsknowledge documents
 Figure 1: Overview of KNOWLEDGE CARD.
 Dianne Feinstein, the senior
 senator from California, is rumored to retire ."
-260,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-84,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"3554–3565, 2021.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-84,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"3554–3565, 2021.
 8635–8648, 2020.
 6491–6506, 2021.
 3929–3938.
@@ -8036,7 +8036,7 @@ senator from California, is rumored to retire ."
 4222–4235, 2020.
 4615–4629, 2020.
 38–45, 2020."
-261,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-85,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"To this end, we
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-85,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"To this end, we
 propose KNOWLEDGE CARD, a modular framework to plug in new factual and
 relevant knowledge into general-purpose LLMs.
 To this end, we propose KNOWLEDGE CARD, a novel framework to empower general-purpose
@@ -8081,7 +8081,7 @@ and activate knowledge cards to empower LLMs with different skill sets and domai
 C E THICS STATEMENT
 We envision KNOWLEDGE CARD as a community-driven and collaborative initiative to improve
 general-purpose LLMs in knowledge-intensive tasks and contexts."
-262,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-86,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"While approaches such as retrieval augmentation could be extended for modularity,
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-86,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"While approaches such as retrieval augmentation could be extended for modularity,
 1Resources are available at https://github.com/BunsenFeng/Knowledge Card.
 Concretely, for the nknowledge cards C={c1,···,cn}, we also ask the knowledge card contributors
 to submit a textual description of LMs S={s1,···,sn}such as “ biomedical literature ”, “college
@@ -8110,23 +8110,23 @@ We leave it to future work on
 integrating multiple types of external knowledge stores to extend K NOWLEDGE CARD.
 Encyclopedic knowledge graph YAGO and Wikipedia
 are generally the most adopted knowledge cards."
-263,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-87,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Analyz-
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-87,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Analyz-
 ing the forgetting problem in pretrain-finetuning of open-domain dialogue response models.
 Promptcap:
 Prompt-guided task-aware image captioning.
 Learning to retrieve prompts for in-context
 learning."
-264,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-88,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Concurrently, top-down approaches surpass all baselines, including
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-88,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Concurrently, top-down approaches surpass all baselines, including
 Flan-PaLM with a few hundred billion more parameters.
 Base layers:
 Simplifying training of large, sparse models.
 Compressive transformers for long-range sequence modelling.
 Hash layers for large sparse models."
-265,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-89,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,Realtime qa: What’s the answer right now?
-266,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-90,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"REFERENCES
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-89,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,Realtime qa: What’s the answer right now?
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-90,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"REFERENCES
 Sharegpt.
 https://sharegpt.com/ , 2023."
-267,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-91,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"As they are increasingly adopted for
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-91,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"As they are increasingly adopted for
 knowledge-intensive tasks, it becomes evident that these design choices lead to
 failures to generate factual, relevant, and up-to-date knowledge.
 However, they still face various
@@ -8144,7 +8144,7 @@ documents are high-quality knowledge statements, occasionally suffering from deg
 deviation, and more.
 In addition, new and emerging knowledge might be well supported by existing retrieval
 corpora and receive low factuality scores."
-268,baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-92,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Generated knowledge prompting for commonsense reasoning.
+baf07af8cb279975638f4875627751cd1ad7639ee446444a5496c3be708f5a12-92,deeplearning,knowledge_card_filling_llms_knowledge_gaps_with_plug_in_specialied_language_models.pdf,"Generated knowledge prompting for commonsense reasoning.
 Autoprompt:
 Eliciting knowledge from language models with automatically generated prompts.
 Chain-of-thought prompting elicits reasoning in large language models.

@@ -16,6 +16,7 @@ src_path = os.path.dirname(__file__)
 sys.path.append(src_path)
 import hybsearch
 from minsearch import Index
+from db import ElasticsearchManager
 from optimization import simple_optimize
 from evaluation import evaluate
 
@@ -47,7 +48,7 @@ class RAG():
         api_key:str,        
         llm_model:str="models/gemini-1.5-flash-latest",
         candidate_count:int=1,
-        temperature:int=0,
+        temperature:float=0.0,
         safety_settings:dict[str,str]=default_safety_settings,
         filter_dict:dict={}, 
         boost_dict:dict={},
@@ -67,7 +68,7 @@ class RAG():
                 - 'models/gemini-1.5-pro-latest'
                 - 'models/gemini-1.5-flash-exp-0827'
             candidat_count (int): Number of candidates to be returned
-            temperature (int):Temperature for the LLM
+            temperature (float):Temperature for the LLM
             safety_settings (dict): Dictionary of settings for gemini's safetty configuration
             filter_dict (dict): Dictionary of keyword fields to filter by. Keys are field names and values are the values to filter by.
             boost_dict (dict): Dictionary of boost scores for text fields. Keys are field names and values are the boost scores.
@@ -388,6 +389,70 @@ class RAG():
         print(f"Best parameters are:\n{best_params}")
         print(f"Best score was:\n{-best_score}")
         
+    def get_es_manager(self,
+        index_name:str,
+        text_fields:list[str],
+        elasticsearch_host:str="localhost",
+        elasticsearch_port:str="9200",
+        embedding_model_name:str='all-mpnet-base-v2'        
+    ) -> None:
+        """
+        Initializes an ElasticsearchManager instance with the specified parameters and assigns it to the `es_manager` attribute.
+
+        Args:
+            index_name str: name of the ElasticSerach index with the documents
+            text_fields: Names of the fields to be used when searching
+            elasticsearch_host (str, optional): The hostname of the Elasticsearch server. Defaults to "localhost".
+            elasticsearch_port (str, optional): The port number of the Elasticsearch server. Defaults to "9200".
+            embedding_model_name (str, optional): The name of the embedding model to be used. Defaults to 'all-mpnet-base-v2'.
+        """
+        self.index_name = index_name
+        self.field_names = text_fields
+        self.es_manager = ElasticsearchManager(
+            host=elasticsearch_host,
+            port=elasticsearch_port,
+            embedding_model_name=embedding_model_name
+        )
+        
+    def elasticsearch(self,
+        query:str,
+        n_results:int=10,
+        alpha:float=None,
+        filter_dict:dict=None,
+        field_weights:dict=None
+    ) -> List[dict]:
+        """
+        Performs a hybrid search on an Elasticsearch index using a combination of keyword and k-nearest neighbors (k-NN) search.
+
+        Args:
+            query (str): The search query string.
+            n_results (int, optional): The number of search results to return. Defaults to 10.
+            alpha (float, optional): The weight given to the k-NN search results. If None, defaults to the instance's alpha attribute.
+            filter_dict (dict, optional): A dictionary of filters to apply to the search. If None, defaults to the instance's filter_dict attribute.
+            field_weights (dict, optional): A dictionary specifying the weight of each field. If None, defaults to the instance's boost_dict attribute.
+
+        Returns:
+            List[dict]: A list of search results, where each result is a dictionary containing the fields specified in the hybrid search.
+        """
+        if alpha is None:
+            alpha = self.alpha
+        if filter_dict is None:
+            filter_dict = self.filter_dict
+        if field_weights is None:
+            field_weights = self.boost_dict
+            
+        vector = self.es_manager.embbeding_model.encode(query)
+        
+        return self.es_manager.hybrid_search(
+            index_name=self.index_name,
+            query=query,
+            field_names=self.field_names,
+            vector=vector,
+            n_results=n_results,
+            alpha=alpha,
+            filter_dict=filter_dict,
+            field_weights=field_weights
+        )
         
     def set_prompt_templates(self,
         entry_template:str = None,
@@ -459,12 +524,17 @@ class RAG():
             }
             return result, tokens    
     
-    def answer(self, query:str, search:str="minsearch") -> str:
+    def answer(self, 
+            query:str, 
+            search:str="minsearch",
+            n_results:int=10
+        ) -> str:
         """_summary_
 
         Args:
             query (str): User's query
-
+            search Optional(str): Type of search to be used. Defaults to elasticsearch
+            n_results Optional(int): Number of results to be retrieved by the search algorithms
         Returns:
             str: Response
         """
@@ -472,7 +542,7 @@ class RAG():
         if search.lower() == "minsearch":
             t0 = time()
             
-            search_results = self.minsearch(query)
+            search_results = self.minsearch(query, num_results=n_results)
             prompt = self.build_prompt(query, search_results)
             answer, token_stats = self.llm(prompt)
             relevance, rel_token_stats = self.evaluate_relevance(query, answer)
@@ -506,7 +576,41 @@ class RAG():
             
             t0 = time()
             
-            search_results = self.hybsearch(query)
+            search_results = self.hybsearch(query, num_results=n_results)
+            prompt = self.build_prompt(query, search_results)
+            answer, token_stats = self.llm(prompt)
+            relevance, rel_token_stats = self.evaluate_relevance(query, answer)
+            
+            t1 = time()            
+            took = t1 - t0
+            
+            google_cost_response = calculate_google_cost(self.model, token_stats)
+            google_cost_eval = calculate_google_cost(self.model, rel_token_stats)
+            
+            answer_data = {
+                "answer": answer,
+                "model_used": self.model,
+                "response_time": took,
+                "relevance": relevance.get('Relevance', "UNKNOWN"),
+                "relevance_explanation": relevance.get(
+                    'Explanation', "Failed to parse evaluation"
+                ),
+                "prompt_tokens": token_stats['prompt_tokens'],
+                "completion_tokens": token_stats['completion_tokens'],
+                "total_tokens": token_stats['total_tokens'],
+                "eval_prompt_tokens": rel_token_stats['prompt_tokens'],
+                "eval_completion_tokens": rel_token_stats['completion_tokens'],
+                "eval_total_tokens": rel_token_stats['total_tokens'],
+                "google_cost": google_cost_response + google_cost_eval         
+            }
+             
+            return answer_data
+        
+        if search.lower() == "elasticsearch":
+            
+            t0 = time()
+            
+            search_results = self.elasticsearch(query, n_results=n_results)
             prompt = self.build_prompt(query, search_results)
             answer, token_stats = self.llm(prompt)
             relevance, rel_token_stats = self.evaluate_relevance(query, answer)

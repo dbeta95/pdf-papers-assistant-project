@@ -11,9 +11,38 @@ from sentence_transformers import SentenceTransformer
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.metrics.pairwise import cosine_similarity
-from typing import List, Union
+from typing import List, Union, Iterable
+from tqdm.auto import tqdm
+from concurrent.futures import ThreadPoolExecutor
 
 load_dotenv()
+
+def map_progress(pool:ThreadPoolExecutor, seq:Iterable, f):
+    """Function to map a function to a sequence and show a progress bar
+    
+    Args:
+        pool (ThreadPoolExecutor): ThreadPoolExecutor object
+        seq (Iterable): Iterable object to be processed
+        f (function): Function to be applied to each element in the sequence
+        
+    Returns:
+        List: List of results from the function applied to each element
+    """
+    results = []
+
+    with tqdm(total=len(seq)) as progress:
+        futures = []
+
+        for el in seq:
+            future = pool.submit(f, el)
+            future.add_done_callback(lambda p: progress.update())
+            futures.append(future)
+
+        for future in futures:
+            result = future.result()
+            results.append(result)
+
+    return results
 
 def extract_text_from_pdf(pdf_path:str) -> str:
     """Function to extract the text from a given PDF
@@ -109,50 +138,43 @@ def get_semantic_chunks(text:str, doc_id:str) -> List[dict]:
     return chunks_dicts
 
 
-def combine_sentences(sentences:List[dict], buffer_size:int=1) -> List[dict]:
+def combine_sentences(
+    sentences:List[dict], 
+    model:SentenceTransformer,
+    buffer_size:int=1
+) -> List[dict]:
     """Function that combines sentences according to a buffer size to give
     stability to the distance comparison between chunks
 
     Args:
         sentences (List[dict]): List of dictionaries where each one contains
             a sentece an it's index
+        model (SentenceTransformer): Sentence embedding model.
         buffer_size (int, optional): _description_. Number of sentences to combine
             from before and after the present one
-
+        
     Returns:
         List[dict]: List of dictionaries where each one contains
             a sentece, it's index and the combined text
     """
-    # Create a sentence embedding model
-    model = SentenceTransformer('all-mpnet-base-v2')
-    # Go through each sentence dict
-    for i in range(len(sentences)):
-
-        # Create a string that will hold the sentences which are joined
-        combined_sentence = ''
-
-        # Add sentences before the current one, based on the buffer size.
-        for j in range(i - buffer_size, i):
-            # Check if the index j is not negative (to avoid index out of range like on the first one)
-            if j >= 0:
-                # Add the sentence at index j to the combined_sentence string
-                combined_sentence += sentences[j]['sentence'] + ' '
-
-        # Add the current sentence
-        combined_sentence += sentences[i]['sentence']
-
-        # Add sentences after the current one, based on the buffer size
-        for j in range(i + 1, i + 1 + buffer_size):
-            # Check if the index j is within the range of the sentences list
-            if j < len(sentences):
-                # Add the sentence at index j to the combined_sentence string
-                combined_sentence += ' ' + sentences[j]['sentence']
-
-        # Then add the whole thing to your dict
-        # Store the combined sentence in the current sentence dict
-        sentences[i]['combined_sentence'] = combined_sentence
-        sentences[i]['combined_sentence_embedding'] = model.encode(combined_sentence)
-
+    
+    combined_sentences = []
+    n = len(sentences)
+    # Precompute the combined sentences
+    for i in range(n):
+        # Get the range of indices for sentences before, current, and after
+        start_idx = max(0, i - buffer_size)
+        end_idx = min(len(sentences), i + 1 + buffer_size)
+        
+        # Combine sentences using list comprehension and str.join
+        combined_sentences.append(' '.join([sentences[j]['sentence'] for j in range(start_idx, end_idx)]))
+    
+    combined_sentences_embeddings = list(map(lambda x: model.encode(x), combined_sentences))
+    # # Store the combined sentence and its embedding in the current sentence dict
+    for i in range(n):
+        sentences[i]['combined_sentence'] = combined_sentences[i]
+        sentences[i]['combined_sentence_embedding'] = combined_sentences_embeddings[i]
+        
     return sentences
 
 def calculate_cosine_similarities(sentences:List[dict]) -> Union[List, List[dict]]:
@@ -181,23 +203,24 @@ def calculate_cosine_similarities(sentences:List[dict]) -> Union[List, List[dict
         # Store distance in the dictionary
         sentences[i]['similarity_with_next'] = similarity
 
-    # Optionally handle the last sentence
-    sentences[-1]['similarity_with_next'] = None  # or a default value
-
     return similarities, sentences
 
 def get_sequential_clusters(
-    sentences:List[str], buffer_size:int=1, breakpoint_percentile:int=5
+    sentences:List[str],
+    model:SentenceTransformer, 
+    buffer_size:int=1, 
+    breakpoint_percentile:int=5    
 ) -> np.ndarray:
     """Function to get the clusters for a semantic chunking maintaining
     the sentences order
 
     Args:
         sentences (List[str]): List of sentences
+        model (SentenceTransformer, optional): Sentence embedding model.
         buffer_size (int, optional): _description_. Number of sentences to combine
             from before and after the present one
         breakpoint_percentile (int, optional): _description_. Defaults to 5.
-
+         
     Returns:
         np.ndarray: Array containing the clusters' labels
     """
@@ -206,7 +229,7 @@ def get_sequential_clusters(
         {'index': i, 'sentence': sentence} for i, sentence in enumerate(sentences)
     ]
     
-    sentences = combine_sentences(sentences, buffer_size=buffer_size)
+    sentences = combine_sentences(sentences, model=model, buffer_size=buffer_size)
     
     similarities, sentences = calculate_cosine_similarities(sentences)
     
@@ -224,13 +247,18 @@ def get_sequential_clusters(
         
     return labels
 
-def get_sequential_semantic_chunks(text:str, doc_id:str) -> List[dict]:
+def get_sequential_semantic_chunks(
+    text:str, 
+    doc_id:str,
+    workers:int=4
+) -> List[dict]:
     """Function that takes a text and splitts it into chunks
     using semantic grouping and maintaining the sentences order
 
     Args:
         text (str): Text to be splitted
         doc_id (str): sha256 codified ID for each document
+        workers (int, optional): Number of workers to use. Defaults to 4.
 
     Returns:
         List[dict]: List of dictionaries containing the
@@ -239,23 +267,29 @@ def get_sequential_semantic_chunks(text:str, doc_id:str) -> List[dict]:
     sentences = sent_tokenize(text)
     # Create a sentence embedding model
     model = SentenceTransformer('all-mpnet-base-v2')
+    pool = ThreadPoolExecutor(max_workers=workers)
 
     embeddings = model.encode(sentences)
     
     silhouette_scores = []
-    parameters = []
-    for buffer_size in [1,2,3]:
-        for breakpoint_percentile in [5, 10]:
-            clusters_labels = get_sequential_clusters(sentences, buffer_size, breakpoint_percentile)
+    parameters = [
+        {"buffer_size":buffer_size, "breakpoint_percentile":breakpoint_percentile} 
+        for buffer_size in [1,2,3] for breakpoint_percentile in [5, 10]
+    ]
+    def get_silhoutte_score(enum_param):
+        i, params = enum_param
+        try:
+            clusters_labels = get_sequential_clusters(sentences, model, **params)
             score = silhouette_score(embeddings, clusters_labels)
-            silhouette_scores.append(score)
-            parameters.append({
-                "buffer_size": buffer_size,
-                "breakpoint_percentile": breakpoint_percentile
-            })
-        
-    best_params = parameters[np.argmax(silhouette_scores)]
-    clusters_labels = get_sequential_clusters(sentences, **best_params)
+        except:
+            score = -1
+        return i, score
+    
+    results_list = map_progress(pool, list(enumerate(parameters)), get_silhoutte_score)
+    silhouette_scores = [score for _, score in results_list]
+    best_index = results_list[np.argmax(silhouette_scores)][0]
+    best_params = parameters[best_index]
+    clusters_labels = get_sequential_clusters(sentences, model, **best_params)
     
     # Create chunks based on cluster assignments
     chunks = [[] for _ in range(clusters_labels.max())]
