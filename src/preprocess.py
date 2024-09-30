@@ -265,6 +265,14 @@ def get_sequential_semantic_chunks(
         document id, chunk_number and text each
     """
     sentences = sent_tokenize(text)
+    
+    if len(sentences) < 2:
+        return [{
+            "doc_id": doc_id,
+            "chunk": 1,
+            "text": text
+        }]
+        
     # Create a sentence embedding model
     model = SentenceTransformer('all-mpnet-base-v2')
     pool = ThreadPoolExecutor(max_workers=workers)

@@ -5,3 +5,10 @@ numpy
 pandas
 google-generativeai
 elasticsearch
+nltk
+scikit-learn
+matplotlib
+seaborn
+python-dotenv
+sentence-transformers
+google-cloud-storage
