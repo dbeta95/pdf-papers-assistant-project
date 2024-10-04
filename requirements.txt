@@ -12,3 +12,4 @@ seaborn
 python-dotenv
 sentence-transformers
 google-cloud-storage
+flask

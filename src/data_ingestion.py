@@ -9,7 +9,6 @@ import hashlib
 import tempfile
 
 from tqdm import tqdm
-from dotenv import load_dotenv
 
 project_path = os.path.dirname(os.path.dirname(__file__))
 sys.path.append(project_path)
@@ -17,17 +16,6 @@ sys.path.append(project_path)
 from src.preprocess import  extract_text_from_pdf, get_sequential_semantic_chunks
 from src.storage import StorageManager
 from src.db import ElasticsearchManager
-
-load_dotenv(override=True)
-
-GCP_PROJECT_ID = os.getenv('GCP_PROJECT_ID')
-BUCKET = os.getenv('BUCKET')
-INDEX_NAME = os.getenv('INDEX_NAME')
-ELASTICSEARCH_HOST = os.getenv('ELASTICSEARCH_HOST')
-ELASTICSEARCH_PORT = os.getenv('ELASTICSEARCH_PORT')
-EMBEDDING_MODEL = os.getenv('EMBEDDING_MODEL')
-TEXT_FIELDS = os.getenv('TEXT_FIELDS').split(',')
-KEYWORD_FIELDS = os.getenv('KEYWORD_FIELDS').split(',')
 
 def upload_documents(docs_path:str, storage_manager:StorageManager) -> None:
     """Uploads documents to GCP bucket.
@@ -101,18 +89,39 @@ def index_documents_from_bucket(
             index_name=index_name
         )
         
-def main():
-    storage_manager = StorageManager(project_id=GCP_PROJECT_ID, bucket_name=BUCKET)
-    elasticsearch_manager = ElasticsearchManager(
-        host=ELASTICSEARCH_HOST,
-        port=ELASTICSEARCH_PORT,
-        embedding_model=EMBEDDING_MODEL,
-        text_fields=TEXT_FIELDS,
-        keyword_fields=KEYWORD_FIELDS
-    )
-    docs_path = os.path.join(project_path, 'docs')
-    upload_documents(docs_path, storage_manager)
-    index_documents_from_bucket(storage_manager, elasticsearch_manager, INDEX_NAME)
+def init_es_index(
+    storage_manager:StorageManager,
+    elasticsearch_manager:ElasticsearchManager,
+    docs_path:str,
+    index_name:str,
+    text_fields:list,
+    keyword_fields:list
+) -> None:
+    """
+    Initializes the database by uploading the documents to the GCP bucket
+    and indexing the documents in Elasticsearch.
     
-if __name__ == '__main__':
-    main()
+    Args:
+        storage_manager (StorageManager): Storage manager object.
+        elasticsearch_manager (ElasticsearchManager): Elasticsearch manager object.
+        docs_path (str): Path to the documents.
+        index_name (str): Name of the Elasticsearch index.
+        text_fields (list): List of text fields.
+        keyword_fields (list): List of keyword fields.  
+    """
+    print("Uploading documents to GCP bucket...")
+    upload_documents(docs_path, storage_manager)
+    print("Creating Elasticsearch index...")
+    elasticsearch_manager.create_index(
+        index_name=index_name,
+        text_fields=text_fields,
+        keyword_fields=keyword_fields   
+    )
+    print("Indexing documents in Elasticsearch...")
+    index_documents_from_bucket(
+        storage_manager=storage_manager, 
+        elasticsearch_manager=elasticsearch_manager,
+        index_name=index_name
+    )
+    print("Data ingestion completed.")
+
