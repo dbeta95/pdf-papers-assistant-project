@@ -1,10 +1,15 @@
-docker_run_elasticsearch:
-	docker run -it \
-    --rm \
-    --name elasticsearch \
-    -p 9200:9200 \
-    -p 9300:9300 \
-    -e "discovery.type=single-node" \
-    -e "xpack.security.enabled=false" \
-	-v elasticsearch-data:/usr/share/elasticsearch/data \
-    elasticsearch:8.4.3
+
+# Variables
+BUCKET_NAME = # Bucket name
+
+# Getting GCP credentials
+get_credentials:
+    gcloud auth application-default login
+
+# Creating a new bucket
+create_bucket:
+    gsutil mb -l us-central1 gs://$(BUCKET_NAME)
+
+# deploy the app with docker-compose
+deploy:
+    docker-compose up -d

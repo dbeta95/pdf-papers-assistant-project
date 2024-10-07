@@ -20,7 +20,7 @@ load_dotenv()
 
 RUN_TIMEZONE_CHECK = os.getenv('RUN_TIMEZONE_CHECK', '1') == '1'
 TZ_INFO = os.getenv('TZ')
-POSTGRES_HOST = 'localhost'
+POSTGRES_HOST = os.getenv('POSTGRES_HOST')
 POSTGRES_DB = os.getenv('POSTGRES_DB')
 POSTGRES_USER = os.getenv('POSTGRES_USER')
 POSTGRES_PASSWORD = os.getenv('POSTGRES_PASSWORD')

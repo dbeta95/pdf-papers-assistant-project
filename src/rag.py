@@ -14,11 +14,14 @@ from typing import List
 
 src_path = os.path.dirname(__file__)
 sys.path.append(src_path)
-import hybsearch
-from minsearch import Index
-from db import ElasticsearchManager
-from optimization import simple_optimize
-from evaluation import evaluate
+project_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(project_path)
+
+from src import hybsearch
+from src.minsearch import Index
+from src.db import ElasticsearchManager
+from src.optimization import simple_optimize
+from src.evaluation import evaluate
 
 ## Settings for Gemini
 # modify according to the model you are using
