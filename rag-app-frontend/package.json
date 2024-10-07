@@ -1,0 +1,12 @@
+{
+  "name": "rag-app-frontend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "keywords": [],
+  "author": "Daniel Betancur",
+  "license": "ISC",
+  "description": ""
+}

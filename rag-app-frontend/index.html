@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documentor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Documentor, your paper reading assistant</h1>
+        <p>Hello! I am Documentor, an assistant created using Gemini LLM with a RAG architecture. I can answer your questions about the knowledge database of papers.</p> 
+        <div>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="">Select Category</option>
+                <option value="deeplearning">Deep Learning</option>
+                <option value="statistics">Statistics</option>
+                <option value="time_series">Time Series</option>
+            </select>
+        </div>
+        <div>
+            <label for="question">Question:</label>
+            <textarea id="question" rows="4"></textarea> 
+        </div>
+        <button id="submit">Submit</button>
+        <button id="clear">Clear</button>
+        <div id="loading" class="loading">
+            <div class="loading-bar"></div> 
+        </div>
+        <div id="answer"></div>
+        <div id="feedback">
+            <button id="thumbsUp">&#128077;</button>
+            <button id="thumbsDown">&#128078;</button>
+            <span id="feedbackMessage"></span> 
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

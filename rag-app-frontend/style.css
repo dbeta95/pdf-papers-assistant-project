@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6; /* Increased line spacing */
+    background-color: #f4f4f4; /* Light background */
+}
+
+.container {
+    width: 600px; /* Slightly wider container */
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2962ff; /* Blue title */
+}
+
+p {
+    color: #689f38; /* Greenish description */
+}
+
+.loading {
+    display: none;
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.loading-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #2979ff; /* Blue loading bar */
+    animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+#question {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+#answer {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#feedback {
+    margin-top: 10px;
+}
+
+#feedback button {
+    font-size: 24px;
+    margin: 0 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#feedbackMessage {
+    margin-left: 10px; 
+    font-style: italic;
+    color: #28a745; /* Green feedback message */
+}
